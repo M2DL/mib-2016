@@ -1,0 +1,15 @@
+= Travail collaboratif sur la Maison Intelligente 2016
+
+Vous trouverez les consignes du TP [ici](https://jmbruel.github.io/masterDL2016/#_tp_sysml).
+
+Consignes pour ce qui concerne git :
+
+* Personne ne pousse dans master
+* la branche de travail est dev
+* Chacun créé sa propre branche à partir de dev (git checkout -b monSuperGroupe)
+* Chacun :
+  ** bosse sur sa branche
+  ** commit
+  ** repasse sur dev en local (git pull au passage)
+  ** vérifie que sa branche se merge correctement dans dev
+  ** pousse dev
