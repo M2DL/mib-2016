@@ -1,37 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks">
-  <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="RootE">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="Root">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_bdHyMK_2EeapM-HOoIo7tA" annotatedElement="_6gfZEK_1EeapM-HOoIo7tA">
+      <body>Liste des exigences reprises du fichier excel.
+Consigne : Organisez celles qui concernent votre partie,
+et nommez-les au passage.
+</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_iuXQoKzUEean1fvqSNKjOw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_iujd4KzUEean1fvqSNKjOw">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_KJ2jkKzVEean1fvqSNKjOw" name="block1" type="_IIbeYKzVEean1fvqSNKjOw" aggregation="composite" association="_KJ0uYKzVEean1fvqSNKjOw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_XxpO8qzVEean1fvqSNKjOw" name="medecin" type="_TubRIKzVEean1fvqSNKjOw" aggregation="composite" association="_XxoA0KzVEean1fvqSNKjOw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZH4CEqzVEean1fvqSNKjOw" name="locataire" type="_RLfaUKzVEean1fvqSNKjOw" aggregation="composite" association="_ZH3bAKzVEean1fvqSNKjOw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6gfZEK_1EeapM-HOoIo7tA" name="ExigencesInitiales">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dj9ksK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkE5cK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkLAEK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkRGsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkX0YK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dkd7AK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkkBoK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkqIQK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DkwO4K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dk2VgK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dk8cIK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlB7sK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlICUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlOI8K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlTogK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlZIEK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlfOsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlkuQK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlqN0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlvGUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dlz-0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dl43UK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dl9v0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmCoUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmHg0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmMZUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmRR0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmXYcK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dmc4AK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmiXkK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dmn3IK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmsvoK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DmxoIK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dm2goK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dm8AMK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnA4sK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnGYQK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnL30K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnQwUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnVo0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnahUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_IIbeYKzVEean1fvqSNKjOw" name="MIB"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJ18gKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJ18gazVEean1fvqSNKjOw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_KJ5m4KzVEean1fvqSNKjOw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_KJ0uYKzVEean1fvqSNKjOw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
+      <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_KJ2jkKzVEean1fvqSNKjOw" name="block1" type="_IIbeYKzVEean1fvqSNKjOw" aggregation="composite" association="_KJ0uYKzVEean1fvqSNKjOw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XxpO8qzVEean1fvqSNKjOw" name="medecin" type="_TubRIKzVEean1fvqSNKjOw" aggregation="composite" association="_XxoA0KzVEean1fvqSNKjOw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eD5YcK_8EeapM-HOoIo7tA" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" aggregation="composite" association="_eDyDsK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fn13cq_8EeapM-HOoIo7tA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" aggregation="composite" association="_fn1QYK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gU7m86_8EeapM-HOoIo7tA" name="visiteur" type="_TIqZ8a_8EeapM-HOoIo7tA" aggregation="composite" association="_gU7m8K_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IIbeYKzVEean1fvqSNKjOw" name="MIB">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iJskorAGEeapM-HOoIo7tA" name="equipementsansfil" type="_OhdZwLAGEeapM-HOoIo7tA" aggregation="composite" association="_iJr9kLAGEeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_i-mzYrAGEeapM-HOoIo7tA" name="reseauelectrique" type="_GldzkLAGEeapM-HOoIo7tA" aggregation="composite" association="_i-mMULAGEeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jt2fALAGEeapM-HOoIo7tA" name="reseauknx" type="__amvYLAFEeapM-HOoIo7tA" aggregation="composite" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="__amvYLAFEeapM-HOoIo7tA" name="ReseauKNX"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_GldzkLAGEeapM-HOoIo7tA" name="ReseauElectrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OhdZwLAGEeapM-HOoIo7tA" name="EquipementSansFil"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
+          <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJ18gKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJ18gazVEean1fvqSNKjOw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_KJ5m4KzVEean1fvqSNKjOw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_KJ0uYKzVEean1fvqSNKjOw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XxoA0KzVEean1fvqSNKjOw" memberEnd="_XxpO8qzVEean1fvqSNKjOw _Xxp2AKzVEean1fvqSNKjOw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XxpO8KzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XxpO8azVEean1fvqSNKjOw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Xxp2AKzVEean1fvqSNKjOw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_XxoA0KzVEean1fvqSNKjOw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_XzCtIK_2EeapM-HOoIo7tA" name="" client="_IIbeYKzVEean1fvqSNKjOw" supplier="_6gfZEK_1EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_eDyDsK_8EeapM-HOoIo7tA" memberEnd="_eD5YcK_8EeapM-HOoIo7tA _eD5Yca_8EeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eD4KUK_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eD4KUa_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_eD5Yca_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_eDyDsK_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_fn1QYK_8EeapM-HOoIo7tA" memberEnd="_fn13cq_8EeapM-HOoIo7tA _fn13c6_8EeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fn13cK_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fn13ca_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_fn13c6_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_fn1QYK_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gU7m8K_8EeapM-HOoIo7tA" memberEnd="_gU7m86_8EeapM-HOoIo7tA _gU7m9K_8EeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gU7m8a_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gU7m8q_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_gU7m9K_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_gU7m8K_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_hEn-gK_8EeapM-HOoIo7tA" memberEnd="_hEolkq_8EeapM-HOoIo7tA _hEolk6_8EeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hEolkK_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hEolka_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hEolk6_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_hEn-gK_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_hyqwQK_8EeapM-HOoIo7tA" memberEnd="_hyrXUa_8EeapM-HOoIo7tA _hyrXUq_8EeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hyqwQa_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hyrXUK_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hyrXUq_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_hyqwQK_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_iJr9kLAGEeapM-HOoIo7tA" memberEnd="_iJskorAGEeapM-HOoIo7tA _iJsko7AGEeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iJskoLAGEeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iJskobAGEeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_iJsko7AGEeapM-HOoIo7tA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_iJr9kLAGEeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i-mMULAGEeapM-HOoIo7tA" memberEnd="_i-mzYrAGEeapM-HOoIo7tA _i-mzY7AGEeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i-mzYLAGEeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i-mzYbAGEeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_i-mzY7AGEeapM-HOoIo7tA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_i-mMULAGEeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jt1Q4LAGEeapM-HOoIo7tA" memberEnd="_jt2fALAGEeapM-HOoIo7tA _jt2fAbAGEeapM-HOoIo7tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jt138LAGEeapM-HOoIo7tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jt138bAGEeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jt2fAbAGEeapM-HOoIo7tA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_RLfaUKzVEean1fvqSNKjOw" name="Locataire"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XxoA0KzVEean1fvqSNKjOw" memberEnd="_XxpO8qzVEean1fvqSNKjOw _Xxp2AKzVEean1fvqSNKjOw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XxpO8KzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XxpO8azVEean1fvqSNKjOw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Xxp2AKzVEean1fvqSNKjOw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_XxoA0KzVEean1fvqSNKjOw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZH3bAKzVEean1fvqSNKjOw" memberEnd="_ZH4CEqzVEean1fvqSNKjOw _ZH4CE6zVEean1fvqSNKjOw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZH4CEKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZH4CEazVEean1fvqSNKjOw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ZH4CE6zVEean1fvqSNKjOw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_ZH3bAKzVEean1fvqSNKjOw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -96,4 +214,54 @@
   </uml:Model>
   <Blocks:Block xmi:id="_1DGMQKzUEean1fvqSNKjOw" base_Class="_02decKzUEean1fvqSNKjOw"/>
   <Blocks:Block xmi:id="_IIkoUKzVEean1fvqSNKjOw" base_Class="_IIbeYKzVEean1fvqSNKjOw"/>
+  <Requirements:Requirement xmi:id="_Dj89oK_2EeapM-HOoIo7tA" base_Class="_Dj9ksK_2EeapM-HOoIo7tA" id="Id" text="Text"/>
+  <Requirements:Requirement xmi:id="_Dj89oa_2EeapM-HOoIo7tA" base_Class="_DkE5cK_2EeapM-HOoIo7tA" id="01-00" text="La MI doit etre securisee"/>
+  <Requirements:Requirement xmi:id="_Dj89oq_2EeapM-HOoIo7tA" base_Class="_DkLAEK_2EeapM-HOoIo7tA" id="01-01" text="La MI doit etre securisee contre le piratage"/>
+  <Requirements:Requirement xmi:id="_Dj89o6_2EeapM-HOoIo7tA" base_Class="_DkRGsK_2EeapM-HOoIo7tA" id="01-02" text="La MI doit pouvoir se defendre des cambrioleurs"/>
+  <Requirements:Requirement xmi:id="_Dj89pK_2EeapM-HOoIo7tA" base_Class="_DkX0YK_2EeapM-HOoIo7tA" id="01-03" text="La MI doit contacter la police en cas d'intrusion"/>
+  <Requirements:Requirement xmi:id="_Dj89pa_2EeapM-HOoIo7tA" base_Class="_Dkd7AK_2EeapM-HOoIo7tA" id="01-04" text="La MI doit etre equipee d'au moins un detecteur de fumee"/>
+  <Requirements:Requirement xmi:id="_Dj89pq_2EeapM-HOoIo7tA" base_Class="_DkkBoK_2EeapM-HOoIo7tA" id="01-05" text="La MI ne doit proposer l'acces qu'a certains utilisateurs"/>
+  <Requirements:Requirement xmi:id="_Dj89p6_2EeapM-HOoIo7tA" base_Class="_DkqIQK_2EeapM-HOoIo7tA" id="01-06" text="La MI doit proposer plusieurs moyens de s'identifier"/>
+  <Requirements:Requirement xmi:id="_Dj89qK_2EeapM-HOoIo7tA" base_Class="_DkwO4K_2EeapM-HOoIo7tA" id="01-07" text="La MI doit pouvoir detecter la fumee d'un plat mal cuisine"/>
+  <Requirements:Requirement xmi:id="_Dj89qa_2EeapM-HOoIo7tA" base_Class="_Dk2VgK_2EeapM-HOoIo7tA" id="01-08" text="La MI doit presenter les memes caracterisques de robustesse qu'un logiciel critique"/>
+  <Requirements:Requirement xmi:id="_Dj89qq_2EeapM-HOoIo7tA" base_Class="_Dk8cIK_2EeapM-HOoIo7tA" id="01-09" text="La MI doit etre equipee de cameras de surveillance"/>
+  <Requirements:Requirement xmi:id="_Dj89q6_2EeapM-HOoIo7tA" base_Class="_DlB7sK_2EeapM-HOoIo7tA" id="01-10" text="La MI ne doit pas violer la vie privee (diffusion a des tiers (terroristes, etc))"/>
+  <Requirements:Requirement xmi:id="_Dj89rK_2EeapM-HOoIo7tA" base_Class="_DlICUK_2EeapM-HOoIo7tA" id="01-11" text="La MI doit assister l'evacuation des habitants en cas d'incident"/>
+  <Requirements:Requirement xmi:id="_Dj89ra_2EeapM-HOoIo7tA" base_Class="_DlOI8K_2EeapM-HOoIo7tA" id="02-00" text="La MI doit s'adapter a l'habitant"/>
+  <Requirements:Requirement xmi:id="_Dj89rq_2EeapM-HOoIo7tA" base_Class="_DlTogK_2EeapM-HOoIo7tA" id="02-01" text="Les meubles de la MI doivent s'adapter au profil de la personne"/>
+  <Requirements:Requirement xmi:id="_Dj89r6_2EeapM-HOoIo7tA" base_Class="_DlZIEK_2EeapM-HOoIo7tA" id="02-02" text="Le MI doit etre econome en energie"/>
+  <Requirements:Requirement xmi:id="_Dj89sK_2EeapM-HOoIo7tA" base_Class="_DlfOsK_2EeapM-HOoIo7tA" id="02-03" text="La MI doit avoir son mobilier adaptable, amovible"/>
+  <Requirements:Requirement xmi:id="_Dj89sa_2EeapM-HOoIo7tA" base_Class="_DlkuQK_2EeapM-HOoIo7tA" id="02-04" text="La MI doit pouvoir reguler sa temperature selon les preferences de l'habitant"/>
+  <Requirements:Requirement xmi:id="_Dj89sq_2EeapM-HOoIo7tA" base_Class="_DlqN0K_2EeapM-HOoIo7tA" id="02-05" text="La MI doit apprendre du comportement de ses habitants"/>
+  <Requirements:Requirement xmi:id="_Dj89s6_2EeapM-HOoIo7tA" base_Class="_DlvGUK_2EeapM-HOoIo7tA" id="03-00" text="La MI doit etre ecologique et econome en energie"/>
+  <Requirements:Requirement xmi:id="_Dj89tK_2EeapM-HOoIo7tA" base_Class="_Dlz-0K_2EeapM-HOoIo7tA" id="03-01" text="La MI doit pouvoir eteindre la lumiere et baisser le chauffage ou couper la clim si aucune presence n'est detectee"/>
+  <Requirements:Requirement xmi:id="_Dj89ta_2EeapM-HOoIo7tA" base_Class="_Dl43UK_2EeapM-HOoIo7tA" id="03-02" text="La MI ne doit pas polluer"/>
+  <Requirements:Requirement xmi:id="_Dj89tq_2EeapM-HOoIo7tA" base_Class="_Dl9v0K_2EeapM-HOoIo7tA" id="03-03" text="La MI doit pouvoir produire seule son electricite"/>
+  <Requirements:Requirement xmi:id="_Dj89t6_2EeapM-HOoIo7tA" base_Class="_DmCoUK_2EeapM-HOoIo7tA" id="03-04" text="La MI doit avoir une consommation dՎnergie primaire (avant transformation et transport) inferieure a 50 kWh/m_/an"/>
+  <Requirements:Requirement xmi:id="_Dj89uK_2EeapM-HOoIo7tA" base_Class="_DmHg0K_2EeapM-HOoIo7tA" id="03-05" text="La MI doit faire attention a sa consommation de gaz"/>
+  <Requirements:Requirement xmi:id="_Dj89ua_2EeapM-HOoIo7tA" base_Class="_DmMZUK_2EeapM-HOoIo7tA" id="04-08" text="La MI doit pouvoir lire un livre a voix haute"/>
+  <Requirements:Requirement xmi:id="_Dj89uq_2EeapM-HOoIo7tA" base_Class="_DmRR0K_2EeapM-HOoIo7tA" id="04-01" text="La Mi doit etre en mesure de se nettoyer seule (aspirateurs robotiques)"/>
+  <Requirements:Requirement xmi:id="_Dj89u6_2EeapM-HOoIo7tA" base_Class="_DmXYcK_2EeapM-HOoIo7tA" id="04-02" text="La MI peut etre commandee vocalement"/>
+  <Requirements:Requirement xmi:id="_Dj89vK_2EeapM-HOoIo7tA" base_Class="_Dmc4AK_2EeapM-HOoIo7tA" id="04-03" text="La MI doit pouvoir etre controllee grace a une interface tactile dans la piece principale"/>
+  <Requirements:Requirement xmi:id="_Dj89va_2EeapM-HOoIo7tA" base_Class="_DmiXkK_2EeapM-HOoIo7tA" id="04-04" text="La MI doit etre connectee a l'Internet"/>
+  <Requirements:Requirement xmi:id="_Dj89vq_2EeapM-HOoIo7tA" base_Class="_Dmn3IK_2EeapM-HOoIo7tA" id="04-05" text="La MI doit faire du cafe le matin. What else ?"/>
+  <Requirements:Requirement xmi:id="_Dj89v6_2EeapM-HOoIo7tA" base_Class="_DmsvoK_2EeapM-HOoIo7tA" id="04-06" text="La MI doit pouvoir se connecter aux smart devices des habitants pour y recuperer des contenus"/>
+  <Requirements:Requirement xmi:id="_Dj89wK_2EeapM-HOoIo7tA" base_Class="_DmxoIK_2EeapM-HOoIo7tA" id="04-07" text="La MI doit controller le contenu televisuel, accords parental, limitation d'utilisation -> roles"/>
+  <Requirements:Requirement xmi:id="_Dj89wa_2EeapM-HOoIo7tA" base_Class="_Dm2goK_2EeapM-HOoIo7tA" id="04-08" text="L'utilisateur doit avoir un lit qui s'adapte a ses besoins et handicap"/>
+  <Requirements:Requirement xmi:id="_Dj89wq_2EeapM-HOoIo7tA" base_Class="_Dm8AMK_2EeapM-HOoIo7tA" id="04-09" text="L'utilisateur doit pouvoir faire son lit sans effort"/>
+  <Requirements:Requirement xmi:id="_Dj89w6_2EeapM-HOoIo7tA" base_Class="_DnA4sK_2EeapM-HOoIo7tA" id="04-10" text="L'utilisateur doit pouvoir incliner le lit sans effort et selon ses besoins"/>
+  <Requirements:Requirement xmi:id="_Dj89xK_2EeapM-HOoIo7tA" base_Class="_DnGYQK_2EeapM-HOoIo7tA" id="04-11" text="L'utilisateur doit pouvoir etre reveille quelque soit son handicap"/>
+  <Requirements:Requirement xmi:id="_Dj89xa_2EeapM-HOoIo7tA" base_Class="_DnL30K_2EeapM-HOoIo7tA" id="04-12" text="La MI doit accompagner au soin dans la vie quotidienne de la personne handicapee"/>
+  <Requirements:Requirement xmi:id="_Dj89xq_2EeapM-HOoIo7tA" base_Class="_DnQwUK_2EeapM-HOoIo7tA" id="04-13" text="La MI doit proposer un systeme de guidage lumineux"/>
+  <Requirements:Requirement xmi:id="_Dj89x6_2EeapM-HOoIo7tA" base_Class="_DnVo0K_2EeapM-HOoIo7tA" id="05-02" text="La MI doit proposer des repas equilibres en fonction de l'habitant"/>
+  <Requirements:Requirement xmi:id="_Dj89yK_2EeapM-HOoIo7tA" base_Class="_DnahUK_2EeapM-HOoIo7tA" id="05-03" text="La MI doit permettre de mettre en relation la personne avec les secours (haut-parleurs, micro)"/>
+  <Requirements:Requirement xmi:id="_Dj89ya_2EeapM-HOoIo7tA" base_Class="_DnmukK_2EeapM-HOoIo7tA" id="05-04" text="La MI doit pouvoir nourrir les animaux de compagnie en cas d'absence du Maitre"/>
+  <Requirements:Requirement xmi:id="_Dj89yq_2EeapM-HOoIo7tA" base_Class="_Dns1MK_2EeapM-HOoIo7tA" id="05-05" text="La MI doit avoir un systeme d'identification d'anomalies dans le comportement des personnes"/>
+  <Requirements:Requirement xmi:id="_Dj89y6_2EeapM-HOoIo7tA" base_Class="_DnxtsK_2EeapM-HOoIo7tA" id="05-06" text="La MI doit assister les deplacements de l'habitant"/>
+  <Requirements:Satisfy xmi:id="_XzSkwK_2EeapM-HOoIo7tA" base_DirectedRelationship="_XzCtIK_2EeapM-HOoIo7tA" base_Abstraction="_XzCtIK_2EeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="__aurMLAFEeapM-HOoIo7tA" base_Class="__amvYLAFEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_GllIULAGEeapM-HOoIo7tA" base_Class="_GldzkLAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
 </xmi:XMI>
