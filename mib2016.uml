@@ -151,6 +151,26 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7e2k8LJJEeaM68BLgT48_Q" name="Sécurité">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_C1xIILJKEeaM68BLgT48_Q" name="Sécurité"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_HVW44LJKEeaM68BLgT48_Q" name="Sécurité"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_SALc0LJKEeaM68BLgT48_Q" name="Sécurité"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r1jYALJNEeaM68BLgT48_Q" name="Sécurité"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_K-2IELJKEeaM68BLgT48_Q" name="Intervention"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a4m2ELJKEeaM68BLgT48_Q" name="Bien-être des utilisateurs"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eBc2ULJKEeaM68BLgT48_Q" name="Bien-être des utilisateurs"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_itz3wLJKEeaM68BLgT48_Q" name="Evacuation"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_95oTYLJLEeaM68BLgT48_Q" name="DeriveReqt1" client="_eBc2ULJKEeaM68BLgT48_Q" supplier="_a4m2ELJKEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YzYkELJMEeaM68BLgT48_Q" name="Refine1" client="_K-2IELJKEeaM68BLgT48_Q" supplier="_HVW44LJKEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FPPZkLJNEeaM68BLgT48_Q" name="Evacuation"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_V-UmALJNEeaM68BLgT48_Q" name="DeriveReqt2" client="_itz3wLJKEeaM68BLgT48_Q" supplier="_FPPZkLJNEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9RcVMLJPEeaM68BLgT48_Q" name="Vie privée"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ImRfcLJQEeaM68BLgT48_Q" name="Refine2" client="_9RcVMLJPEeaM68BLgT48_Q" supplier="_r1jYALJNEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_gbxfgLJREeaM68BLgT48_Q" name="DeriveReqt3" client="_HVW44LJKEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_hDXrALJREeaM68BLgT48_Q" name="DeriveReqt4" client="_C1xIILJKEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_hsybcLJREeaM68BLgT48_Q" name="DeriveReqt5" client="_r1jYALJNEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ijeL0LJREeaM68BLgT48_Q" name="DeriveReqt6" client="_SALc0LJKEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -264,4 +284,23 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Requirement xmi:id="_7fAV8LJJEeaM68BLgT48_Q" base_Class="_7e2k8LJJEeaM68BLgT48_Q" id="01-00" text="L'utilisateur doit se sentir en sécurité"/>
+  <Requirements:Requirement xmi:id="_C16SELJKEeaM68BLgT48_Q" base_Class="_C1xIILJKEeaM68BLgT48_Q" id="01-01" text="L'utilisateur ne doit pas se faire pirater"/>
+  <Requirements:Requirement xmi:id="_HVgp4LJKEeaM68BLgT48_Q" base_Class="_HVW44LJKEeaM68BLgT48_Q" id="01-02" text="L'utilisateur doit être défendu des cambrioleurs"/>
+  <Requirements:Requirement xmi:id="_K-_5ELJKEeaM68BLgT48_Q" base_Class="_K-2IELJKEeaM68BLgT48_Q" id="01-03" text="La police doit être contacté en cas d'intrusion"/>
+  <Requirements:Requirement xmi:id="_SALc0bJKEeaM68BLgT48_Q" base_Class="_SALc0LJKEeaM68BLgT48_Q" id="01-05" text="La MI ne doit proposer l'acces qu'a certains utilisateurs"/>
+  <Requirements:Requirement xmi:id="_a4s8sLJKEeaM68BLgT48_Q" base_Class="_a4m2ELJKEeaM68BLgT48_Q" id="04-08" text="L'utilisateur doit avoir un lit qui s'adapte a ses besoins et handicap"/>
+  <Requirements:Requirement xmi:id="_eBmnULJKEeaM68BLgT48_Q" base_Class="_eBc2ULJKEeaM68BLgT48_Q" id="04-09" text="L'utilisateur doit pouvoir faire son lit sans effort"/>
+  <Requirements:Requirement xmi:id="_it9owLJKEeaM68BLgT48_Q" base_Class="_itz3wLJKEeaM68BLgT48_Q" id="04-13" text="La MI doit proposer un systeme de guidage lumineux"/>
+  <Requirements:DeriveReqt xmi:id="_95yEYLJLEeaM68BLgT48_Q" base_DirectedRelationship="_95oTYLJLEeaM68BLgT48_Q" base_Abstraction="_95oTYLJLEeaM68BLgT48_Q"/>
+  <Requirements:Refine xmi:id="_YziVELJMEeaM68BLgT48_Q" base_DirectedRelationship="_YzYkELJMEeaM68BLgT48_Q" base_Abstraction="_YzYkELJMEeaM68BLgT48_Q"/>
+  <Requirements:Requirement xmi:id="_FPYjgLJNEeaM68BLgT48_Q" base_Class="_FPPZkLJNEeaM68BLgT48_Q" id="01-11" text="La MI doit assister l'evacuation des habitants en cas d'incident&#xD;&#xA;"/>
+  <Requirements:DeriveReqt xmi:id="_V-ng8LJNEeaM68BLgT48_Q" base_DirectedRelationship="_V-UmALJNEeaM68BLgT48_Q" base_Abstraction="_V-UmALJNEeaM68BLgT48_Q"/>
+  <Requirements:Requirement xmi:id="_r1tJALJNEeaM68BLgT48_Q" base_Class="_r1jYALJNEeaM68BLgT48_Q" id="01-09" text="La MI doit etre equipee de cameras de surveillance"/>
+  <Requirements:Requirement xmi:id="_9RlfILJPEeaM68BLgT48_Q" base_Class="_9RcVMLJPEeaM68BLgT48_Q" id="01-11" text="La MI ne doit pas violer la vie privee (diffusion a des tiers (terroristes, etc))"/>
+  <Requirements:Refine xmi:id="_ImbQcLJQEeaM68BLgT48_Q" base_DirectedRelationship="_ImRfcLJQEeaM68BLgT48_Q" base_Abstraction="_ImRfcLJQEeaM68BLgT48_Q"/>
+  <Requirements:DeriveReqt xmi:id="_gb6pcLJREeaM68BLgT48_Q" base_DirectedRelationship="_gbxfgLJREeaM68BLgT48_Q" base_Abstraction="_gbxfgLJREeaM68BLgT48_Q"/>
+  <Requirements:DeriveReqt xmi:id="_hDXrAbJREeaM68BLgT48_Q" base_DirectedRelationship="_hDXrALJREeaM68BLgT48_Q" base_Abstraction="_hDXrALJREeaM68BLgT48_Q"/>
+  <Requirements:DeriveReqt xmi:id="_hs8McLJREeaM68BLgT48_Q" base_DirectedRelationship="_hsybcLJREeaM68BLgT48_Q" base_Abstraction="_hsybcLJREeaM68BLgT48_Q"/>
+  <Requirements:DeriveReqt xmi:id="_ijn80LJREeaM68BLgT48_Q" base_DirectedRelationship="_ijeL0LJREeaM68BLgT48_Q" base_Abstraction="_ijeL0LJREeaM68BLgT48_Q"/>
 </xmi:XMI>
