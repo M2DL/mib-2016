@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_KZsbULJEEeadqoFGEHfAxw" name="RootRequirement">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Kint4LJEEeadqoFGEHfAxw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Ki6owLJEEeadqoFGEHfAxw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hN1FALJFEeadqoFGEHfAxw" name="ReqEco6"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_qZ7oMLJFEeadqoFGEHfAxw" client="_90XdELJEEeadqoFGEHfAxw" supplier="_KZsbULJEEeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1CnosLJGEeadqoFGEHfAxw" name="ReqEco8"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nrceILJEEeadqoFGEHfAxw" name="ReqEco1">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ZApWQLJHEeadqoFGEHfAxw" name="ReqEco9"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_x1vH4LJEEeadqoFGEHfAxw" name="ReqEco2"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_90XdELJEEeadqoFGEHfAxw" name="ReqEco3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MRJ1wLJQEeadqoFGEHfAxw" name="" client="_90XdELJEEeadqoFGEHfAxw" supplier="_1CnosLJGEeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_P-4rwLJQEeadqoFGEHfAxw" name="" client="_KZsbULJEEeadqoFGEHfAxw" supplier="_KZsbULJEEeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MWJ1ELJREeadqoFGEHfAxw" name="ReqEco10">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_kzP2ELJREeadqoFGEHfAxw" name="ReqEco10"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_SBAfELJREeadqoFGEHfAxw" name="" client="_ZApWQLJHEeadqoFGEHfAxw" supplier="_MWJ1ELJREeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lJaTULJREeadqoFGEHfAxw" name="ReqEco11"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_qOCq0LJREeadqoFGEHfAxw" name="" client="_ZApWQLJHEeadqoFGEHfAxw" supplier="_lJaTULJREeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UFNWALJSEeadqoFGEHfAxw" name="ReqEco12"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_c_UKQLJSEeadqoFGEHfAxw" name="" client="_90XdELJEEeadqoFGEHfAxw" supplier="_UFNWALJSEeadqoFGEHfAxw"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kbxe8LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kbxe8bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KiUy4LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KiUy4bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint0LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint0bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint0rJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint07JEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint1LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint1bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint1rJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint17JEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint2LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint2bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint2rJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint27JEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint3LJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint3bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kint3rJEEeadqoFGEHfAxw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kint37JEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_oCr5cLJEEeadqoFGEHfAxw" base_Class="_nrceILJEEeadqoFGEHfAxw" id="ReqEco1" text="La MI doit être écologique et économe en energie"/>
+  <Requirements:Requirement xmi:id="_x1444LJEEeadqoFGEHfAxw" base_Class="_x1vH4LJEEeadqoFGEHfAxw" id="ReqEco2" text="L'habitant doit pouvoir quitter sa maison sans avoir à vérifier l'état de l'éclairage, du chauffage ou de la climatisation"/>
+  <Requirements:Requirement xmi:id="_90qYALJEEeadqoFGEHfAxw" base_Class="_90XdELJEEeadqoFGEHfAxw" id="ReqEco3" text="L'habitant doit pouvoir réduire sa consommation d'électricité"/>
+  <Requirements:Requirement xmi:id="_hOH_8LJFEeadqoFGEHfAxw" base_Class="_hN1FALJFEeadqoFGEHfAxw" id="ReqEco6" text="L'habitant ne doit pas se soucier du réglage de la température"/>
+  <Requirements:Requirement xmi:id="_1DAqQLJGEeadqoFGEHfAxw" base_Class="_1CnosLJGEeadqoFGEHfAxw" id="ReqEco8" text="L'habitant ne doit pas avoir à allumer/éteindre les lumières en se déplacant"/>
+  <Requirements:Requirement xmi:id="_ZA8RMLJHEeadqoFGEHfAxw" base_Class="_ZApWQLJHEeadqoFGEHfAxw" id="ReqEco9" text="L'habitant doit pouvoir saisir ses préférences (chauffage, clim...)"/>
+  <Requirements:Refine xmi:id="_MRS_sLJQEeadqoFGEHfAxw" base_DirectedRelationship="_MRJ1wLJQEeadqoFGEHfAxw" base_Abstraction="_MRJ1wLJQEeadqoFGEHfAxw"/>
+  <Requirements:Refine xmi:id="_P_CcwLJQEeadqoFGEHfAxw" base_DirectedRelationship="_P-4rwLJQEeadqoFGEHfAxw" base_Abstraction="_P-4rwLJQEeadqoFGEHfAxw"/>
+  <Requirements:Requirement xmi:id="_MWcwALJREeadqoFGEHfAxw" base_Class="_MWJ1ELJREeadqoFGEHfAxw" id="ReqEco10" text="L'habitant doit pouvoir choisir des réglages différents pour le jour ou la nuit"/>
+  <Requirements:Refine xmi:id="_SBKQELJREeadqoFGEHfAxw" base_DirectedRelationship="_SBAfELJREeadqoFGEHfAxw" base_Abstraction="_SBAfELJREeadqoFGEHfAxw"/>
+  <Requirements:Requirement xmi:id="_kzZnELJREeadqoFGEHfAxw" base_Class="_kzP2ELJREeadqoFGEHfAxw" id="ReqEco10" text="L'habitant doit pouvoir choisir des réglages différents pour le jour ou la nuit"/>
+  <Requirements:Requirement xmi:id="_lJaTl7JREeadqoFGEHfAxw" base_Class="_lJaTULJREeadqoFGEHfAxw" id="ReqEco11" text="L'habitant doit pouvoir choisir des réglages différents par pièce"/>
+  <Requirements:Refine xmi:id="_qOL0wLJREeadqoFGEHfAxw" base_DirectedRelationship="_qOCq0LJREeadqoFGEHfAxw" base_Abstraction="_qOCq0LJREeadqoFGEHfAxw"/>
+  <Requirements:Requirement xmi:id="_UFg4ALJSEeadqoFGEHfAxw" base_Class="_UFNWALJSEeadqoFGEHfAxw" id="ReqEco12" text="L'habitant doit pouvoir consulter à tout moment ses consommations énergétiques"/>
+  <Requirements:DeriveReqt xmi:id="_c_nFMLJSEeadqoFGEHfAxw" base_DirectedRelationship="_c_UKQLJSEeadqoFGEHfAxw" base_Abstraction="_c_UKQLJSEeadqoFGEHfAxw"/>
+</xmi:XMI>
