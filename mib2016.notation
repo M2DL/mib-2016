@@ -817,4 +817,12 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oc-gkbAGEeapM-HOoIo7tA" id="(0.4153846153846154,1.0)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_M4atwL1LEeaZdelyTFMzJg" type="UseCase" name="UseCaseDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_M4atwb1LEeaZdelyTFMzJg" name="diagram_compatibility_version" stringValue="1.2.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_M4atwr1LEeaZdelyTFMzJg"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_M4atw71LEeaZdelyTFMzJg">
+      <owner xmi:type="uml:Package" href="mib2016.uml#_B85bYL1LEeaZdelyTFMzJg"/>
+    </styles>
+    <element xmi:type="uml:Package" href="mib2016.uml#_B85bYL1LEeaZdelyTFMzJg"/>
+  </notation:Diagram>
 </xmi:XMI>
