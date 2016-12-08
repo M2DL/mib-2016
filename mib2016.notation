@@ -818,6 +818,22 @@
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_M4atwL1LEeaZdelyTFMzJg" type="UseCase" name="UseCaseDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_ZEIx0L1NEeaZdelyTFMzJg" type="Actor_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZEJY4L1NEeaZdelyTFMzJg" type="Actor_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZEJY4b1NEeaZdelyTFMzJg" x="20" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZEJY4r1NEeaZdelyTFMzJg" type="Actor_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZEJY471NEeaZdelyTFMzJg" x="20" y="100"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZEJ_8L1NEeaZdelyTFMzJg" type="Actor_QualifiedNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZEJ_8b1NEeaZdelyTFMzJg" x="20" y="80"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZEJ_8r1NEeaZdelyTFMzJg" type="Actor_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZEJ_871NEeaZdelyTFMzJg" y="5"/>
+      </children>
+      <element xmi:type="uml:Actor" href="mib2016.uml#_TIpy4K_8EeapM-HOoIo7tA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZEIx0b1NEeaZdelyTFMzJg" x="284" y="245"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_M4atwb1LEeaZdelyTFMzJg" name="diagram_compatibility_version" stringValue="1.2.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_M4atwr1LEeaZdelyTFMzJg"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_M4atw71LEeaZdelyTFMzJg">
