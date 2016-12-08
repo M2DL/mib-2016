@@ -146,10 +146,100 @@ et nommez-les au passage.
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien">
+        <generalization xmi:type="uml:Generalization" xmi:id="_RyAIUL1KEeaGe5cJmH7UEg" general="_3-pfAL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_3-pfAL1JEeaGe5cJmH7UEg" name="Utilisateur"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Jr-cYL1KEeaGe5cJmH7UEg" name="Habitant">
+        <generalization xmi:type="uml:Generalization" xmi:id="_MKH50L1KEeaGe5cJmH7UEg" general="_3-pfAL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_yVRbsL1JEeaGe5cJmH7UEg" name="Gérer la consommation d'énergie">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbsb1JEeaGe5cJmH7UEg" name="Ajuster le réglage des radiateurs" classifierBehavior="_mLlbIL1LEeaGe5cJmH7UEg">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbsr1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbs71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
+          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbtL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        </ownedUseCase>
+        <ownedBehavior xmi:type="uml:Interaction" xmi:id="_mLlbIL1LEeaGe5cJmH7UEg" name="Interaction1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbtr1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbt71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
+          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbuL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        </ownedUseCase>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbub1JEeaGe5cJmH7UEg" name="Allumer/éteindre les lumières">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbur1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbu71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
+          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbvL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
+        </ownedUseCase>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvb1JEeaGe5cJmH7UEg" name="Saisir ses préférences"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvr1JEeaGe5cJmH7UEg" name="Corriger les réglages de la MI"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbv71JEeaGe5cJmH7UEg" name="Détecter la présence des habitants">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbwL1JEeaGe5cJmH7UEg" name="Détecter la présence des habitants"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbwb1JEeaGe5cJmH7UEg" name="Réinitialiser / reprogrammer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbwr1JEeaGe5cJmH7UEg" name="Interpréter le planning de présence"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_92kUoL1JEeaGe5cJmH7UEg" memberEnd="_92kUo71JEeaGe5cJmH7UEg _92uFoL1JEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_92kUob1JEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_92kUor1JEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_92kUo71JEeaGe5cJmH7UEg" name="corriger les réglages de la mi" type="_yVRbvr1JEeaGe5cJmH7UEg" association="_92kUoL1JEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_92uFoL1JEeaGe5cJmH7UEg" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_92kUoL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-riNwL1JEeaGe5cJmH7UEg" memberEnd="_-riNw71JEeaGe5cJmH7UEg _-riNxL1JEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-riNwb1JEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-riNwr1JEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-riNw71JEeaGe5cJmH7UEg" name="réinitialiser / reprogrammer" type="_yVRbwb1JEeaGe5cJmH7UEg" association="_-riNwL1JEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-riNxL1JEeaGe5cJmH7UEg" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_-riNwL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_A_tP0L1KEeaGe5cJmH7UEg" memberEnd="_A_tP071KEeaGe5cJmH7UEg _A_tP1L1KEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A_tP0b1KEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A_tP0r1KEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A_tP071KEeaGe5cJmH7UEg" name="ajuster le réglage des radiateurs" type="_yVRbsb1JEeaGe5cJmH7UEg" association="_A_tP0L1KEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A_tP1L1KEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_A_tP0L1KEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_CPAUgL1KEeaGe5cJmH7UEg" memberEnd="_CPAUg71KEeaGe5cJmH7UEg _CPAUhL1KEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CPAUgb1KEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CPAUgr1KEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_CPAUg71KEeaGe5cJmH7UEg" name="ajuster le réglage de la clim" type="_yVRbtb1JEeaGe5cJmH7UEg" association="_CPAUgL1KEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_CPAUhL1KEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_CPAUgL1KEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_C08TIL1KEeaGe5cJmH7UEg" memberEnd="_C08TI71KEeaGe5cJmH7UEg _C08TJL1KEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C08TIb1KEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C08TIr1KEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_C08TI71KEeaGe5cJmH7UEg" name="allumer/éteindre les lumières" type="_yVRbub1JEeaGe5cJmH7UEg" association="_C08TIL1KEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_C08TJL1KEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_C08TIL1KEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DZGJEL1KEeaGe5cJmH7UEg" memberEnd="_DZGJE71KEeaGe5cJmH7UEg _DZGJFL1KEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DZGJEb1KEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DZGJEr1KEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DZGJE71KEeaGe5cJmH7UEg" name="détecter la présence des habitants" type="_yVRbv71JEeaGe5cJmH7UEg" association="_DZGJEL1KEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DZGJFL1KEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_DZGJEL1KEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EHguQL1KEeaGe5cJmH7UEg" memberEnd="_EHqfQr1KEeaGe5cJmH7UEg _EHqfQ71KEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EHqfQL1KEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EHqfQb1KEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_EHqfQr1KEeaGe5cJmH7UEg" name="interpréter le planning de présence" type="_yVRbwr1JEeaGe5cJmH7UEg" association="_EHguQL1KEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_EHqfQ71KEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_EHguQL1KEeaGe5cJmH7UEg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_812egL1JEeaGe5cJmH7UEg" memberEnd="_812eg71JEeaGe5cJmH7UEg _812ehL1JEeaGe5cJmH7UEg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_812egb1JEeaGe5cJmH7UEg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_812egr1JEeaGe5cJmH7UEg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_812eg71JEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_812egL1JEeaGe5cJmH7UEg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_812ehL1JEeaGe5cJmH7UEg" name="utilisateur" type="_3-pfAL1JEeaGe5cJmH7UEg" association="_812egL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
