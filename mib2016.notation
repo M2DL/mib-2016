@@ -817,4 +817,28 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oc-gkbAGEeapM-HOoIo7tA" id="(0.4153846153846154,1.0)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_FsLwkL1LEea3JNKwRmRjiA" type="UseCase" name="Diagramme1" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_l90r8L1LEea3JNKwRmRjiA" type="Actor_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_l9914L1LEea3JNKwRmRjiA" type="Actor_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_l9914b1LEea3JNKwRmRjiA" x="20" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_l9914r1LEea3JNKwRmRjiA" type="Actor_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_l991471LEea3JNKwRmRjiA" x="20" y="100"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_l9915L1LEea3JNKwRmRjiA" type="Actor_QualifiedNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_l9915b1LEea3JNKwRmRjiA" x="20" y="80"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_l9915r1LEea3JNKwRmRjiA" type="Actor_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_l991571LEea3JNKwRmRjiA" y="5"/>
+      </children>
+      <element xmi:type="uml:Actor" href="mib2016.uml#_TIpy4K_8EeapM-HOoIo7tA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l90r8b1LEea3JNKwRmRjiA" x="167" y="149"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_FsLwkb1LEea3JNKwRmRjiA" name="diagram_compatibility_version" stringValue="1.2.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_FsLwkr1LEea3JNKwRmRjiA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_FsLwk71LEea3JNKwRmRjiA">
+      <owner xmi:type="uml:Package" href="mib2016.uml#_tK2IwL1KEea3JNKwRmRjiA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="mib2016.uml#_tK2IwL1KEea3JNKwRmRjiA"/>
+  </notation:Diagram>
 </xmi:XMI>
