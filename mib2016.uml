@@ -159,26 +159,13 @@ et nommez-les au passage.
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_yVRbsL1JEeaGe5cJmH7UEg" name="Gérer la consommation d'énergie">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbsb1JEeaGe5cJmH7UEg" name="Ajuster le réglage des radiateurs" classifierBehavior="_mLlbIL1LEeaGe5cJmH7UEg">
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbsr1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
         <ownedBehavior xmi:type="uml:Interaction" xmi:id="_mLlbIL1LEeaGe5cJmH7UEg" name="Interaction1"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim">
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbtr1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbt71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbuL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        </ownedUseCase>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbub1JEeaGe5cJmH7UEg" name="Allumer/éteindre les lumières">
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbur1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbu71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbvL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        </ownedUseCase>
-      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbub1JEeaGe5cJmH7UEg" name="Allumer/éteindre les lumières"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvb1JEeaGe5cJmH7UEg" name="Saisir ses préférences"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvr1JEeaGe5cJmH7UEg" name="Corriger les réglages de la MI"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbv71JEeaGe5cJmH7UEg" name="Détecter la présence des habitants">
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbwL1JEeaGe5cJmH7UEg" name="Détecter la présence des habitants"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbv71JEeaGe5cJmH7UEg" name="Détecter la présence des habitants"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbwb1JEeaGe5cJmH7UEg" name="Réinitialiser / reprogrammer"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbwr1JEeaGe5cJmH7UEg" name="Interpréter le planning de présence"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_92kUoL1JEeaGe5cJmH7UEg" memberEnd="_92kUo71JEeaGe5cJmH7UEg _92uFoL1JEeaGe5cJmH7UEg">
