@@ -25,6 +25,8 @@
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_qOCq0LJREeadqoFGEHfAxw" name="" client="_ZApWQLJHEeadqoFGEHfAxw" supplier="_lJaTULJREeadqoFGEHfAxw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_UFNWALJSEeadqoFGEHfAxw" name="ReqEco12"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_c_UKQLJSEeadqoFGEHfAxw" name="" client="_90XdELJEEeadqoFGEHfAxw" supplier="_UFNWALJSEeadqoFGEHfAxw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VqCDcL1CEeaGe5cJmH7UEg" name="ReqEco13"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_mRaFYL1CEeaGe5cJmH7UEg" client="_ZApWQLJHEeadqoFGEHfAxw" supplier="_VqCDcL1CEeaGe5cJmH7UEg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kbxe8LJEEeadqoFGEHfAxw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kbxe8bJEEeadqoFGEHfAxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -101,4 +103,6 @@
   <Requirements:Refine xmi:id="_qOL0wLJREeadqoFGEHfAxw" base_DirectedRelationship="_qOCq0LJREeadqoFGEHfAxw" base_Abstraction="_qOCq0LJREeadqoFGEHfAxw"/>
   <Requirements:Requirement xmi:id="_UFg4ALJSEeadqoFGEHfAxw" base_Class="_UFNWALJSEeadqoFGEHfAxw" id="ReqEco12" text="L'habitant doit pouvoir consulter à tout moment ses consommations énergétiques"/>
   <Requirements:DeriveReqt xmi:id="_c_nFMLJSEeadqoFGEHfAxw" base_DirectedRelationship="_c_UKQLJSEeadqoFGEHfAxw" base_Abstraction="_c_UKQLJSEeadqoFGEHfAxw"/>
+  <Requirements:Requirement xmi:id="_WEEUEL1CEeaGe5cJmH7UEg" base_Class="_VqCDcL1CEeaGe5cJmH7UEg" id="ReqEco13" text="L'utilisateur doit pouvoir saisir à l'avance son planning de présence (vacances, absences...)"/>
+  <Requirements:Refine xmi:id="_mRtAUL1CEeaGe5cJmH7UEg" base_DirectedRelationship="_mRaFYL1CEeaGe5cJmH7UEg" base_Abstraction="_mRaFYL1CEeaGe5cJmH7UEg"/>
 </xmi:XMI>
