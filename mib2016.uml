@@ -160,9 +160,6 @@ et nommez-les au passage.
     <packagedElement xmi:type="uml:Package" xmi:id="_yVRbsL1JEeaGe5cJmH7UEg" name="Gérer la consommation d'énergie">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbsb1JEeaGe5cJmH7UEg" name="Ajuster le réglage des radiateurs" classifierBehavior="_mLlbIL1LEeaGe5cJmH7UEg">
         <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbsr1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbs71JEeaGe5cJmH7UEg" name="CopyOf_Allumer/éteindre les radiateurs_1">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yVRbtL1JEeaGe5cJmH7UEg" name="Allumer/éteindre les radiateurs"/>
-        </ownedUseCase>
         <ownedBehavior xmi:type="uml:Interaction" xmi:id="_mLlbIL1LEeaGe5cJmH7UEg" name="Interaction1"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim">
