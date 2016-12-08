@@ -151,6 +151,46 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o1ZygL1KEeaoNaEJesm1RA" name="02-01-AdaptationMeubles">
+      <packagedElement xmi:type="uml:Package" xmi:id="_4ysnkL1IEeaoNaEJesm1RA" name="Diagramme de cas">
+        <packagedElement xmi:type="uml:Package" xmi:id="_FllrQL1JEeaoNaEJesm1RA" name="MIB">
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_1DrisL1JEeaoNaEJesm1RA" name="Modification automatique hauteur">
+            <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sTz9oL1LEeaoNaEJesm1RA" name="ExtensionPoint1"/>
+            <include xmi:type="uml:Include" xmi:id="_TFCgsL1OEeaoNaEJesm1RA" addition="_VluRkL1KEeaoNaEJesm1RA"/>
+            <include xmi:type="uml:Include" xmi:id="_TydnYL1OEeaoNaEJesm1RA" addition="_YMHsEL1KEeaoNaEJesm1RA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_3MmXAL1JEeaoNaEJesm1RA" name="Choix du mode"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_VluRkL1KEeaoNaEJesm1RA" name="Augmenter hauteur"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_YMHsEL1KEeaoNaEJesm1RA" name="Diminuer hauteur"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_UxvTEL1OEeaoNaEJesm1RA" name="Choix hauteur">
+            <include xmi:type="uml:Include" xmi:id="_d9784L1OEeaoNaEJesm1RA" addition="_VluRkL1KEeaoNaEJesm1RA"/>
+            <include xmi:type="uml:Include" xmi:id="_ejyb8L1OEeaoNaEJesm1RA" addition="_YMHsEL1KEeaoNaEJesm1RA"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_IApGgL1LEeaoNaEJesm1RA" memberEnd="_IAptkr1LEeaoNaEJesm1RA _IAptk71LEeaoNaEJesm1RA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IAptkL1LEeaoNaEJesm1RA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IAptkb1LEeaoNaEJesm1RA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_IAptkr1LEeaoNaEJesm1RA" name="choix du mode" type="_3MmXAL1JEeaoNaEJesm1RA" association="_IApGgL1LEeaoNaEJesm1RA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_IAptk71LEeaoNaEJesm1RA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_IApGgL1LEeaoNaEJesm1RA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_g4214L1OEeaoNaEJesm1RA" memberEnd="_g43c8r1OEeaoNaEJesm1RA _g43c871OEeaoNaEJesm1RA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g43c8L1OEeaoNaEJesm1RA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g43c8b1OEeaoNaEJesm1RA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_g43c8r1OEeaoNaEJesm1RA" name="choix hauteur" type="_UxvTEL1OEeaoNaEJesm1RA" association="_g4214L1OEeaoNaEJesm1RA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_g43c871OEeaoNaEJesm1RA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_g4214L1OEeaoNaEJesm1RA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_oiKwoL1OEeaoNaEJesm1RA" name="Modification automatique hauteur">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6Tk8wL1OEeaoNaEJesm1RA" name="Diagramme sequence">
+            <packagedElement xmi:type="uml:Interaction" xmi:id="_9wHVEL1OEeaoNaEJesm1RA" name="Interaction1">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_JzV2YL1PEeaoNaEJesm1RA" name="" type="_TIpy4K_8EeapM-HOoIo7tA"/>
+              <lifeline xmi:type="uml:Lifeline" xmi:id="_JzVPUL1PEeaoNaEJesm1RA" name="" represents="_JzV2YL1PEeaoNaEJesm1RA"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
