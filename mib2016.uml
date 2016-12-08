@@ -68,6 +68,7 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gU7m86_8EeapM-HOoIo7tA" name="visiteur" type="_TIqZ8a_8EeapM-HOoIo7tA" aggregation="composite" association="_gU7m8K_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Iiey0L1MEeaR96T_B2Zkjw" name="intrus" type="_dfTSYL1JEea7Z6Lk32BwXw" aggregation="composite" association="_IiahYL1MEeaR96T_B2Zkjw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_IIbeYKzVEean1fvqSNKjOw" name="MIB">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iJskorAGEeapM-HOoIo7tA" name="equipementsansfil" type="_OhdZwLAGEeapM-HOoIo7tA" aggregation="composite" association="_iJr9kLAGEeapM-HOoIo7tA"/>
@@ -142,7 +143,6 @@ et nommez-les au passage.
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_jt2fAbAGEeapM-HOoIo7tA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_m6pygL1JEea7Z6Lk32BwXw" name="Verify1" client="_02decKzUEean1fvqSNKjOw" supplier="_dfTSYL1JEea7Z6Lk32BwXw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
@@ -151,8 +151,14 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_dfTSYL1JEea7Z6Lk32BwXw" name="Intrus"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_dfTSYL1JEea7Z6Lk32BwXw" name="Intrus"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IiahYL1MEeaR96T_B2Zkjw" memberEnd="_Iiey0L1MEeaR96T_B2Zkjw _Iiey0b1MEeaR96T_B2Zkjw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Iic9oL1MEeaR96T_B2Zkjw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Iic9ob1MEeaR96T_B2Zkjw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Iiey0b1MEeaR96T_B2Zkjw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_IiahYL1MEeaR96T_B2Zkjw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -266,5 +272,4 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
-  <Requirements:Verify xmi:id="_m-Dr0L1JEea7Z6Lk32BwXw" base_DirectedRelationship="_m6pygL1JEea7Z6Lk32BwXw" base_Abstraction="_m6pygL1JEea7Z6Lk32BwXw"/>
 </xmi:XMI>
