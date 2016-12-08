@@ -142,6 +142,7 @@ et nommez-les au passage.
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_jt2fAbAGEeapM-HOoIo7tA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_m6pygL1JEea7Z6Lk32BwXw" name="Verify1" client="_02decKzUEean1fvqSNKjOw" supplier="_dfTSYL1JEea7Z6Lk32BwXw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
@@ -151,6 +152,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_dfTSYL1JEea7Z6Lk32BwXw" name="Intrus"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -264,4 +266,5 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Verify xmi:id="_m-Dr0L1JEea7Z6Lk32BwXw" base_DirectedRelationship="_m6pygL1JEea7Z6Lk32BwXw" base_Abstraction="_m6pygL1JEea7Z6Lk32BwXw"/>
 </xmi:XMI>
