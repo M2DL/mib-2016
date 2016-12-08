@@ -75,10 +75,21 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jt2fALAGEeapM-HOoIo7tA" name="reseauknx" type="__amvYLAFEeapM-HOoIo7tA" aggregation="composite" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__amvYLAFEeapM-HOoIo7tA" name="ReseauKNX"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GldzkLAGEeapM-HOoIo7tA" name="ReseauElectrique"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs" isAbstract="true"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_OhdZwLAGEeapM-HOoIo7tA" name="EquipementSansFil"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_uu9qEL1OEeaGe5cJmH7UEg" name="CentreDeControle"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_yPdVUL1OEeaGe5cJmH7UEg" name="CapteurTempérature">
+          <generalization xmi:type="uml:Generalization" xmi:id="_1tbRAL1OEeaGe5cJmH7UEg" general="_INsVoLAGEeapM-HOoIo7tA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zlmB0L1OEeaGe5cJmH7UEg" name="CapteurPrésence">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3iNoYL1OEeaGe5cJmH7UEg" general="_INsVoLAGEeapM-HOoIo7tA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_BzMwAL1PEeaGe5cJmH7UEg" name="Actionneurs" isAbstract="true"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_C8sHoL1PEeaGe5cJmH7UEg" name="Radiateurs">
+          <generalization xmi:type="uml:Generalization" xmi:id="_GevSEL1PEeaGe5cJmH7UEg" general="_BzMwAL1PEeaGe5cJmH7UEg"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
@@ -338,4 +349,9 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_vBHKAL1OEeaGe5cJmH7UEg" base_Class="_uu9qEL1OEeaGe5cJmH7UEg"/>
+  <Blocks:Block xmi:id="_yPnGUL1OEeaGe5cJmH7UEg" base_Class="_yPdVUL1OEeaGe5cJmH7UEg"/>
+  <Blocks:Block xmi:id="_zl5j0L1OEeaGe5cJmH7UEg" base_Class="_zlmB0L1OEeaGe5cJmH7UEg"/>
+  <Blocks:Block xmi:id="_Bzfq8L1PEeaGe5cJmH7UEg" base_Class="_BzMwAL1PEeaGe5cJmH7UEg"/>
+  <Blocks:Block xmi:id="_C814oL1PEeaGe5cJmH7UEg" base_Class="_C8sHoL1PEeaGe5cJmH7UEg"/>
 </xmi:XMI>
