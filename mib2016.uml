@@ -165,6 +165,45 @@ et nommez-les au passage.
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_hDXrALJREeaM68BLgT48_Q" name="DeriveReqt4" client="_C1xIILJKEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_hsybcLJREeaM68BLgT48_Q" name="DeriveReqt5" client="_r1jYALJNEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_ijeL0LJREeaM68BLgT48_Q" name="DeriveReqt6" client="_SALc0LJKEeaM68BLgT48_Q" supplier="_7e2k8LJJEeaM68BLgT48_Q"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_uPZWAL1KEeaE6NsQRwNxSQ" name="La MI doit pouvoir se défendre des cambrioleurs">
+      <packagedElement xmi:type="uml:Package" xmi:id="_POO8UL1QEeaE6NsQRwNxSQ" name="MI">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_33stAL1KEeaE6NsQRwNxSQ" name="Déclenchement des défenses" classifierBehavior="_Fzg44L1REeaE6NsQRwNxSQ">
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Fzg44L1REeaE6NsQRwNxSQ" name="Interaction1">
+            <ownedRule xmi:type="uml:TimeConstraint" xmi:id="_EusT8L1TEeaE6NsQRwNxSQ" name="TimeConstraint" constrainedElement="_XDYowb1SEeaE6NsQRwNxSQ">
+              <specification xmi:type="uml:TimeInterval" xmi:id="_EusT8b1TEeaE6NsQRwNxSQ" name="TimeInterval" max="_EusT871TEeaE6NsQRwNxSQ" min="_EusT8r1TEeaE6NsQRwNxSQ"/>
+            </ownedRule>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_OUxvUL1REeaE6NsQRwNxSQ" name="Système de défense" coveredBy="_FwztsL1SEeaE6NsQRwNxSQ _XDYowL1SEeaE6NsQRwNxSQ _hKh34b1SEeaE6NsQRwNxSQ _ikTHMb1SEeaE6NsQRwNxSQ"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_fZNgsL1REeaE6NsQRwNxSQ" name="Gestionnaire des alarmes" coveredBy="_XDYowb1SEeaE6NsQRwNxSQ"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_jt_IkL1REeaE6NsQRwNxSQ" name="Gestionnaire des portes" coveredBy="_hKh34r1SEeaE6NsQRwNxSQ"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_vQficL1REeaE6NsQRwNxSQ" name="Gestionnaire des lumières" coveredBy="_ikTHMr1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FwztsL1SEeaE6NsQRwNxSQ" name="MessageRecv" covered="_OUxvUL1REeaE6NsQRwNxSQ" message="_FwqjwL1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XDYowL1SEeaE6NsQRwNxSQ" name="MessageSend" covered="_OUxvUL1REeaE6NsQRwNxSQ" message="_XDYBsL1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XDYowb1SEeaE6NsQRwNxSQ" name="MessageRecv0" covered="_fZNgsL1REeaE6NsQRwNxSQ" message="_XDYBsL1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hKh34b1SEeaE6NsQRwNxSQ" name="MessageSend0" covered="_OUxvUL1REeaE6NsQRwNxSQ" message="_hKh34L1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hKh34r1SEeaE6NsQRwNxSQ" name="MessageRecv1" covered="_jt_IkL1REeaE6NsQRwNxSQ" message="_hKh34L1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ikTHMb1SEeaE6NsQRwNxSQ" name="Message0Send" covered="_OUxvUL1REeaE6NsQRwNxSQ" message="_ikTHML1SEeaE6NsQRwNxSQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ikTHMr1SEeaE6NsQRwNxSQ" name="Message0Recv" covered="_vQficL1REeaE6NsQRwNxSQ" message="_ikTHML1SEeaE6NsQRwNxSQ"/>
+            <message xmi:type="uml:Message" xmi:id="_FwqjwL1SEeaE6NsQRwNxSQ" name="Intrusion dans la MI" messageSort="asynchSignal" receiveEvent="_FwztsL1SEeaE6NsQRwNxSQ"/>
+            <message xmi:type="uml:Message" xmi:id="_XDYBsL1SEeaE6NsQRwNxSQ" name="DéclencherAlarmes()" messageSort="asynchCall" receiveEvent="_XDYowb1SEeaE6NsQRwNxSQ" sendEvent="_XDYowL1SEeaE6NsQRwNxSQ"/>
+            <message xmi:type="uml:Message" xmi:id="_hKh34L1SEeaE6NsQRwNxSQ" name="VerrouillerPortes&amp;Fenêtres()" messageSort="asynchCall" receiveEvent="_hKh34r1SEeaE6NsQRwNxSQ" sendEvent="_hKh34b1SEeaE6NsQRwNxSQ"/>
+            <message xmi:type="uml:Message" xmi:id="_ikTHML1SEeaE6NsQRwNxSQ" name="AllumerToutesLesLumieres0" messageSort="asynchCall" receiveEvent="_ikTHMr1SEeaE6NsQRwNxSQ" sendEvent="_ikTHMb1SEeaE6NsQRwNxSQ"/>
+          </ownedBehavior>
+          <include xmi:type="uml:Include" xmi:id="_bdfO0L1NEeaE6NsQRwNxSQ" addition="_Rsz0YL1MEeaE6NsQRwNxSQ"/>
+          <include xmi:type="uml:Include" xmi:id="_jbLeIL1NEeaE6NsQRwNxSQ" addition="_7aQ00L1KEeaE6NsQRwNxSQ"/>
+          <include xmi:type="uml:Include" xmi:id="_OOpuoL1QEeaE6NsQRwNxSQ" addition="_9ESUYL1PEeaE6NsQRwNxSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_JMOTYL1MEeaE6NsQRwNxSQ" name="Appel de la police"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_7aQ00L1KEeaE6NsQRwNxSQ" name="Allumage des lumières de dehors"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Rsz0YL1MEeaE6NsQRwNxSQ" name="Verrouillage des portes"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_9ESUYL1PEeaE6NsQRwNxSQ" name="Déclenchement des alarmes"/>
+        <packagedElement xmi:type="uml:TimeExpression" xmi:id="_EusT8r1TEeaE6NsQRwNxSQ" name="TimeIntervalMin">
+          <expr xmi:type="uml:LiteralInteger" xmi:id="_EusT9L1TEeaE6NsQRwNxSQ" value="1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:TimeExpression" xmi:id="_EusT871TEeaE6NsQRwNxSQ" name="TimeIntervalMax">
+          <expr xmi:type="uml:LiteralInteger" xmi:id="_EusT9b1TEeaE6NsQRwNxSQ" value="10"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
