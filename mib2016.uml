@@ -64,7 +64,6 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KJ2jkKzVEean1fvqSNKjOw" name="block1" type="_IIbeYKzVEean1fvqSNKjOw" aggregation="composite" association="_KJ0uYKzVEean1fvqSNKjOw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XxpO8qzVEean1fvqSNKjOw" name="medecin" type="_TubRIKzVEean1fvqSNKjOw" aggregation="composite" association="_XxoA0KzVEean1fvqSNKjOw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eD5YcK_8EeapM-HOoIo7tA" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" aggregation="composite" association="_eDyDsK_8EeapM-HOoIo7tA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_fn13cq_8EeapM-HOoIo7tA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" aggregation="composite" association="_fn1QYK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gU7m86_8EeapM-HOoIo7tA" name="visiteur" type="_TIqZ8a_8EeapM-HOoIo7tA" aggregation="composite" association="_gU7m8K_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
@@ -99,12 +98,6 @@ et nommez-les au passage.
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eD4KUa_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_eD5Yca_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_eDyDsK_8EeapM-HOoIo7tA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_fn1QYK_8EeapM-HOoIo7tA" memberEnd="_fn13cq_8EeapM-HOoIo7tA _fn13c6_8EeapM-HOoIo7tA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fn13cK_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fn13ca_8EeapM-HOoIo7tA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_fn13c6_8EeapM-HOoIo7tA" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_fn1QYK_8EeapM-HOoIo7tA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_gU7m8K_8EeapM-HOoIo7tA" memberEnd="_gU7m86_8EeapM-HOoIo7tA _gU7m9K_8EeapM-HOoIo7tA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gU7m8a_8EeapM-HOoIo7tA" source="org.eclipse.papyrus">
@@ -145,23 +138,19 @@ et nommez-les au passage.
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_tK2IwL1KEea3JNKwRmRjiA" name="Le dernier habitant sort de la maison" URI="">
-      <ownedRule xmi:type="uml:Constraint" xmi:id="_HmgdUL1NEea3JNKwRmRjiA" name="Dernier habitant" constrainedElement="_5XahYL1MEea3JNKwRmRjiA">
-        <specification xmi:type="uml:LiteralString" xmi:id="_HmqOUL1NEea3JNKwRmRjiA" name="constraintSpec"/>
-      </ownedRule>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_5XahYL1MEea3JNKwRmRjiA" name="Sortir de la maison"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_SDYE0L1NEea3JNKwRmRjiA" memberEnd="_SDYE071NEea3JNKwRmRjiA _SDYE1L1NEea3JNKwRmRjiA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SDYE0b1NEea3JNKwRmRjiA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SDYE0r1NEea3JNKwRmRjiA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_SDYE071NEea3JNKwRmRjiA" name="sort de la maison" type="_5XahYL1MEea3JNKwRmRjiA" association="_SDYE0L1NEea3JNKwRmRjiA"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_SDYE1L1NEea3JNKwRmRjiA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_SDYE0L1NEea3JNKwRmRjiA"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tK2IwL1KEea3JNKwRmRjiA" name="01-13-FermetureAuto" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_grpgUL1OEea3JNKwRmRjiA" name="Diagramme de cas d'utilisation">
+        <packagedElement xmi:type="uml:Package" xmi:id="_UhroYL1PEea3JNKwRmRjiA" name="MI">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_HmgdUL1NEea3JNKwRmRjiA" name="Quand le dernier habitant sort de la maison on la vérouille" constrainedElement="_5XahYL1MEea3JNKwRmRjiA">
+            <specification xmi:type="uml:LiteralString" xmi:id="_HmqOUL1NEea3JNKwRmRjiA" name="constraintSpec"/>
+          </ownedRule>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_5XahYL1MEea3JNKwRmRjiA" name="Verouiller maison"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
