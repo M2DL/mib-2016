@@ -142,6 +142,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_ChEbQL1SEea3JNKwRmRjiA" name="Patient"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_tK2IwL1KEea3JNKwRmRjiA" name="01-13-FermetureAuto" URI="">
       <packagedElement xmi:type="uml:Package" xmi:id="_grpgUL1OEea3JNKwRmRjiA" name="Diagramme de cas d'utilisation">
@@ -150,6 +151,13 @@ et nommez-les au passage.
             <specification xmi:type="uml:LiteralString" xmi:id="_HmqOUL1NEea3JNKwRmRjiA" name="constraintSpec"/>
           </ownedRule>
           <packagedElement xmi:type="uml:UseCase" xmi:id="_5XahYL1MEea3JNKwRmRjiA" name="Verouiller maison"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_FzwUAL1SEea3JNKwRmRjiA" name="Diagramme de séquence">
+        <packagedElement xmi:type="uml:Interaction" xmi:id="_ID6YwL1SEea3JNKwRmRjiA" name="Interaction1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gwUoIb1SEea3JNKwRmRjiA" name="" type="_ChEbQL1SEea3JNKwRmRjiA"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_gwUoIL1SEea3JNKwRmRjiA" name="" represents="_gwUoIb1SEea3JNKwRmRjiA"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_n4EG4L1SEea3JNKwRmRjiA" name=":MI"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>

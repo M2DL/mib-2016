@@ -781,7 +781,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oc-gkbAGEeapM-HOoIo7tA" id="(0.4153846153846154,1.0)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_FsLwkL1LEea3JNKwRmRjiA" type="UseCase" name="Diagramme1" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_FsLwkL1LEea3JNKwRmRjiA" type="UseCase" name="UseCase" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_Uh1ZYL1PEea3JNKwRmRjiA" type="Package_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_Uh1ZY71PEea3JNKwRmRjiA" type="Package_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_Uh1ZZL1PEea3JNKwRmRjiA" type="Package_PackagedElementCompartment">
@@ -823,5 +823,31 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mtFTwL1NEea3JNKwRmRjiA" id="(0.42990654205607476,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mtFTwb1NEea3JNKwRmRjiA" id="(0.5071428571428571,0.0)"/>
     </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_JLRCYL1SEea3JNKwRmRjiA" type="PapyrusUMLSequenceDiagram" name="Séquence" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_JLRCYb1SEea3JNKwRmRjiA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JLRCYr1SEea3JNKwRmRjiA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JLRCY71SEea3JNKwRmRjiA" type="Interaction_SubfragmentCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_gwUoIr1SEea3JNKwRmRjiA" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_gwUoJL1SEea3JNKwRmRjiA" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="mib2016.uml#_gwUoIL1SEea3JNKwRmRjiA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gwUoI71SEea3JNKwRmRjiA" x="94" y="10" width="100" height="699"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_n4NQ0L1SEea3JNKwRmRjiA" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_n4NQ0r1SEea3JNKwRmRjiA" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="mib2016.uml#_n4EG4L1SEea3JNKwRmRjiA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n4NQ0b1SEea3JNKwRmRjiA" x="257" y="10" width="100" height="699"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JLRCZL1SEea3JNKwRmRjiA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="mib2016.uml#_ID6YwL1SEea3JNKwRmRjiA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JLRCZb1SEea3JNKwRmRjiA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_JLRCZr1SEea3JNKwRmRjiA" name="diagram_compatibility_version" stringValue="1.2.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_JLRCZ71SEea3JNKwRmRjiA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_JLRCaL1SEea3JNKwRmRjiA">
+      <owner xmi:type="uml:Package" href="mib2016.uml#_FzwUAL1SEea3JNKwRmRjiA"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="mib2016.uml#_ID6YwL1SEea3JNKwRmRjiA"/>
   </notation:Diagram>
 </xmi:XMI>
