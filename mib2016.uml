@@ -154,7 +154,7 @@ et nommez-les au passage.
     <packagedElement xmi:type="uml:UseCase" xmi:id="_cIjdsL1QEea9ZaXX_e1eoQ" name="ReapprovisionnerSonRefregirateur"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_P7c8wL1SEea9ZaXX_e1eoQ" name="PrevenirDeSaVenue"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_YBJ4kL1SEea9ZaXX_e1eoQ" name="ControlerLaSécuriteADistance"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_lMXVoL1SEea9ZaXX_e1eoQ" name="EtreNotifierDUneVenue"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lMXVoL1SEea9ZaXX_e1eoQ" name="EtreNotifieDUneVenue"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_NnNz0L1TEea9ZaXX_e1eoQ" memberEnd="_NnOa4r1TEea9ZaXX_e1eoQ _NnPB8L1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_NnOa4r1TEea9ZaXX_e1eoQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NnOa4L1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NnOa4b1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
@@ -176,7 +176,7 @@ et nommez-les au passage.
       <ownedEnd xmi:type="uml:Property" xmi:id="_QBKGsb1TEea9ZaXX_e1eoQ" name="etrenotifierdunevenue" type="_lMXVoL1SEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_QBKtwL1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_VRHkcL1TEea9ZaXX_e1eoQ" name="EtreNotifier"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VRHkcL1TEea9ZaXX_e1eoQ" name="EtreNotifie"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_Z14wIL1TEea9ZaXX_e1eoQ" client="_lMXVoL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_adRgQL1TEea9ZaXX_e1eoQ" client="_P7c8wL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_bxObcL1TEea9ZaXX_e1eoQ" memberEnd="_bxPCgr1TEea9ZaXX_e1eoQ _bxPpkL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_bxPCgr1TEea9ZaXX_e1eoQ">
@@ -186,6 +186,19 @@ et nommez-les au passage.
       <ownedEnd xmi:type="uml:Property" xmi:id="_bxPCgr1TEea9ZaXX_e1eoQ" name="prevenirdesavenue" type="_P7c8wL1SEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_bxPpkL1TEea9ZaXX_e1eoQ" name="visiteur" type="_I03fIL1TEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8pGsYL6QEeaEArWGUGk6Fg" name="SeConnecterAInternet"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="__Qp9cL6QEeaEArWGUGk6Fg" client="_VRHkcL1TEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ANAQ8L6REeaEArWGUGk6Fg" client="_YBJ4kL1SEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_BB21UL6REeaEArWGUGk6Fg" client="_cIjdsL1QEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_O6bSML6SEeaEArWGUGk6Fg" name="FournirConnexion"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RQ-54L6SEeaEArWGUGk6Fg" memberEnd="_RRJR8L6SEeaEArWGUGk6Fg _RRJ5AL6SEeaEArWGUGk6Fg" navigableOwnedEnd="_RRJR8L6SEeaEArWGUGk6Fg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RRAvEL6SEeaEArWGUGk6Fg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RRAvEb6SEeaEArWGUGk6Fg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RRJR8L6SEeaEArWGUGk6Fg" name="fournirconnexion" type="_O6bSML6SEeaEArWGUGk6Fg" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RRJ5AL6SEeaEArWGUGk6Fg" name="fournisseur internet" type="_OlRe4L1QEea9ZaXX_e1eoQ" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_SFW9IL6SEeaEArWGUGk6Fg" client="_8pGsYL6QEeaEArWGUGk6Fg" supplier="_O6bSML6SEeaEArWGUGk6Fg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
