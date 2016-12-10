@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="Root">
     <ownedComment xmi:type="uml:Comment" xmi:id="_bdHyMK_2EeapM-HOoIo7tA" annotatedElement="_6gfZEK_1EeapM-HOoIo7tA">
       <body>Liste des exigences reprises du fichier excel.
@@ -58,6 +58,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NBMnoL7-EeaKLPyhWXsoCg" name="Satisfy1" client="_6gfZEK_1EeapM-HOoIo7tA" supplier="_IIbeYKzVEean1fvqSNKjOw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
       <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
@@ -67,6 +68,8 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_fn13cq_8EeapM-HOoIo7tA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" aggregation="composite" association="_fn1QYK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__6aCcb77EeaKLPyhWXsoCg" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" aggregation="composite" association="__6Y0UL77EeaKLPyhWXsoCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6ziu8b7-EeaKLPyhWXsoCg" name="reseau" type="_x7_fcL7-EeaKLPyhWXsoCg" aggregation="composite" association="_6ziH4L7-EeaKLPyhWXsoCg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_IIbeYKzVEean1fvqSNKjOw" name="MIB">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iJskorAGEeapM-HOoIo7tA" name="equipementsansfil" type="_OhdZwLAGEeapM-HOoIo7tA" aggregation="composite" association="_iJr9kLAGEeapM-HOoIo7tA"/>
@@ -151,54 +154,102 @@ et nommez-les au passage.
         <generalization xmi:type="uml:Generalization" xmi:id="_Xsn9kL1TEea9ZaXX_e1eoQ" general="_Jvo6wL1SEea9ZaXX_e1eoQ"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_cIjdsL1QEea9ZaXX_e1eoQ" name="ReapprovisionnerSonRefregirateur"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_P7c8wL1SEea9ZaXX_e1eoQ" name="PrevenirDeSaVenue"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_YBJ4kL1SEea9ZaXX_e1eoQ" name="ControlerLaSécuriteADistance"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_lMXVoL1SEea9ZaXX_e1eoQ" name="EtreNotifieDUneVenue"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NnNz0L1TEea9ZaXX_e1eoQ" memberEnd="_NnOa4r1TEea9ZaXX_e1eoQ _NnPB8L1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_NnOa4r1TEea9ZaXX_e1eoQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NnOa4L1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NnOa4b1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_NnOa4r1TEea9ZaXX_e1eoQ" name="reapprovisionnersonrefregirateur" type="_cIjdsL1QEea9ZaXX_e1eoQ" association="_NnNz0L1TEea9ZaXX_e1eoQ"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_NnPB8L1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_NnNz0L1TEea9ZaXX_e1eoQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JV5FcL78EeaKLPyhWXsoCg" name="ContexteInternet">
+      <packagedElement xmi:type="uml:Association" xmi:id="__6Y0UL77EeaKLPyhWXsoCg" memberEnd="__6aCcb77EeaKLPyhWXsoCg __6apgL77EeaKLPyhWXsoCg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__6ZbYL77EeaKLPyhWXsoCg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__6aCcL77EeaKLPyhWXsoCg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__6apgL77EeaKLPyhWXsoCg" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="__6Y0UL77EeaKLPyhWXsoCg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_A5rHEL78EeaKLPyhWXsoCg" memberEnd="_A5ruIb78EeaKLPyhWXsoCg _A5ruIr78EeaKLPyhWXsoCg" navigableOwnedEnd="_A5ruIb78EeaKLPyhWXsoCg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A5rHEb78EeaKLPyhWXsoCg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A5ruIL78EeaKLPyhWXsoCg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A5ruIr78EeaKLPyhWXsoCg" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_A5rHEL78EeaKLPyhWXsoCg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A5ruIb78EeaKLPyhWXsoCg" name="fournisseur internet" type="_OlRe4L1QEea9ZaXX_e1eoQ" aggregation="composite" association="_A5rHEL78EeaKLPyhWXsoCg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Bx6WoL78EeaKLPyhWXsoCg" memberEnd="_Bx7kwL78EeaKLPyhWXsoCg _Bx7kwb78EeaKLPyhWXsoCg" navigableOwnedEnd="_Bx7kwL78EeaKLPyhWXsoCg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bx69sL78EeaKLPyhWXsoCg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bx69sb78EeaKLPyhWXsoCg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Bx7kwb78EeaKLPyhWXsoCg" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_Bx6WoL78EeaKLPyhWXsoCg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Bx7kwL78EeaKLPyhWXsoCg" name="visiteur" type="_I03fIL1TEea9ZaXX_e1eoQ" aggregation="composite" association="_Bx6WoL78EeaKLPyhWXsoCg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_CgZNQL78EeaKLPyhWXsoCg" memberEnd="_CgZ0Ub78EeaKLPyhWXsoCg _CgZ0Ur78EeaKLPyhWXsoCg" navigableOwnedEnd="_CgZ0Ub78EeaKLPyhWXsoCg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CgZNQb78EeaKLPyhWXsoCg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CgZ0UL78EeaKLPyhWXsoCg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_CgZ0Ur78EeaKLPyhWXsoCg" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_CgZNQL78EeaKLPyhWXsoCg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_CgZ0Ub78EeaKLPyhWXsoCg" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" aggregation="composite" association="_CgZNQL78EeaKLPyhWXsoCg"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Om5IIL1TEea9ZaXX_e1eoQ" memberEnd="_Om6WQb1TEea9ZaXX_e1eoQ _Om69UL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_Om6WQb1TEea9ZaXX_e1eoQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Om5vML1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Om6WQL1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Om6WQb1TEea9ZaXX_e1eoQ" name="controlerlasécuriteadistance" type="_YBJ4kL1SEea9ZaXX_e1eoQ" association="_Om5IIL1TEea9ZaXX_e1eoQ"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Om69UL1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_Om5IIL1TEea9ZaXX_e1eoQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_S5oFgL78EeaKLPyhWXsoCg" name="IBDInternet">
+      <packagedElement xmi:type="uml:Class" xmi:id="_-4No0L7_EeaKLPyhWXsoCg" name="MIB">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PvfH8L8AEeaKLPyhWXsoCg" name="refrigerateur" type="_KiEA0L8AEeaKLPyhWXsoCg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KiEA0L8AEeaKLPyhWXsoCg" name="Refrigerateur">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Qc8D0L8AEeaKLPyhWXsoCg" name="PortDemandeProvisions" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QBJfoL1TEea9ZaXX_e1eoQ" memberEnd="_QBKGsb1TEea9ZaXX_e1eoQ _QBKtwL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_QBKGsb1TEea9ZaXX_e1eoQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QBJfob1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QBKGsL1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QBKGsb1TEea9ZaXX_e1eoQ" name="etrenotifierdunevenue" type="_lMXVoL1SEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QBKtwL1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_anfwIL78EeaKLPyhWXsoCg" name="UseCaseInternet">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_BB21UL6REeaEArWGUGk6Fg" client="_cIjdsL1QEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ANAQ8L6REeaEArWGUGk6Fg" client="_YBJ4kL1SEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="__Qp9cL6QEeaEArWGUGk6Fg" client="_VRHkcL1TEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RQ-54L6SEeaEArWGUGk6Fg" memberEnd="_RRJR8L6SEeaEArWGUGk6Fg _RRJ5AL6SEeaEArWGUGk6Fg" navigableOwnedEnd="_RRJR8L6SEeaEArWGUGk6Fg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RRAvEL6SEeaEArWGUGk6Fg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RRAvEb6SEeaEArWGUGk6Fg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RRJR8L6SEeaEArWGUGk6Fg" name="fournirconnexion" type="_O6bSML6SEeaEArWGUGk6Fg" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RRJ5AL6SEeaEArWGUGk6Fg" name="fournisseur internet" type="_OlRe4L1QEea9ZaXX_e1eoQ" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_O6bSML6SEeaEArWGUGk6Fg" name="FournirConnexion"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8pGsYL6QEeaEArWGUGk6Fg" name="SeConnecterAInternet"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_SFW9IL6SEeaEArWGUGk6Fg" client="_8pGsYL6QEeaEArWGUGk6Fg" supplier="_O6bSML6SEeaEArWGUGk6Fg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_adRgQL1TEea9ZaXX_e1eoQ" client="_P7c8wL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bxObcL1TEea9ZaXX_e1eoQ" memberEnd="_bxPCgr1TEea9ZaXX_e1eoQ _bxPpkL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_bxPCgr1TEea9ZaXX_e1eoQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bxPCgL1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bxPCgb1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bxPCgr1TEea9ZaXX_e1eoQ" name="prevenirdesavenue" type="_P7c8wL1SEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bxPpkL1TEea9ZaXX_e1eoQ" name="visiteur" type="_I03fIL1TEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Z14wIL1TEea9ZaXX_e1eoQ" client="_lMXVoL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_VRHkcL1TEea9ZaXX_e1eoQ" name="EtreNotifie"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QBJfoL1TEea9ZaXX_e1eoQ" memberEnd="_QBKGsb1TEea9ZaXX_e1eoQ _QBKtwL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_QBKGsb1TEea9ZaXX_e1eoQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QBJfob1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QBKGsL1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QBKGsb1TEea9ZaXX_e1eoQ" name="etrenotifierdunevenue" type="_lMXVoL1SEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QBKtwL1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_QBJfoL1TEea9ZaXX_e1eoQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Om5IIL1TEea9ZaXX_e1eoQ" memberEnd="_Om6WQb1TEea9ZaXX_e1eoQ _Om69UL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_Om6WQb1TEea9ZaXX_e1eoQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Om5vML1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Om6WQL1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Om6WQb1TEea9ZaXX_e1eoQ" name="controlerlasécuriteadistance" type="_YBJ4kL1SEea9ZaXX_e1eoQ" association="_Om5IIL1TEea9ZaXX_e1eoQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Om69UL1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_Om5IIL1TEea9ZaXX_e1eoQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NnNz0L1TEea9ZaXX_e1eoQ" memberEnd="_NnOa4r1TEea9ZaXX_e1eoQ _NnPB8L1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_NnOa4r1TEea9ZaXX_e1eoQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NnOa4L1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NnOa4b1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NnOa4r1TEea9ZaXX_e1eoQ" name="reapprovisionnersonrefregirateur" type="_cIjdsL1QEea9ZaXX_e1eoQ" association="_NnNz0L1TEea9ZaXX_e1eoQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NnPB8L1TEea9ZaXX_e1eoQ" name="habitant" type="_LDhvEL1TEea9ZaXX_e1eoQ" association="_NnNz0L1TEea9ZaXX_e1eoQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cIjdsL1QEea9ZaXX_e1eoQ" name="ReapprovisionnerSonRefregirateur"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_P7c8wL1SEea9ZaXX_e1eoQ" name="PrevenirDeSaVenue"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YBJ4kL1SEea9ZaXX_e1eoQ" name="ControlerLaSécuriteADistance"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_lMXVoL1SEea9ZaXX_e1eoQ" name="EtreNotifieDUneVenue"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_VRHkcL1TEea9ZaXX_e1eoQ" name="EtreNotifie"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_Z14wIL1TEea9ZaXX_e1eoQ" client="_lMXVoL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_adRgQL1TEea9ZaXX_e1eoQ" client="_P7c8wL1SEea9ZaXX_e1eoQ" supplier="_VRHkcL1TEea9ZaXX_e1eoQ"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_bxObcL1TEea9ZaXX_e1eoQ" memberEnd="_bxPCgr1TEea9ZaXX_e1eoQ _bxPpkL1TEea9ZaXX_e1eoQ" navigableOwnedEnd="_bxPCgr1TEea9ZaXX_e1eoQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bxPCgL1TEea9ZaXX_e1eoQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bxPCgb1TEea9ZaXX_e1eoQ" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_x7_fcL7-EeaKLPyhWXsoCg" name="Reseau"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6ziH4L7-EeaKLPyhWXsoCg" memberEnd="_6ziu8b7-EeaKLPyhWXsoCg _6ziu8r7-EeaKLPyhWXsoCg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6ziH4b7-EeaKLPyhWXsoCg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6ziu8L7-EeaKLPyhWXsoCg" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_bxPCgr1TEea9ZaXX_e1eoQ" name="prevenirdesavenue" type="_P7c8wL1SEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_bxPpkL1TEea9ZaXX_e1eoQ" name="visiteur" type="_I03fIL1TEea9ZaXX_e1eoQ" association="_bxObcL1TEea9ZaXX_e1eoQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6ziu8r7-EeaKLPyhWXsoCg" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_6ziH4L7-EeaKLPyhWXsoCg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_8pGsYL6QEeaEArWGUGk6Fg" name="SeConnecterAInternet"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="__Qp9cL6QEeaEArWGUGk6Fg" client="_VRHkcL1TEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_ANAQ8L6REeaEArWGUGk6Fg" client="_YBJ4kL1SEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_BB21UL6REeaEArWGUGk6Fg" client="_cIjdsL1QEea9ZaXX_e1eoQ" supplier="_8pGsYL6QEeaEArWGUGk6Fg"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_O6bSML6SEeaEArWGUGk6Fg" name="FournirConnexion"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RQ-54L6SEeaEArWGUGk6Fg" memberEnd="_RRJR8L6SEeaEArWGUGk6Fg _RRJ5AL6SEeaEArWGUGk6Fg" navigableOwnedEnd="_RRJR8L6SEeaEArWGUGk6Fg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RRAvEL6SEeaEArWGUGk6Fg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RRAvEb6SEeaEArWGUGk6Fg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_RRJR8L6SEeaEArWGUGk6Fg" name="fournirconnexion" type="_O6bSML6SEeaEArWGUGk6Fg" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_RRJ5AL6SEeaEArWGUGk6Fg" name="fournisseur internet" type="_OlRe4L1QEea9ZaXX_e1eoQ" association="_RQ-54L6SEeaEArWGUGk6Fg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_SFW9IL6SEeaEArWGUGk6Fg" client="_8pGsYL6QEeaEArWGUGk6Fg" supplier="_O6bSML6SEeaEArWGUGk6Fg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="__Vt5oL7-EeaKLPyhWXsoCg" name="Routeur"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_CBTWIL7_EeaKLPyhWXsoCg" client="_x7_fcL7-EeaKLPyhWXsoCg" supplier="__Vt5oL7-EeaKLPyhWXsoCg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -312,4 +363,9 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Satisfy xmi:id="_NBaDAL7-EeaKLPyhWXsoCg" base_DirectedRelationship="_NBMnoL7-EeaKLPyhWXsoCg" base_Abstraction="_NBMnoL7-EeaKLPyhWXsoCg"/>
+  <Blocks:Block xmi:id="_x8RMQL7-EeaKLPyhWXsoCg" base_Class="_x7_fcL7-EeaKLPyhWXsoCg"/>
+  <Blocks:Block xmi:id="__V3qoL7-EeaKLPyhWXsoCg" base_Class="__Vt5oL7-EeaKLPyhWXsoCg"/>
+  <Blocks:Block xmi:id="_-4cSUL7_EeaKLPyhWXsoCg" base_Class="_-4No0L7_EeaKLPyhWXsoCg"/>
+  <Blocks:Block xmi:id="_KiPnAL8AEeaKLPyhWXsoCg" base_Class="_KiEA0L8AEeaKLPyhWXsoCg"/>
 </xmi:XMI>
