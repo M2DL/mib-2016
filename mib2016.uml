@@ -174,6 +174,7 @@ et nommez-les au passage.
         <ownedEnd xmi:type="uml:Property" xmi:id="_wl41YMKyEeaALrA3j_efTg" name="detecter intrusion" type="_7NF3UL1REea5F7G7KR-NOg" association="_wlwSgMKyEeaALrA3j_efTg"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_c2wuoMLOEeaOAKagoNXVuA" name="04-08-Diagrammes"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>

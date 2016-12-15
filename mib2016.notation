@@ -958,4 +958,13 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wmbA4cKyEeaALrA3j_efTg" id="(0.0,0.25878172588832515)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_uKpRQMLOEeaOAKagoNXVuA" type="PapyrusUMLClassDiagram" name="dReq" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_uKpRQcLOEeaOAKagoNXVuA" name="diagram_compatibility_version" stringValue="1.2.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_uKpRQsLOEeaOAKagoNXVuA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_uKpRQ8LOEeaOAKagoNXVuA">
+      <owner xmi:type="uml:Package" href="mib2016.uml#_c2wuoMLOEeaOAKagoNXVuA"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.sysml14.diagram.requirement/resources/configuration/requirementDiagram.configuration#_ZrBf4JaBEeS8eNvSwD0lgA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="mib2016.uml#_c2wuoMLOEeaOAKagoNXVuA"/>
+  </notation:Diagram>
 </xmi:XMI>
