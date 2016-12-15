@@ -84,10 +84,14 @@ et nommez-les au passage.
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__amvYLAFEeapM-HOoIo7tA" name="ReseauKNX"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GldzkLAGEeapM-HOoIo7tA" name="ReseauElectrique"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteur"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_OhdZwLAGEeapM-HOoIo7tA" name="EquipementSansFil"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_WwK48MLQEeazeqgPzwH9jA" name="Actionneur"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_aOARwMLQEeazeqgPzwH9jA" name="ActionneurAudio">
+          <generalization xmi:type="uml:Generalization" xmi:id="_dhGaMMLQEeazeqgPzwH9jA" general="_WwK48MLQEeazeqgPzwH9jA"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_69iU8MLOEeankbaEtBM7Tw" name="Actionneur"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UeJBYMLPEeankbaEtBM7Tw" name="ActionneurAudio">
@@ -335,6 +339,8 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_WwXtQMLQEeazeqgPzwH9jA" base_Class="_WwK48MLQEeazeqgPzwH9jA"/>
+  <Blocks:Block xmi:id="_aOKp0MLQEeazeqgPzwH9jA" base_Class="_aOARwMLQEeazeqgPzwH9jA"/>
   <Blocks:Block xmi:id="_IilnoMLKEeankbaEtBM7Tw" base_Class="_IiT60MLKEeankbaEtBM7Tw"/>
   <Blocks:Block xmi:id="_OSvBUMLKEeankbaEtBM7Tw" base_Class="_OSkpQMLKEeankbaEtBM7Tw"/>
   <Blocks:Block xmi:id="_9Pd4IMLKEeankbaEtBM7Tw" base_Class="_9PUHIMLKEeankbaEtBM7Tw"/>
