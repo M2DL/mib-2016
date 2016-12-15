@@ -58,6 +58,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gmmpAMLEEea1duOKOOPI0A" name="&lt;Class>"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
       <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
@@ -68,7 +69,6 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gU7m86_8EeapM-HOoIo7tA" name="visiteur" type="_TIqZ8a_8EeapM-HOoIo7tA" aggregation="composite" association="_gU7m8K_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Iiey0L1MEeaR96T_B2Zkjw" name="intrus" type="_dfTSYL1JEea7Z6Lk32BwXw" aggregation="composite" association="_IiahYL1MEeaR96T_B2Zkjw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_IIbeYKzVEean1fvqSNKjOw" name="MIB">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iJskorAGEeapM-HOoIo7tA" name="equipementsansfil" type="_OhdZwLAGEeapM-HOoIo7tA" aggregation="composite" association="_iJr9kLAGEeapM-HOoIo7tA"/>
@@ -145,19 +145,86 @@ et nommez-les au passage.
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_dfTSYL1JEea7Z6Lk32BwXw" name="Intrus"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin">
+        <generalization xmi:type="uml:Generalization" xmi:id="_VmcbkL1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient">
+        <generalization xmi:type="uml:Generalization" xmi:id="_XJHIML1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien">
+        <generalization xmi:type="uml:Generalization" xmi:id="_mPq3oL1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur">
+        <generalization xmi:type="uml:Generalization" xmi:id="_shgCEL1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité">
+        <generalization xmi:type="uml:Generalization" xmi:id="_1eWoUL1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie">
+        <generalization xmi:type="uml:Generalization" xmi:id="_30tbsL1QEeaix-K-c6wLuw" general="_dfTSYL1JEea7Z6Lk32BwXw"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_IiahYL1MEeaR96T_B2Zkjw" memberEnd="_Iiey0L1MEeaR96T_B2Zkjw _Iiey0b1MEeaR96T_B2Zkjw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Iic9oL1MEeaR96T_B2Zkjw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Iic9ob1MEeaR96T_B2Zkjw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Iiey0b1MEeaR96T_B2Zkjw" name="contexte" type="_02decKzUEean1fvqSNKjOw" association="_IiahYL1MEeaR96T_B2Zkjw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_V3kIIL1NEeaix-K-c6wLuw" name="06-01-Alerte" visibility="package" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XTl6oMLGEea1duOKOOPI0A" name="RequirementDiagram">
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bVKSoMLGEea1duOKOOPI0A" name="DeriveReqt1" client="_gmmpAMLEEea1duOKOOPI0A" supplier="_DkE5cK_2EeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_VHpLAMLHEea1duOKOOPI0A" name="UseCaseDiagram">
+        <packagedElement xmi:type="uml:Actor" xmi:id="_dfTSYL1JEea7Z6Lk32BwXw" name="John Doe"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_UALL4L1REeaix-K-c6wLuw" memberEnd="_UALy8r1REeaix-K-c6wLuw _UAMaAL1REeaix-K-c6wLuw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UALy8L1REeaix-K-c6wLuw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UALy8b1REeaix-K-c6wLuw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_UALy8r1REeaix-K-c6wLuw" name="usecase1" type="_Kv4FML1REeaix-K-c6wLuw" association="_UALL4L1REeaix-K-c6wLuw"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_UAMaAL1REeaix-K-c6wLuw" name="john doe" type="_dfTSYL1JEea7Z6Lk32BwXw" association="_UALL4L1REeaix-K-c6wLuw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Kv4FML1REeaix-K-c6wLuw" name="Signale une urgence de santé"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Mw8wYMLIEea1duOKOOPI0A" name="Signale un problème technique"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2K-zoMLIEea1duOKOOPI0A" memberEnd="_2LAo0MLIEea1duOKOOPI0A _2LAo0cLIEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2K_asMLIEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2LABwMLIEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2LAo0MLIEea1duOKOOPI0A" name="signale un problème matériel" type="_Mw8wYMLIEea1duOKOOPI0A" association="_2K-zoMLIEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2LAo0cLIEea1duOKOOPI0A" name="medecin" type="_TubRIKzVEean1fvqSNKjOw" association="_2K-zoMLIEea1duOKOOPI0A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2nESsMLIEea1duOKOOPI0A" memberEnd="_2nE5wMLIEea1duOKOOPI0A _2nE5wcLIEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2nESscLIEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2nESssLIEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2nE5wMLIEea1duOKOOPI0A" name="signale un problème matériel" type="_Mw8wYMLIEea1duOKOOPI0A" association="_2nESsMLIEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2nE5wcLIEea1duOKOOPI0A" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_2nESsMLIEea1duOKOOPI0A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3HHEsMLIEea1duOKOOPI0A" memberEnd="_3HHrwsLIEea1duOKOOPI0A _3HHrw8LIEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3HHrwMLIEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3HHrwcLIEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_3HHrwsLIEea1duOKOOPI0A" name="signale un problème matériel" type="_Mw8wYMLIEea1duOKOOPI0A" association="_3HHEsMLIEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_3HHrw8LIEea1duOKOOPI0A" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" association="_3HHEsMLIEea1duOKOOPI0A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8MsecMLIEea1duOKOOPI0A" memberEnd="_8MtFgsLIEea1duOKOOPI0A _8MtFg8LIEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8MtFgMLIEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8MtFgcLIEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8MtFgsLIEea1duOKOOPI0A" name="signale un problème matériel" type="_Mw8wYMLIEea1duOKOOPI0A" association="_8MsecMLIEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8MtFg8LIEea1duOKOOPI0A" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_8MsecMLIEea1duOKOOPI0A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_IigkkMLJEea1duOKOOPI0A" name="&lt;Système> Détection Incendie" visibility="private"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_5jo8EMLJEea1duOKOOPI0A" name="Signale un incendie"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_D1at4MLKEea1duOKOOPI0A" memberEnd="_D1bU8MLKEea1duOKOOPI0A _D1bU8cLKEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D1at4cLKEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D1at4sLKEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D1bU8MLKEea1duOKOOPI0A" name="signale un incendie" type="_5jo8EMLJEea1duOKOOPI0A" association="_D1at4MLKEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D1bU8cLKEea1duOKOOPI0A" name="&lt;système> détection incendie" type="_IigkkMLJEea1duOKOOPI0A" association="_D1at4MLKEea1duOKOOPI0A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_H_2G8MLKEea1duOKOOPI0A" name="Configure les alarmes"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MwXPoMLKEea1duOKOOPI0A" memberEnd="_MwX2ssLKEea1duOKOOPI0A _MwX2s8LKEea1duOKOOPI0A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MwX2sMLKEea1duOKOOPI0A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MwX2scLKEea1duOKOOPI0A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MwX2ssLKEea1duOKOOPI0A" name="configure les alarmes" type="_H_2G8MLKEea1duOKOOPI0A" association="_MwXPoMLKEea1duOKOOPI0A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MwX2s8LKEea1duOKOOPI0A" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_MwXPoMLKEea1duOKOOPI0A"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -272,4 +339,6 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Requirement xmi:id="_gnYFEMLEEea1duOKOOPI0A" base_Class="_gmmpAMLEEea1duOKOOPI0A" id="06-01" text="La MI doit pouvoir lancer une alerte en cas de problèmes"/>
+  <Requirements:DeriveReqt xmi:id="_bVSOcMLGEea1duOKOOPI0A" base_DirectedRelationship="_bVKSoMLGEea1duOKOOPI0A" base_Abstraction="_bVKSoMLGEea1duOKOOPI0A"/>
 </xmi:XMI>
