@@ -211,6 +211,32 @@ et nommez-les au passage.
         <ownedEnd xmi:type="uml:Property" xmi:id="_xMmmYcLOEea1Sqztfgldsw" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_xMl_UMLOEea1Sqztfgldsw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_xMmmYsLOEea1Sqztfgldsw" name="detecter presence dans la mi" type="_GkuXUMLLEea1Sqztfgldsw" association="_xMl_UMLOEea1Sqztfgldsw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Vw3QsMLTEea1Sqztfgldsw" name="UC-anomalie 3">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_aZtEEMLTEea1Sqztfgldsw" name="Detecter presence dans la MI"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_a0BokMLTEea1Sqztfgldsw" name="Calculer nombre heures"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_cBBAIMLTEea1Sqztfgldsw" name="CapteurMouvement"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_sbiR0MLTEea1Sqztfgldsw" memberEnd="_sbi44sLTEea1Sqztfgldsw _sbjf8MLTEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sbi44MLTEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sbi44cLTEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_sbi44sLTEea1Sqztfgldsw" name="capteurmouvement" type="_cBBAIMLTEea1Sqztfgldsw" association="_sbiR0MLTEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_sbjf8MLTEea1Sqztfgldsw" name="detecter presence dans la mi" type="_aZtEEMLTEea1Sqztfgldsw" association="_sbiR0MLTEea1Sqztfgldsw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s4esgMLTEea1Sqztfgldsw" memberEnd="_s4fTksLTEea1Sqztfgldsw _s4fTk8LTEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s4fTkMLTEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s4fTkcLTEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_s4fTksLTEea1Sqztfgldsw" name="capteurmouvement" type="_cBBAIMLTEea1Sqztfgldsw" association="_s4esgMLTEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_s4fTk8LTEea1Sqztfgldsw" name="calculer nombre heures" type="_a0BokMLTEea1Sqztfgldsw" association="_s4esgMLTEea1Sqztfgldsw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zt6TQMLTEea1Sqztfgldsw" memberEnd="_zt66UsLTEea1Sqztfgldsw _zt66U8LTEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zt66UMLTEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zt66UcLTEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zt66UsLTEea1Sqztfgldsw" name="detecter presence dans la mi" type="_aZtEEMLTEea1Sqztfgldsw" association="_zt6TQMLTEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zt66U8LTEea1Sqztfgldsw" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_zt6TQMLTEea1Sqztfgldsw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
