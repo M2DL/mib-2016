@@ -151,7 +151,14 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_5G8nwMLDEea3U58PqWhiNQ" name="05-03-relation-personne-secours"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5G8nwMLDEea3U58PqWhiNQ" name="05-03-relation-personne-secours">
+      <packagedElement xmi:type="uml:Class" xmi:id="_koDaUMLGEea3U58PqWhiNQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NE5ckMLHEea3U58PqWhiNQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_jZOaQMLHEea3U58PqWhiNQ" name="DeriveReqt1" client="_koDaUMLGEea3U58PqWhiNQ" supplier="_DnahUK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_py_YsMLHEea3U58PqWhiNQ" name="Refine1" client="_NE5ckMLHEea3U58PqWhiNQ" supplier="_koDaUMLGEea3U58PqWhiNQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yXDrgMLHEea3U58PqWhiNQ" name=""/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_B942cMLIEea3U58PqWhiNQ" name="Refine2" client="_yXDrgMLHEea3U58PqWhiNQ" supplier="_koDaUMLGEea3U58PqWhiNQ"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -265,4 +272,10 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Requirement xmi:id="_koRcwMLGEea3U58PqWhiNQ" base_Class="_koDaUMLGEea3U58PqWhiNQ" id="05-03_01" text="La MI doit pouvoir communiquer."/>
+  <Requirements:Requirement xmi:id="_NFEbsMLHEea3U58PqWhiNQ" base_Class="_NE5ckMLHEea3U58PqWhiNQ" id="05-03_02" text="La MI doit avoir un système de communication fiable pour contacter les secours.&#xD;&#xA;"/>
+  <Requirements:DeriveReqt xmi:id="_jZgHEMLHEea3U58PqWhiNQ" base_DirectedRelationship="_jZOaQMLHEea3U58PqWhiNQ" base_Abstraction="_jZOaQMLHEea3U58PqWhiNQ"/>
+  <Requirements:Refine xmi:id="_pzRskMLHEea3U58PqWhiNQ" base_DirectedRelationship="_py_YsMLHEea3U58PqWhiNQ" base_Abstraction="_py_YsMLHEea3U58PqWhiNQ"/>
+  <Requirements:Requirement xmi:id="_yXX0kMLHEea3U58PqWhiNQ" base_Class="_yXDrgMLHEea3U58PqWhiNQ" id="05-03_03" text="La MI doit pouvoir communiquer avec les personnes handicapés."/>
+  <Requirements:Refine xmi:id="_B-J8MMLIEea3U58PqWhiNQ" base_DirectedRelationship="_B942cMLIEea3U58PqWhiNQ" base_Abstraction="_B942cMLIEea3U58PqWhiNQ"/>
 </xmi:XMI>
