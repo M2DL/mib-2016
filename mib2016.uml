@@ -75,10 +75,14 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jt2fALAGEeapM-HOoIo7tA" name="reseauknx" type="__amvYLAFEeapM-HOoIo7tA" aggregation="composite" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__amvYLAFEeapM-HOoIo7tA" name="ReseauKNX"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GldzkLAGEeapM-HOoIo7tA" name="ReseauElectrique"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteur"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_OhdZwLAGEeapM-HOoIo7tA" name="EquipementSansFil"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_WwK48MLQEeazeqgPzwH9jA" name="Actionneur"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_aOARwMLQEeazeqgPzwH9jA" name="ActionneurAudio">
+          <generalization xmi:type="uml:Generalization" xmi:id="_dhGaMMLQEeazeqgPzwH9jA" general="_WwK48MLQEeazeqgPzwH9jA"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
@@ -264,4 +268,6 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_WwXtQMLQEeazeqgPzwH9jA" base_Class="_WwK48MLQEeazeqgPzwH9jA"/>
+  <Blocks:Block xmi:id="_aOKp0MLQEeazeqgPzwH9jA" base_Class="_aOARwMLQEeazeqgPzwH9jA"/>
 </xmi:XMI>
