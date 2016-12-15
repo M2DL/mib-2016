@@ -191,10 +191,11 @@ et nommez-les au passage.
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_h7Oq4MLKEeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_h7NcwMLKEeankbaEtBM7Tw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9PUHIMLKEeankbaEtBM7Tw" name="VocalCommandSystem">
+      <packagedElement xmi:type="uml:Class" xmi:id="_9PUHIMLKEeankbaEtBM7Tw" name="SystemeCommandeVocale">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_avhcssLLEeankbaEtBM7Tw" name="voiceprocessingsoftware" type="_Mze_oMLLEeankbaEtBM7Tw" aggregation="composite" association="_avg1oMLLEeankbaEtBM7Tw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3lyrI8LQEeankbaEtBM7Tw" name="synthetiseurvocal" type="_z3-VkMLQEeankbaEtBM7Tw" aggregation="composite" association="_3lyrIMLQEeankbaEtBM7Tw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Mze_oMLLEeankbaEtBM7Tw" name="VoiceProcessingSoftware"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Mze_oMLLEeankbaEtBM7Tw" name="AnalyseurVocal"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_avg1oMLLEeankbaEtBM7Tw" memberEnd="_avhcssLLEeankbaEtBM7Tw _avhcs8LLEeankbaEtBM7Tw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_avhcsMLLEeankbaEtBM7Tw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_avhcscLLEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
@@ -212,6 +213,13 @@ et nommez-les au passage.
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uVln4cLMEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_uVln48LMEeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_uVlA0MLMEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_z3-VkMLQEeankbaEtBM7Tw" name="SynthetiseurVocal"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3lyrIMLQEeankbaEtBM7Tw" memberEnd="_3lyrI8LQEeankbaEtBM7Tw _3lzSMMLQEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3lyrIcLQEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3lyrIsLQEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_3lzSMMLQEeankbaEtBM7Tw" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_3lyrIMLQEeankbaEtBM7Tw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
@@ -333,4 +341,5 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_MzoJkMLLEeankbaEtBM7Tw" base_Class="_Mze_oMLLEeankbaEtBM7Tw"/>
   <Blocks:Block xmi:id="_69re4MLOEeankbaEtBM7Tw" base_Class="_69iU8MLOEeankbaEtBM7Tw"/>
   <Blocks:Block xmi:id="_UeRkQMLPEeankbaEtBM7Tw" base_Class="_UeJBYMLPEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_z4HfgMLQEeankbaEtBM7Tw" base_Class="_z3-VkMLQEeankbaEtBM7Tw"/>
 </xmi:XMI>
