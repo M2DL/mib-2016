@@ -80,6 +80,10 @@ et nommez-les au passage.
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
         </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_2XrdwMLGEea1Sqztfgldsw" name="CapteurMouvement">
+          <generalization xmi:type="uml:Generalization" xmi:id="_2XrdwcLGEea1Sqztfgldsw" general="_IIbeYKzVEean1fvqSNKjOw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_-oGb0MLGEea1Sqztfgldsw" general="_INsVoLAGEeapM-HOoIo7tA"/>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJ18gKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
@@ -278,4 +282,5 @@ et nommez-les au passage.
   <Requirements:Refine xmi:id="_FUI_0L1SEeavFtdqBqDyJg" base_DirectedRelationship="_FT_O0L1SEeavFtdqBqDyJg" base_Abstraction="_FT_O0L1SEeavFtdqBqDyJg"/>
   <Requirements:Refine xmi:id="_HugwgL1SEeavFtdqBqDyJg" base_DirectedRelationship="_HubQ8L1SEeavFtdqBqDyJg" base_Abstraction="_HubQ8L1SEeavFtdqBqDyJg"/>
   <Requirements:Refine xmi:id="_IUjc0L1SEeavFtdqBqDyJg" base_DirectedRelationship="_IUd9QL1SEeavFtdqBqDyJg" base_Abstraction="_IUd9QL1SEeavFtdqBqDyJg"/>
+  <Blocks:Block xmi:id="_2bBFoMLGEea1Sqztfgldsw" base_Class="_2XrdwMLGEea1Sqztfgldsw"/>
 </xmi:XMI>
