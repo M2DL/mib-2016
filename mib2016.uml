@@ -150,6 +150,29 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_0lKd4L1NEea5F7G7KR-NOg" name="Intrus"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2FO0YL1LEea5F7G7KR-NOg" name="intrusion">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CZa7IL1SEea5F7G7KR-NOg" name="UC-Police">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_cQIMsL1NEea5F7G7KR-NOg" name="appeler police"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_7NF3UL1REea5F7G7KR-NOg" name="Detecter intrusion">
+          <include xmi:type="uml:Include" xmi:id="_GxRsML1SEea5F7G7KR-NOg" addition="_cQIMsL1NEea5F7G7KR-NOg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JAWy4L1SEea5F7G7KR-NOg" memberEnd="_JAWy471SEea5F7G7KR-NOg _JAWy5L1SEea5F7G7KR-NOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JAWy4b1SEea5F7G7KR-NOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JAWy4r1SEea5F7G7KR-NOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JAWy471SEea5F7G7KR-NOg" name="appeler police" association="_JAWy4L1SEea5F7G7KR-NOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JAWy5L1SEea5F7G7KR-NOg" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" association="_JAWy4L1SEea5F7G7KR-NOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_wlwSgMKyEeaALrA3j_efTg" memberEnd="_wl4OUMKyEeaALrA3j_efTg _wl41YMKyEeaALrA3j_efTg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wl3nQMKyEeaALrA3j_efTg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wl3nQcKyEeaALrA3j_efTg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wl4OUMKyEeaALrA3j_efTg" name="intrus" type="_0lKd4L1NEea5F7G7KR-NOg" association="_wlwSgMKyEeaALrA3j_efTg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wl41YMKyEeaALrA3j_efTg" name="detecter intrusion" type="_7NF3UL1REea5F7G7KR-NOg" association="_wlwSgMKyEeaALrA3j_efTg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
