@@ -80,9 +80,9 @@ et nommez-les au passage.
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_2XrdwMLGEea1Sqztfgldsw" name="CapteurMouvement">
-          <generalization xmi:type="uml:Generalization" xmi:id="_2XrdwcLGEea1Sqztfgldsw" general="_IIbeYKzVEean1fvqSNKjOw"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_-oGb0MLGEea1Sqztfgldsw" general="_INsVoLAGEeapM-HOoIo7tA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1EvVkMLOEea1Sqztfgldsw" name="CapteurMouvement">
+          <generalization xmi:type="uml:Generalization" xmi:id="_1EvVkcLOEea1Sqztfgldsw" general="_IIbeYKzVEean1fvqSNKjOw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_5eiAUMLOEea1Sqztfgldsw" general="_INsVoLAGEeapM-HOoIo7tA"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
@@ -185,6 +185,32 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_FT_O0L1SEeavFtdqBqDyJg" name="Refine1" client="_I4a0UL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_HubQ8L1SEeavFtdqBqDyJg" name="Refine2" client="_JrQmgL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_IUd9QL1SEeavFtdqBqDyJg" name="Refine3" client="_Y9R_EL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_966o4MLKEea1Sqztfgldsw" name="UC-annomalie2">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_GkuXUMLLEea1Sqztfgldsw" name="Detecter presence dans la MI"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_BOmKsMLMEea1Sqztfgldsw" name="Calculer jours"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_s2C10MLOEea1Sqztfgldsw" name="CapteurMouvement"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uTFbkMLOEea1Sqztfgldsw" memberEnd="_uTGCosLOEea1Sqztfgldsw _uTGpsMLOEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTGCoMLOEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uTGCocLOEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uTGCosLOEea1Sqztfgldsw" name="detecterannomalie" type="_s2C10MLOEea1Sqztfgldsw" association="_uTFbkMLOEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uTGpsMLOEea1Sqztfgldsw" name="detecter presence dans la mi" type="_GkuXUMLLEea1Sqztfgldsw" association="_uTFbkMLOEea1Sqztfgldsw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_u0MkkMLOEea1Sqztfgldsw" memberEnd="_u0NysMLOEea1Sqztfgldsw _u0NyscLOEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u0NLoMLOEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u0NLocLOEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_u0NysMLOEea1Sqztfgldsw" name="detecterannomalie" type="_s2C10MLOEea1Sqztfgldsw" association="_u0MkkMLOEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_u0NyscLOEea1Sqztfgldsw" name="calculer jours" type="_BOmKsMLMEea1Sqztfgldsw" association="_u0MkkMLOEea1Sqztfgldsw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xMl_UMLOEea1Sqztfgldsw" memberEnd="_xMmmYcLOEea1Sqztfgldsw _xMmmYsLOEea1Sqztfgldsw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xMl_UcLOEea1Sqztfgldsw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xMmmYMLOEea1Sqztfgldsw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xMmmYcLOEea1Sqztfgldsw" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_xMl_UMLOEea1Sqztfgldsw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xMmmYsLOEea1Sqztfgldsw" name="detecter presence dans la mi" type="_GkuXUMLLEea1Sqztfgldsw" association="_xMl_UMLOEea1Sqztfgldsw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -305,5 +331,5 @@ et nommez-les au passage.
   <Requirements:Refine xmi:id="_FUI_0L1SEeavFtdqBqDyJg" base_DirectedRelationship="_FT_O0L1SEeavFtdqBqDyJg" base_Abstraction="_FT_O0L1SEeavFtdqBqDyJg"/>
   <Requirements:Refine xmi:id="_HugwgL1SEeavFtdqBqDyJg" base_DirectedRelationship="_HubQ8L1SEeavFtdqBqDyJg" base_Abstraction="_HubQ8L1SEeavFtdqBqDyJg"/>
   <Requirements:Refine xmi:id="_IUjc0L1SEeavFtdqBqDyJg" base_DirectedRelationship="_IUd9QL1SEeavFtdqBqDyJg" base_Abstraction="_IUd9QL1SEeavFtdqBqDyJg"/>
-  <Blocks:Block xmi:id="_2bBFoMLGEea1Sqztfgldsw" base_Class="_2XrdwMLGEea1Sqztfgldsw"/>
+  <Blocks:Block xmi:id="_1E2qUMLOEea1Sqztfgldsw" base_Class="_1EvVkMLOEea1Sqztfgldsw"/>
 </xmi:XMI>
