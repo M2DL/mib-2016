@@ -73,12 +73,25 @@ et nommez-les au passage.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iJskorAGEeapM-HOoIo7tA" name="equipementsansfil" type="_OhdZwLAGEeapM-HOoIo7tA" aggregation="composite" association="_iJr9kLAGEeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_i-mzYrAGEeapM-HOoIo7tA" name="reseauelectrique" type="_GldzkLAGEeapM-HOoIo7tA" aggregation="composite" association="_i-mMULAGEeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jt2fALAGEeapM-HOoIo7tA" name="reseauknx" type="__amvYLAFEeapM-HOoIo7tA" aggregation="composite" association="_jt1Q4LAGEeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_h7OD0sLKEeankbaEtBM7Tw" name="micro" type="_IiT60MLKEeankbaEtBM7Tw" aggregation="composite" association="_h7NcwMLKEeankbaEtBM7Tw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkrvYsLMEeankbaEtBM7Tw" name="microphone" type="_IiT60MLKEeankbaEtBM7Tw" aggregation="composite" association="_tkrIUMLMEeankbaEtBM7Tw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v48RAMLMEeankbaEtBM7Tw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v4_UUMLMEeankbaEtBM7Tw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uVln4sLMEeankbaEtBM7Tw" name="speaker" type="_OSkpQMLKEeankbaEtBM7Tw" aggregation="composite" association="_uVlA0MLMEeankbaEtBM7Tw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xb4DYMLMEeankbaEtBM7Tw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xb6foMLMEeankbaEtBM7Tw" value="*"/>
+        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__amvYLAFEeapM-HOoIo7tA" name="ReseauKNX"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GldzkLAGEeapM-HOoIo7tA" name="ReseauElectrique"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_INsVoLAGEeapM-HOoIo7tA" name="Capteurs"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_OhdZwLAGEeapM-HOoIo7tA" name="EquipementSansFil"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_llwb0LAGEeapM-HOoIo7tA" name="CapteurVoix">
           <generalization xmi:type="uml:Generalization" xmi:id="_oYELYLAGEeapM-HOoIo7tA" general="_IIbeYKzVEean1fvqSNKjOw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_69iU8MLOEeankbaEtBM7Tw" name="Actionneur"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UeJBYMLPEeankbaEtBM7Tw" name="ActionneurAudio">
+          <generalization xmi:type="uml:Generalization" xmi:id="_XzFj8MLPEeankbaEtBM7Tw" general="_69iU8MLOEeankbaEtBM7Tw"/>
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
@@ -150,6 +163,54 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_dbG9YMLEEeankbaEtBM7Tw" name="commandes-vocales">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_G3B3AMLFEeankbaEtBM7Tw" name="Programmer le réveil" classifierBehavior="_bq744MLHEeankbaEtBM7Tw">
+        <ownedBehavior xmi:type="uml:Interaction" xmi:id="_bq744MLHEeankbaEtBM7Tw" name="Programmation du réveil">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jtu3AMLIEeankbaEtBM7Tw" name="" type="_TIpy4K_8EeapM-HOoIo7tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_K828kMLIEeankbaEtBM7Tw" name="" type="_IIbeYKzVEean1fvqSNKjOw"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_JtuP8MLIEeankbaEtBM7Tw" name="" represents="_Jtu3AMLIEeankbaEtBM7Tw"/>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-0B_AMLGEeankbaEtBM7Tw" memberEnd="_-0EbQMLGEeankbaEtBM7Tw _-0FCUMLGEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-0DNIMLGEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-0D0MMLGEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-0EbQMLGEeankbaEtBM7Tw" name="programmer le réveil" type="_G3B3AMLFEeankbaEtBM7Tw" association="_-0B_AMLGEeankbaEtBM7Tw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-0FCUMLGEeankbaEtBM7Tw" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_-0B_AMLGEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IiT60MLKEeankbaEtBM7Tw" name="Microphone">
+        <generalization xmi:type="uml:Generalization" xmi:id="_r5a1gMLOEeankbaEtBM7Tw" general="_llwb0LAGEeapM-HOoIo7tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OSkpQMLKEeankbaEtBM7Tw" name="Speaker"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h7NcwMLKEeankbaEtBM7Tw" memberEnd="_h7OD0sLKEeankbaEtBM7Tw _h7Oq4MLKEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h7OD0MLKEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h7OD0cLKEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_h7Oq4MLKEeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_h7NcwMLKEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9PUHIMLKEeankbaEtBM7Tw" name="VocalCommandSystem">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_avhcssLLEeankbaEtBM7Tw" name="voiceprocessingsoftware" type="_Mze_oMLLEeankbaEtBM7Tw" aggregation="composite" association="_avg1oMLLEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Mze_oMLLEeankbaEtBM7Tw" name="VoiceProcessingSoftware"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_avg1oMLLEeankbaEtBM7Tw" memberEnd="_avhcssLLEeankbaEtBM7Tw _avhcs8LLEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_avhcsMLLEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_avhcscLLEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_avhcs8LLEeankbaEtBM7Tw" name="vocalcommandsystem" type="_9PUHIMLKEeankbaEtBM7Tw" association="_avg1oMLLEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tkrIUMLMEeankbaEtBM7Tw" memberEnd="_tkrvYsLMEeankbaEtBM7Tw _tksWcMLMEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tkrvYMLMEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tkrvYcLMEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_tksWcMLMEeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_tkrIUMLMEeankbaEtBM7Tw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uVlA0MLMEeankbaEtBM7Tw" memberEnd="_uVln4sLMEeankbaEtBM7Tw _uVln48LMEeankbaEtBM7Tw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVln4MLMEeankbaEtBM7Tw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uVln4cLMEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uVln48LMEeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_uVlA0MLMEeankbaEtBM7Tw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -264,4 +325,10 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Blocks:Block xmi:id="_IilnoMLKEeankbaEtBM7Tw" base_Class="_IiT60MLKEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_OSvBUMLKEeankbaEtBM7Tw" base_Class="_OSkpQMLKEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_9Pd4IMLKEeankbaEtBM7Tw" base_Class="_9PUHIMLKEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_MzoJkMLLEeankbaEtBM7Tw" base_Class="_Mze_oMLLEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_69re4MLOEeankbaEtBM7Tw" base_Class="_69iU8MLOEeankbaEtBM7Tw"/>
+  <Blocks:Block xmi:id="_UeRkQMLPEeankbaEtBM7Tw" base_Class="_UeJBYMLPEeankbaEtBM7Tw"/>
 </xmi:XMI>
