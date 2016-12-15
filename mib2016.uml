@@ -152,6 +152,28 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_0lKd4L1NEea5F7G7KR-NOg" name="Intrus"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_18vmwL1LEeaIP5PCTYjGSg" name="identifications">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_9_QrsL1LEeaIP5PCTYjGSg" name="S'identifier pour rentrer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BgxqoL1MEeaIP5PCTYjGSg" name="S'identifier avec une carte d'accès">
+        <generalization xmi:type="uml:Generalization" xmi:id="_fyLzoL1MEeaIP5PCTYjGSg" general="_9_QrsL1LEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_E4PVsL1MEeaIP5PCTYjGSg" name="S'identifier avec un code">
+        <generalization xmi:type="uml:Generalization" xmi:id="_gKSxoL1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dSCyIL1MEeaIP5PCTYjGSg" name="S'identifier avec son empreinte digitale">
+        <generalization xmi:type="uml:Generalization" xmi:id="_gyNGML1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rVYxEL1MEeaIP5PCTYjGSg" name="S'identifier avec un scan rétinien">
+        <generalization xmi:type="uml:Generalization" xmi:id="_xZMtoL1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0byC8L1OEeaIP5PCTYjGSg" memberEnd="_0byC871OEeaIP5PCTYjGSg _0byC9L1OEeaIP5PCTYjGSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0byC8b1OEeaIP5PCTYjGSg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0byC8r1OEeaIP5PCTYjGSg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0byC871OEeaIP5PCTYjGSg" name="s'identifier pour rentrer" association="_0byC8L1OEeaIP5PCTYjGSg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0byC9L1OEeaIP5PCTYjGSg" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_0byC8L1OEeaIP5PCTYjGSg"/>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2FO0YL1LEea5F7G7KR-NOg" name="intrusion">
       <packagedElement xmi:type="uml:Package" xmi:id="_CZa7IL1SEea5F7G7KR-NOg" name="UC-Police">
         <packagedElement xmi:type="uml:UseCase" xmi:id="_cQIMsL1NEea5F7G7KR-NOg" name="appeler police"/>
