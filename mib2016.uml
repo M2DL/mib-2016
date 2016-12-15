@@ -158,6 +158,8 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_FT_O0L1SEeavFtdqBqDyJg" name="Refine1" client="_I4a0UL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_HubQ8L1SEeavFtdqBqDyJg" name="Refine2" client="_JrQmgL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_IUd9QL1SEeavFtdqBqDyJg" name="Refine3" client="_Y9R_EL1REeavFtdqBqDyJg" supplier="_Dns1MK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_7tWDQMK4EeaSwsB8v5ueNw" name="DetecterTomber"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_LctNMMK7EeaSwsB8v5ueNw" name="calculer1minute"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
