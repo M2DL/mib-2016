@@ -58,13 +58,14 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MPPxgMLIEeaDqqUocSJQ0Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
       <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KJ2jkKzVEean1fvqSNKjOw" name="block1" type="_IIbeYKzVEean1fvqSNKjOw" aggregation="composite" association="_KJ0uYKzVEean1fvqSNKjOw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XxpO8qzVEean1fvqSNKjOw" name="medecin" type="_TubRIKzVEean1fvqSNKjOw" aggregation="composite" association="_XxoA0KzVEean1fvqSNKjOw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eD5YcK_8EeapM-HOoIo7tA" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" aggregation="composite" association="_eDyDsK_8EeapM-HOoIo7tA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_fn13cq_8EeapM-HOoIo7tA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" aggregation="composite" association="_fn1QYK_8EeapM-HOoIo7tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fn13cq_8EeapM-HOoIo7tA" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" aggregation="shared" association="_fn1QYK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gU7m86_8EeapM-HOoIo7tA" name="visiteur" type="_TIqZ8a_8EeapM-HOoIo7tA" aggregation="composite" association="_gU7m8K_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hEolkq_8EeapM-HOoIo7tA" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" aggregation="composite" association="_hEn-gK_8EeapM-HOoIo7tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hyrXUa_8EeapM-HOoIo7tA" name="assistancedevie" type="_TIqZ86_8EeapM-HOoIo7tA" aggregation="composite" association="_hyqwQK_8EeapM-HOoIo7tA"/>
@@ -146,10 +147,48 @@ et nommez-les au passage.
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4K_8EeapM-HOoIo7tA" name="Patient"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIpy4a_8EeapM-HOoIo7tA" name="Technicien">
+        <generalization xmi:type="uml:Generalization" xmi:id="_D7v8MMLGEeaDqqUocSJQ0Q" general="_TIpy4K_8EeapM-HOoIo7tA"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie">
+        <generalization xmi:type="uml:Generalization" xmi:id="_g4VnUMLGEeaDqqUocSJQ0Q" general="_TIpy4K_8EeapM-HOoIo7tA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3SeGwL1PEeaUH7iz5m1WkQ" name="06-02_arroser_plantes">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bRC8AL1SEeaUH7iz5m1WkQ" name="Activer le système d'arrosage"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_gIiPYL1SEeaUH7iz5m1WkQ" name="Configurer le système d'arrosage"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_LM8j0MLEEeaDqqUocSJQ0Q" name="Désactiver le système d'arrosage"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bUOwcMLEEeaDqqUocSJQ0Q" memberEnd="_bUSa0MLEEeaDqqUocSJQ0Q _bUSa0cLEEeaDqqUocSJQ0Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bURMsMLEEeaDqqUocSJQ0Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bURMscLEEeaDqqUocSJQ0Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bUSa0MLEEeaDqqUocSJQ0Q" name="activer le système d'arrosage" type="_bRC8AL1SEeaUH7iz5m1WkQ" association="_bUOwcMLEEeaDqqUocSJQ0Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bUSa0cLEEeaDqqUocSJQ0Q" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_bUOwcMLEEeaDqqUocSJQ0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bz2rsMLEEeaDqqUocSJQ0Q" memberEnd="_bz350sLEEeaDqqUocSJQ0Q _bz3508LEEeaDqqUocSJQ0Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bz350MLEEeaDqqUocSJQ0Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bz350cLEEeaDqqUocSJQ0Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bz350sLEEeaDqqUocSJQ0Q" name="désactiver le système d'arrosage" type="_LM8j0MLEEeaDqqUocSJQ0Q" association="_bz2rsMLEEeaDqqUocSJQ0Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bz3508LEEeaDqqUocSJQ0Q" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_bz2rsMLEEeaDqqUocSJQ0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cWthIMLEEeaDqqUocSJQ0Q" memberEnd="_cWuvQcLEEeaDqqUocSJQ0Q _cWuvQsLEEeaDqqUocSJQ0Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cWuIMMLEEeaDqqUocSJQ0Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cWuvQMLEEeaDqqUocSJQ0Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cWuvQcLEEeaDqqUocSJQ0Q" name="configurer le système d'arrosage" type="_gIiPYL1SEeaUH7iz5m1WkQ" association="_cWthIMLEEeaDqqUocSJQ0Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cWuvQsLEEeaDqqUocSJQ0Q" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_cWthIMLEEeaDqqUocSJQ0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_sDBB8MLEEeaDqqUocSJQ0Q" name="Réparer le système d'arrosage"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uerzIMLEEeaDqqUocSJQ0Q" memberEnd="_uesaMsLEEeaDqqUocSJQ0Q _uesaM8LEEeaDqqUocSJQ0Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uesaMMLEEeaDqqUocSJQ0Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uesaMcLEEeaDqqUocSJQ0Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uesaMsLEEeaDqqUocSJQ0Q" name="réparer le système d'arrosage" type="_sDBB8MLEEeaDqqUocSJQ0Q" association="_uerzIMLEEeaDqqUocSJQ0Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uesaM8LEEeaDqqUocSJQ0Q" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_uerzIMLEEeaDqqUocSJQ0Q"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -264,4 +303,5 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Requirement xmi:id="_MPcl0MLIEeaDqqUocSJQ0Q" base_Class="_MPPxgMLIEeaDqqUocSJQ0Q" id="06-02" text="La MI doit arroser les plantes"/>
 </xmi:XMI>
