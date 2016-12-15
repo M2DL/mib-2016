@@ -182,7 +182,9 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_IiT60MLKEeankbaEtBM7Tw" name="Microphone">
         <generalization xmi:type="uml:Generalization" xmi:id="_r5a1gMLOEeankbaEtBM7Tw" general="_llwb0LAGEeapM-HOoIo7tA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_OSkpQMLKEeankbaEtBM7Tw" name="Speaker"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OSkpQMLKEeankbaEtBM7Tw" name="Speaker">
+        <generalization xmi:type="uml:Generalization" xmi:id="_a8HKYMLPEeankbaEtBM7Tw" general="_UeJBYMLPEeankbaEtBM7Tw"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_h7NcwMLKEeankbaEtBM7Tw" memberEnd="_h7OD0sLKEeankbaEtBM7Tw _h7Oq4MLKEeankbaEtBM7Tw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h7OD0MLKEeankbaEtBM7Tw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h7OD0cLKEeankbaEtBM7Tw" key="nature" value="UML_Nature"/>
