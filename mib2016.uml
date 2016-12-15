@@ -58,6 +58,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_CbdGAL1TEeaJz_Dpwvd4yA" name="ssExigences" client="_Dl9v0K_2EeapM-HOoIo7tA" supplier="_DlvGUK_2EeapM-HOoIo7tA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
       <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
@@ -151,7 +152,12 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_6wrsUL1KEea7gNFGavHwPw" name="03_03-ProductionEnergie"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6wrsUL1KEea7gNFGavHwPw" name="03_03-ProductionEnergie">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GtdtwL1TEeaJz_Dpwvd4yA" name="Requirement1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HC_R0L1TEeaJz_Dpwvd4yA" name="Requirement2"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ypkk0L1WEeaJz_Dpwvd4yA" name="Solaire" client="_GtdtwL1TEeaJz_Dpwvd4yA" supplier="_Dl9v0K_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_0fdIYL1WEeaJz_Dpwvd4yA" name="Vent" client="_HC_R0L1TEeaJz_Dpwvd4yA" supplier="_Dl9v0K_2EeapM-HOoIo7tA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -265,4 +271,9 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_INycQLAGEeapM-HOoIo7tA" base_Class="_INsVoLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
+  <Requirements:Refine xmi:id="_CbjMoL1TEeaJz_Dpwvd4yA" base_DirectedRelationship="_CbdGAL1TEeaJz_Dpwvd4yA" base_Abstraction="_CbdGAL1TEeaJz_Dpwvd4yA"/>
+  <Requirements:Requirement xmi:id="_GtlpkL1TEeaJz_Dpwvd4yA" base_Class="_GtdtwL1TEeaJz_Dpwvd4yA" id="03-03_1" text="Production Solaire"/>
+  <Requirements:Requirement xmi:id="_HDGmkL1TEeaJz_Dpwvd4yA" base_Class="_HC_R0L1TEeaJz_Dpwvd4yA" id="03-03_2" text="Production Eolienne"/>
+  <Requirements:Refine xmi:id="_yp1qkL1WEeaJz_Dpwvd4yA" base_DirectedRelationship="_ypkk0L1WEeaJz_Dpwvd4yA" base_Abstraction="_ypkk0L1WEeaJz_Dpwvd4yA"/>
+  <Requirements:Refine xmi:id="_0fin8L1WEeaJz_Dpwvd4yA" base_DirectedRelationship="_0fdIYL1WEeaJz_Dpwvd4yA" base_Abstraction="_0fdIYL1WEeaJz_Dpwvd4yA"/>
 </xmi:XMI>
