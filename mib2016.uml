@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="Root">
     <ownedComment xmi:type="uml:Comment" xmi:id="_bdHyMK_2EeapM-HOoIo7tA" annotatedElement="_6gfZEK_1EeapM-HOoIo7tA">
       <body>Liste des exigences reprises du fichier excel.
@@ -443,6 +443,28 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_lSRQcMLQEeai59sP9xZFPg" name="NotificationReponse"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_qUMSMMLQEeai59sP9xZFPg" name="RefineNotif2" client="_lSRQcMLQEeai59sP9xZFPg" supplier="_F0dbMMLPEeai59sP9xZFPg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-vuTMNBuEeajXJhvb8S0HA" name="EtatInternet">
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_ENqGENBwEeajXJhvb8S0HA" name="StateMachineUtilisationApplication">
+        <region xmi:type="uml:Region" xmi:id="_E02B4NBwEeajXJhvb8S0HA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_0vD0oNBwEeajXJhvb8S0HA" name="Envoie Demande de visite / Demande ++" source="_RQkiwNBwEeajXJhvb8S0HA" target="_a7IjkNBwEeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_6l1ogNB1EeajXJhvb8S0HA" name="Demande Refusée" source="_a7IjkNBwEeajXJhvb8S0HA" target="_e-JeUNB2EeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_EBzMoNB2EeajXJhvb8S0HA" name="Demande Annulée" source="_a7IjkNBwEeajXJhvb8S0HA" target="_RQkiwNBwEeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_InmTENB2EeajXJhvb8S0HA" name="Demande Acceptée" source="_a7IjkNBwEeajXJhvb8S0HA" target="_dUNTwNBwEeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_k6PpUNB2EeajXJhvb8S0HA" source="_JIyjUNBwEeajXJhvb8S0HA" target="_e-JeUNB2EeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_m6AhoNB2EeajXJhvb8S0HA" name="Aucun Creneau de reservation possible" source="_e-JeUNB2EeajXJhvb8S0HA" target="_e-JeUNB2EeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_w3NxoNB2EeajXJhvb8S0HA" name="Creneau disponible" source="_e-JeUNB2EeajXJhvb8S0HA" target="_RQkiwNBwEeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GQn_MNB3EeajXJhvb8S0HA" name="Demande Refusée" source="_a7IjkNBwEeajXJhvb8S0HA" target="_e-JeUNB2EeajXJhvb8S0HA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_NKKp4NB3EeajXJhvb8S0HA" name="Visite Effectuée" source="_dUNTwNBwEeajXJhvb8S0HA" target="_e-JeUNB2EeajXJhvb8S0HA"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_JIyjUNBwEeajXJhvb8S0HA" name="Initial1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_RQkiwNBwEeajXJhvb8S0HA" name="Demande Possible">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_SkKRkNBwEeajXJhvb8S0HA" name="EntryPoint1" kind="entryPoint"/>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_a7IjkNBwEeajXJhvb8S0HA" name="DemandeEffectuée"/>
+          <subvertex xmi:type="uml:State" xmi:id="_dUNTwNBwEeajXJhvb8S0HA" name="AttenteVisite"/>
+          <subvertex xmi:type="uml:State" xmi:id="_e-JeUNB2EeajXJhvb8S0HA" name="Connectée / Aucune demande de visite en cours"/>
+        </region>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -502,6 +524,12 @@ et nommez-les au passage.
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_zme4cNBvEeajXJhvb8S0HA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zmgGkNBvEeajXJhvb8S0HA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_1DGMQKzUEean1fvqSNKjOw" base_Class="_02decKzUEean1fvqSNKjOw"/>
@@ -570,4 +598,7 @@ et nommez-les au passage.
   <Requirements:Refine xmi:id="_X-FdkMLQEeai59sP9xZFPg" base_DirectedRelationship="_X-CaQMLQEeai59sP9xZFPg" base_Abstraction="_X-CaQMLQEeai59sP9xZFPg"/>
   <Requirements:Requirement xmi:id="_lSTssMLQEeai59sP9xZFPg" base_Class="_lSRQcMLQEeai59sP9xZFPg" id="04-04-01-01" text="L'Habitant doit pouvoir répondre à une notification du visiteur"/>
   <Requirements:Refine xmi:id="_qUWqQMLQEeai59sP9xZFPg" base_DirectedRelationship="_qUMSMMLQEeai59sP9xZFPg" base_Abstraction="_qUMSMMLQEeai59sP9xZFPg"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zzs1ENBvEeajXJhvb8S0HA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_LpRjENBwEeajXJhvb8S0HA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_5SkcENBwEeajXJhvb8S0HA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
 </xmi:XMI>
