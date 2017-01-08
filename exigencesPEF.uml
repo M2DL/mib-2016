@@ -10,9 +10,9 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_hN1FALJFEeadqoFGEHfAxw" name="ReqEco6"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_qZ7oMLJFEeadqoFGEHfAxw" client="_90XdELJEEeadqoFGEHfAxw" supplier="_KZsbULJEEeadqoFGEHfAxw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_1CnosLJGEeadqoFGEHfAxw" name="ReqEco8"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_x1vH4LJEEeadqoFGEHfAxw" name="ReqEco2"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_nrceILJEEeadqoFGEHfAxw" name="ReqEco1">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ZApWQLJHEeadqoFGEHfAxw" name="ReqEco9"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_x1vH4LJEEeadqoFGEHfAxw" name="ReqEco2"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_90XdELJEEeadqoFGEHfAxw" name="ReqEco3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_MRJ1wLJQEeadqoFGEHfAxw" name="" client="_90XdELJEEeadqoFGEHfAxw" supplier="_1CnosLJGEeadqoFGEHfAxw"/>

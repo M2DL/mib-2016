@@ -58,6 +58,26 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Class" xmi:id="_DnmukK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Dns1MK_2EeapM-HOoIo7tA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DnxtsK_2EeapM-HOoIo7tA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JACicNW_EeakRO8LB8qZYw" name="Ecologie">
+        <packagedElement xmi:type="uml:Class" xmi:id="_dMmiYNW_EeakRO8LB8qZYw" name="ReqEco1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_jzaeUNW_EeakRO8LB8qZYw" name="ReqEco9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_AlzroNXAEeakRO8LB8qZYw" name="ReqEco3"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qt1SwNW_EeakRO8LB8qZYw" name="ReqEco13"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vLoTwNW_EeakRO8LB8qZYw" name="" client="_jzaeUNW_EeakRO8LB8qZYw" supplier="_qt1SwNW_EeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yIuXANW_EeakRO8LB8qZYw" name="ReqEco10"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_2LJqoNW_EeakRO8LB8qZYw" name="" client="_jzaeUNW_EeakRO8LB8qZYw" supplier="_yIuXANW_EeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5lse4NW_EeakRO8LB8qZYw" name="ReqEco11"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_87yQ8NW_EeakRO8LB8qZYw" name="" client="_jzaeUNW_EeakRO8LB8qZYw" supplier="_5lse4NW_EeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I3cxsNXAEeakRO8LB8qZYw" name="ReqEco12"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_MDa-cNXAEeakRO8LB8qZYw" client="_AlzroNXAEeakRO8LB8qZYw" supplier="_I3cxsNXAEeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RSwKENXAEeakRO8LB8qZYw" name="ReqEco6"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_WPMO4NXAEeakRO8LB8qZYw" client="_AlzroNXAEeakRO8LB8qZYw" supplier="_RSwKENXAEeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_YyiVYNXAEeakRO8LB8qZYw" name="ReqEco8"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cjjI4NXAEeakRO8LB8qZYw" name="" client="_AlzroNXAEeakRO8LB8qZYw" supplier="_YyiVYNXAEeakRO8LB8qZYw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fOCZMNXAEeakRO8LB8qZYw" name="ReqEco2"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_jWs3sNXAEeakRO8LB8qZYw" name="" client="_AlzroNXAEeakRO8LB8qZYw" supplier="_fOCZMNXAEeakRO8LB8qZYw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zjWZEK_7EeapM-HOoIo7tA" name="ContexteInitial">
       <packagedElement xmi:type="uml:Class" xmi:id="_02decKzUEean1fvqSNKjOw" name="Contexte">
@@ -508,4 +528,20 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_C814oL1PEeaGe5cJmH7UEg" base_Class="_C8sHoL1PEeaGe5cJmH7UEg"/>
   <Blocks:Block xmi:id="_uWCacL1TEeaGe5cJmH7UEg" base_Class="_uHdL4L1TEeaGe5cJmH7UEg"/>
   <Requirements:TestCase xmi:id="_vXJS4MLJEea-heYGI39TwA" base_Behavior="_vWl5QMLJEea-heYGI39TwA"/>
+  <Requirements:Requirement xmi:id="_dNMYQNW_EeakRO8LB8qZYw" base_Class="_dMmiYNW_EeakRO8LB8qZYw" id="ReqEco1" text="La MI doit être écologique et économe en energie"/>
+  <Requirements:Requirement xmi:id="_jzuAUNW_EeakRO8LB8qZYw" base_Class="_jzaeUNW_EeakRO8LB8qZYw" id="ReqEco9" text="L'habitant doit pouvoir saisir ses préférences (chauffage, clim...)"/>
+  <Requirements:Requirement xmi:id="_qt_DwNW_EeakRO8LB8qZYw" base_Class="_qt1SwNW_EeakRO8LB8qZYw" id="ReqEco13" text="L'utilisateur doit pouvoir saisir à l'avance son planning de présence (vacances, absences...)"/>
+  <Requirements:Refine xmi:id="_vLyEwNW_EeakRO8LB8qZYw" base_DirectedRelationship="_vLoTwNW_EeakRO8LB8qZYw" base_Abstraction="_vLoTwNW_EeakRO8LB8qZYw"/>
+  <Requirements:Requirement xmi:id="_yI4IANW_EeakRO8LB8qZYw" base_Class="_yIuXANW_EeakRO8LB8qZYw" id="ReqEco10" text="L'habitant doit pouvoir choisir des réglages différents pour le jour ou la nuit"/>
+  <Requirements:Refine xmi:id="_2LlvgNW_EeakRO8LB8qZYw" base_DirectedRelationship="_2LJqoNW_EeakRO8LB8qZYw" base_Abstraction="_2LJqoNW_EeakRO8LB8qZYw"/>
+  <Requirements:Requirement xmi:id="_5l2P4NW_EeakRO8LB8qZYw" base_Class="_5lse4NW_EeakRO8LB8qZYw" id="ReqEco11" text="L'habitant doit pouvoir choisir des réglages différents par pièce"/>
+  <Requirements:Refine xmi:id="_878B8NW_EeakRO8LB8qZYw" base_DirectedRelationship="_87yQ8NW_EeakRO8LB8qZYw" base_Abstraction="_87yQ8NW_EeakRO8LB8qZYw"/>
+  <Requirements:Requirement xmi:id="_Al9coNXAEeakRO8LB8qZYw" base_Class="_AlzroNXAEeakRO8LB8qZYw" id="ReqEco3" text="L'habitant doit pouvoir réduire sa consommation d'électricité"/>
+  <Requirements:Requirement xmi:id="_I3l7oNXAEeakRO8LB8qZYw" base_Class="_I3cxsNXAEeakRO8LB8qZYw" id="ReqEco12" text="L'habitant doit pouvoir consulter à tout moment ses consommations énergétiques"/>
+  <Requirements:DeriveReqt xmi:id="_MDkIYNXAEeakRO8LB8qZYw" base_DirectedRelationship="_MDa-cNXAEeakRO8LB8qZYw" base_Abstraction="_MDa-cNXAEeakRO8LB8qZYw"/>
+  <Requirements:Requirement xmi:id="_RS57ENXAEeakRO8LB8qZYw" base_Class="_RSwKENXAEeakRO8LB8qZYw" id="ReqEco6" text="L'habitant ne doit pas se soucier du réglage de la température"/>
+  <Requirements:Requirement xmi:id="_YysGYNXAEeakRO8LB8qZYw" base_Class="_YyiVYNXAEeakRO8LB8qZYw" id="ReqEco8" text="L'habitant ne doit pas avoir à allumer/éteindre les lumières en se déplacant"/>
+  <Requirements:Refine xmi:id="_cjs54NXAEeakRO8LB8qZYw" base_DirectedRelationship="_cjjI4NXAEeakRO8LB8qZYw" base_Abstraction="_cjjI4NXAEeakRO8LB8qZYw"/>
+  <Requirements:Requirement xmi:id="_fOMKMNXAEeakRO8LB8qZYw" base_Class="_fOCZMNXAEeakRO8LB8qZYw" id="ReqEco2" text="L'habitant doit pouvoir quitter sa maison sans avoir à vérifier l'état de l'éclairage, du chauffage ou de la climatisation"/>
+  <Requirements:Refine xmi:id="_jW2osNXAEeakRO8LB8qZYw" base_DirectedRelationship="_jWs3sNXAEeakRO8LB8qZYw" base_Abstraction="_jWs3sNXAEeakRO8LB8qZYw"/>
 </xmi:XMI>
