@@ -265,9 +265,54 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8a_8EeapM-HOoIo7tA" name="Visiteur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ8q_8EeapM-HOoIo7tA" name="Agent de securité"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_0lKd4L1NEea5F7G7KR-NOg" name="Intrus"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_3-pfAL1JEeaGe5cJmH7UEg" name="Utilisateur"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_Jr-cYL1KEeaGe5cJmH7UEg" name="Habitant">
         <generalization xmi:type="uml:Generalization" xmi:id="_MKH50L1KEeaGe5cJmH7UEg" general="_3-pfAL1JEeaGe5cJmH7UEg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_18vmwL1LEeaIP5PCTYjGSg" name="identifications">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_9_QrsL1LEeaIP5PCTYjGSg" name="S'identifier pour rentrer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BgxqoL1MEeaIP5PCTYjGSg" name="S'identifier avec une carte d'accès">
+        <generalization xmi:type="uml:Generalization" xmi:id="_fyLzoL1MEeaIP5PCTYjGSg" general="_9_QrsL1LEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_E4PVsL1MEeaIP5PCTYjGSg" name="S'identifier avec un code">
+        <generalization xmi:type="uml:Generalization" xmi:id="_gKSxoL1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dSCyIL1MEeaIP5PCTYjGSg" name="S'identifier avec son empreinte digitale">
+        <generalization xmi:type="uml:Generalization" xmi:id="_gyNGML1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rVYxEL1MEeaIP5PCTYjGSg" name="S'identifier avec un scan rétinien">
+        <generalization xmi:type="uml:Generalization" xmi:id="_xZMtoL1MEeaIP5PCTYjGSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0byC8L1OEeaIP5PCTYjGSg" memberEnd="_0byC871OEeaIP5PCTYjGSg _0byC9L1OEeaIP5PCTYjGSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0byC8b1OEeaIP5PCTYjGSg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0byC8r1OEeaIP5PCTYjGSg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0byC871OEeaIP5PCTYjGSg" name="s'identifier pour rentrer" association="_0byC8L1OEeaIP5PCTYjGSg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0byC9L1OEeaIP5PCTYjGSg" name="patient" type="_TIpy4K_8EeapM-HOoIo7tA" association="_0byC8L1OEeaIP5PCTYjGSg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2FO0YL1LEea5F7G7KR-NOg" name="intrusion">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CZa7IL1SEea5F7G7KR-NOg" name="UC-Police">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_cQIMsL1NEea5F7G7KR-NOg" name="appeler police"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_7NF3UL1REea5F7G7KR-NOg" name="Detecter intrusion">
+          <include xmi:type="uml:Include" xmi:id="_GxRsML1SEea5F7G7KR-NOg" addition="_cQIMsL1NEea5F7G7KR-NOg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JAWy4L1SEea5F7G7KR-NOg" memberEnd="_JAWy471SEea5F7G7KR-NOg _JAWy5L1SEea5F7G7KR-NOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JAWy4b1SEea5F7G7KR-NOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JAWy4r1SEea5F7G7KR-NOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JAWy471SEea5F7G7KR-NOg" name="appeler police" association="_JAWy4L1SEea5F7G7KR-NOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JAWy5L1SEea5F7G7KR-NOg" name="agent de securité" type="_TIqZ8q_8EeapM-HOoIo7tA" association="_JAWy4L1SEea5F7G7KR-NOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_wlwSgMKyEeaALrA3j_efTg" memberEnd="_wl4OUMKyEeaALrA3j_efTg _wl41YMKyEeaALrA3j_efTg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wl3nQMKyEeaALrA3j_efTg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wl3nQcKyEeaALrA3j_efTg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wl4OUMKyEeaALrA3j_efTg" name="intrus" type="_0lKd4L1NEea5F7G7KR-NOg" association="_wlwSgMKyEeaALrA3j_efTg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wl41YMKyEeaALrA3j_efTg" name="detecter intrusion" type="_7NF3UL1REea5F7G7KR-NOg" association="_wlwSgMKyEeaALrA3j_efTg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_yVRbsL1JEeaGe5cJmH7UEg" name="Gérer la consommation d'énergie">
