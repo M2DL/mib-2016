@@ -146,9 +146,15 @@ et nommez-les au passage.
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EJavaObject"/>
             </ownedParameter>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6Zpx4NawEeaMeqoB1UXfNg" name="changerTemperatureClim">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_CTdmwNaxEeaMeqoB1UXfNg" name="temp">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            </ownedParameter>
+          </ownedOperation>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yPdVUL1OEeaGe5cJmH7UEg" name="CapteurTempérature">
           <generalization xmi:type="uml:Generalization" xmi:id="_1tbRAL1OEeaGe5cJmH7UEg" general="_INsVoLAGEeapM-HOoIo7tA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qPNNcNa5EeaMeqoB1UXfNg" name="transmettreEtat"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_zlmB0L1OEeaGe5cJmH7UEg" name="CapteurPrésence">
           <generalization xmi:type="uml:Generalization" xmi:id="_3iNoYL1OEeaGe5cJmH7UEg" general="_INsVoLAGEeapM-HOoIo7tA"/>
@@ -175,6 +181,16 @@ et nommez-les au passage.
           <ownedOperation xmi:type="uml:Operation" xmi:id="_xhd7wMLREea-heYGI39TwA" name="actualiser" visibility="private"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Signal" xmi:id="_URk-UMLKEea-heYGI39TwA" name="Signal1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EIvKgNaqEeaMeqoB1UXfNg" name="Climatisation">
+          <generalization xmi:type="uml:Generalization" xmi:id="_VICkQNaqEeaMeqoB1UXfNg" general="_BzMwAL1PEeaGe5cJmH7UEg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5wNlkNarEeaMeqoB1UXfNg" name="reglerTemperatureClim">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ULz6oNasEeaMeqoB1UXfNg" name="temp">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_PiKbsNa8EeaMeqoB1UXfNg" name="changerTemperature"/>
+          <ownedReception xmi:type="uml:Reception" xmi:id="_cetk8NasEeaMeqoB1UXfNg" name="receptionAffichageTemp" signal="_URk-UMLKEea-heYGI39TwA"/>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJ18gKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
@@ -344,7 +360,47 @@ et nommez-les au passage.
           <message xmi:type="uml:Message" xmi:id="_62h1oNW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0" messageSort="reply" receiveEvent="_62h1otW0EeakRO8LB8qZYw" sendEvent="_62h1odW0EeakRO8LB8qZYw" signature="_tsboUNWzEeakRO8LB8qZYw"/>
         </ownedBehavior>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim" classifierBehavior="_N0tS0NalEeaMeqoB1UXfNg">
+        <ownedBehavior xmi:type="uml:Interaction" xmi:id="_N0tS0NalEeaMeqoB1UXfNg" name="Interaction1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_celhwNavEeaMeqoB1UXfNg" name="" type="_uHdL4L1TEeaGe5cJmH7UEg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_deuwINavEeaMeqoB1UXfNg" name="" type="_uu9qEL1OEeaGe5cJmH7UEg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_feirwNavEeaMeqoB1UXfNg" name="" type="__amvYLAFEeapM-HOoIo7tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hvrn8NavEeaMeqoB1UXfNg" name="" type="_EIvKgNaqEeaMeqoB1UXfNg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_48MK0NavEeaMeqoB1UXfNg" name="" type="_yPdVUL1OEeaGe5cJmH7UEg"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_cekToNavEeaMeqoB1UXfNg" name="" represents="_celhwNavEeaMeqoB1UXfNg" coveredBy="_2i7igNaxEeaMeqoB1UXfNg _2i_M4NaxEeaMeqoB1UXfNg _2i-l0NaxEeaMeqoB1UXfNg _QRi1wNayEeaMeqoB1UXfNg _LBsWoNa7EeaMeqoB1UXfNg"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_detiANavEeaMeqoB1UXfNg" name="" represents="_deuwINavEeaMeqoB1UXfNg" coveredBy="_4HRqINaxEeaMeqoB1UXfNg _QRjc0NayEeaMeqoB1UXfNg _ybDxYNa1EeaMeqoB1UXfNg _ChSb0Na7EeaMeqoB1UXfNg _LBrvkNa7EeaMeqoB1UXfNg"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_fehdoNavEeaMeqoB1UXfNg" name="" represents="_feirwNavEeaMeqoB1UXfNg" coveredBy="_wf1a0Na1EeaMeqoB1UXfNg _ybEYcNa1EeaMeqoB1UXfNg _zfVcYNa2EeaMeqoB1UXfNg _vZpSANa5EeaMeqoB1UXfNg _ChR0wNa7EeaMeqoB1UXfNg"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_hvrA4NavEeaMeqoB1UXfNg" name="" represents="_hvrn8NavEeaMeqoB1UXfNg" coveredBy="_wxHioNa2EeaMeqoB1UXfNg _wxGUgNa2EeaMeqoB1UXfNg _zfWDcNa2EeaMeqoB1UXfNg"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_48LjwNavEeaMeqoB1UXfNg" name="" represents="_48MK0NavEeaMeqoB1UXfNg" coveredBy="_DcvCUNa5EeaMeqoB1UXfNg _Dcw3gNa5EeaMeqoB1UXfNg _vZoq8Na5EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_2i7igNaxEeaMeqoB1UXfNg" name="ActionExecSpecStart" covered="_cekToNavEeaMeqoB1UXfNg" execution="_2i-l0NaxEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_2i-l0NaxEeaMeqoB1UXfNg" name="ActionExecSpec" covered="_cekToNavEeaMeqoB1UXfNg" finish="_2i_M4NaxEeaMeqoB1UXfNg" start="_2i7igNaxEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QRi1wNayEeaMeqoB1UXfNg" name="changerTemperatureClim_MessageSend" covered="_cekToNavEeaMeqoB1UXfNg" message="_QRgZgNayEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_4HRqINaxEeaMeqoB1UXfNg" name="ActionExecSpec0" covered="_detiANavEeaMeqoB1UXfNg" finish="_LBrvkNa7EeaMeqoB1UXfNg" start="_QRjc0NayEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QRjc0NayEeaMeqoB1UXfNg" name="changerTemperatureClim_MessageRecv" covered="_detiANavEeaMeqoB1UXfNg" message="_QRgZgNayEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ybDxYNa1EeaMeqoB1UXfNg" name="transmettreTemperature_MessageSend" covered="_detiANavEeaMeqoB1UXfNg" message="_ybCjQNa1EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_wf1a0Na1EeaMeqoB1UXfNg" name="ActionExecSpec1" covered="_fehdoNavEeaMeqoB1UXfNg" finish="_ChR0wNa7EeaMeqoB1UXfNg" start="_ybEYcNa1EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ybEYcNa1EeaMeqoB1UXfNg" name="transmettreTemperature_MessageRecv" covered="_fehdoNavEeaMeqoB1UXfNg" message="_ybCjQNa1EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_wxGUgNa2EeaMeqoB1UXfNg" name="ActionExecSpec2" covered="_hvrA4NavEeaMeqoB1UXfNg" finish="_wxHioNa2EeaMeqoB1UXfNg" start="_zfWDcNa2EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zfWDcNa2EeaMeqoB1UXfNg" name="reglerTemperatureClim_MessageRecv" covered="_hvrA4NavEeaMeqoB1UXfNg" message="_zfUOQNa2EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zfVcYNa2EeaMeqoB1UXfNg" name="reglerTemperatureClim_MessageSend" covered="_fehdoNavEeaMeqoB1UXfNg" message="_zfUOQNa2EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DcvCUNa5EeaMeqoB1UXfNg" name="ActionExecSpec3Start" covered="_48LjwNavEeaMeqoB1UXfNg" execution="_Dcw3gNa5EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Dcw3gNa5EeaMeqoB1UXfNg" name="ActionExecSpec3" covered="_48LjwNavEeaMeqoB1UXfNg" finish="_vZoq8Na5EeaMeqoB1UXfNg" start="_DcvCUNa5EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wxHioNa2EeaMeqoB1UXfNg" name="ActionExecSpec2Finish" covered="_hvrA4NavEeaMeqoB1UXfNg" execution="_wxGUgNa2EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vZoq8Na5EeaMeqoB1UXfNg" name="transmettreEtat_MessageSend" covered="_48LjwNavEeaMeqoB1UXfNg" message="_vZnc0Na5EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vZpSANa5EeaMeqoB1UXfNg" name="transmettreEtat_MessageRecv" covered="_fehdoNavEeaMeqoB1UXfNg" message="_vZnc0Na5EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ChR0wNa7EeaMeqoB1UXfNg" name="transmettreEtat_Message0Send" covered="_fehdoNavEeaMeqoB1UXfNg" message="_ChQmoNa7EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LBrvkNa7EeaMeqoB1UXfNg" name="notifierUtilisateur_MessageSend" covered="_detiANavEeaMeqoB1UXfNg" message="_LBrIgNa7EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ChSb0Na7EeaMeqoB1UXfNg" name="transmettreEtat_Message0Recv" covered="_detiANavEeaMeqoB1UXfNg" message="_ChQmoNa7EeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_2i_M4NaxEeaMeqoB1UXfNg" name="ActionExecSpecFinish" covered="_cekToNavEeaMeqoB1UXfNg" execution="_2i-l0NaxEeaMeqoB1UXfNg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LBsWoNa7EeaMeqoB1UXfNg" name="notifierUtilisateur_MessageRecv" covered="_cekToNavEeaMeqoB1UXfNg" message="_LBrIgNa7EeaMeqoB1UXfNg"/>
+          <message xmi:type="uml:Message" xmi:id="_QRgZgNayEeaMeqoB1UXfNg" name="changerTemperatureClim_Message" receiveEvent="_QRjc0NayEeaMeqoB1UXfNg" sendEvent="_QRi1wNayEeaMeqoB1UXfNg" signature="_6Zpx4NawEeaMeqoB1UXfNg"/>
+          <message xmi:type="uml:Message" xmi:id="_ybCjQNa1EeaMeqoB1UXfNg" name="transmettreTemperature_Message" receiveEvent="_ybEYcNa1EeaMeqoB1UXfNg" sendEvent="_ybDxYNa1EeaMeqoB1UXfNg" signature="_dAp2AMLEEea1jsPJNPu_aw"/>
+          <message xmi:type="uml:Message" xmi:id="_zfUOQNa2EeaMeqoB1UXfNg" name="reglerTemperatureClim_Message" receiveEvent="_zfWDcNa2EeaMeqoB1UXfNg" sendEvent="_zfVcYNa2EeaMeqoB1UXfNg" signature="_5wNlkNarEeaMeqoB1UXfNg"/>
+          <message xmi:type="uml:Message" xmi:id="_vZnc0Na5EeaMeqoB1UXfNg" name="transmettreEtat_Message" messageSort="reply" receiveEvent="_vZpSANa5EeaMeqoB1UXfNg" sendEvent="_vZoq8Na5EeaMeqoB1UXfNg" signature="_SrtpcNWyEeakRO8LB8qZYw"/>
+          <message xmi:type="uml:Message" xmi:id="_ChQmoNa7EeaMeqoB1UXfNg" name="transmettreEtat_Message0" messageSort="reply" receiveEvent="_ChSb0Na7EeaMeqoB1UXfNg" sendEvent="_ChR0wNa7EeaMeqoB1UXfNg" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
+          <message xmi:type="uml:Message" xmi:id="_LBrIgNa7EeaMeqoB1UXfNg" name="notifierUtilisateur_Message" messageSort="reply" receiveEvent="_LBsWoNa7EeaMeqoB1UXfNg" sendEvent="_LBrvkNa7EeaMeqoB1UXfNg" signature="_tsboUNWzEeakRO8LB8qZYw"/>
+        </ownedBehavior>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbub1JEeaGe5cJmH7UEg" name="Allumer/éteindre les lumières"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvb1JEeaGe5cJmH7UEg" name="Saisir ses préférences"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbvr1JEeaGe5cJmH7UEg" name="Corriger les réglages de la MI"/>
@@ -544,4 +600,5 @@ et nommez-les au passage.
   <Requirements:Refine xmi:id="_cjs54NXAEeakRO8LB8qZYw" base_DirectedRelationship="_cjjI4NXAEeakRO8LB8qZYw" base_Abstraction="_cjjI4NXAEeakRO8LB8qZYw"/>
   <Requirements:Requirement xmi:id="_fOMKMNXAEeakRO8LB8qZYw" base_Class="_fOCZMNXAEeakRO8LB8qZYw" id="ReqEco2" text="L'habitant doit pouvoir quitter sa maison sans avoir à vérifier l'état de l'éclairage, du chauffage ou de la climatisation"/>
   <Requirements:Refine xmi:id="_jW2osNXAEeakRO8LB8qZYw" base_DirectedRelationship="_jWs3sNXAEeakRO8LB8qZYw" base_Abstraction="_jWs3sNXAEeakRO8LB8qZYw"/>
+  <Blocks:Block xmi:id="_EqTmgNaqEeaMeqoB1UXfNg" base_Class="_EIvKgNaqEeaMeqoB1UXfNg"/>
 </xmi:XMI>
