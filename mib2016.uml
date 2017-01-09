@@ -168,13 +168,11 @@ et nommez-les au passage.
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_mJSKgNW0EeakRO8LB8qZYw" name="augmenterTemperature" visibility="private"/>
-          <ownedReception xmi:type="uml:Reception" xmi:id="_ej0DIMLKEea-heYGI39TwA" name="receptionSignalAllumer" signal="_URk-UMLKEea-heYGI39TwA"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_uHdL4L1TEeaGe5cJmH7UEg" name="Tablette">
           <generalization xmi:type="uml:Generalization" xmi:id="_wfD8cL1TEeaGe5cJmH7UEg" general="_OhdZwLAGEeapM-HOoIo7tA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_xhd7wMLREea-heYGI39TwA" name="actualiser" visibility="private"/>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Signal" xmi:id="_URk-UMLKEea-heYGI39TwA" name="Signal1"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KJ0uYKzVEean1fvqSNKjOw" memberEnd="_KJ2jkKzVEean1fvqSNKjOw _KJ5m4KzVEean1fvqSNKjOw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJ18gKzVEean1fvqSNKjOw" source="org.eclipse.papyrus">
@@ -255,6 +253,7 @@ et nommez-les au passage.
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_HxgooMLNEea-heYGI39TwA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_HxXesMLNEea-heYGI39TwA"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Signal" xmi:id="_URk-UMLKEea-heYGI39TwA" name="Signal1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
@@ -324,51 +323,53 @@ et nommez-les au passage.
           <ownedAttribute xmi:type="uml:Property" xmi:id="_LizpoMLFEea1jsPJNPu_aw" name="" type="_C8sHoL1PEeaGe5cJmH7UEg"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_UvLfkL1UEeaGe5cJmH7UEg" name="" represents="_UvLfkb1UEeaGe5cJmH7UEg" coveredBy="_YcVGwL1UEeaGe5cJmH7UEg _F4RoYMLIEea-heYGI39TwA _oYkBEsLSEea-heYGI39TwA _-0rBwcLSEea-heYGI39TwA _-0rBwsLSEea-heYGI39TwA _mbk7wdWxEeakRO8LB8qZYw _17BaYdWzEeakRO8LB8qZYw _62h1otW0EeakRO8LB8qZYw _-e7fsNW0EeakRO8LB8qZYw _DK_mMdW1EeakRO8LB8qZYw _DK_mMtW1EeakRO8LB8qZYw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_VPdiIL1UEeaGe5cJmH7UEg" name="" represents="_VPdiIb1UEeaGe5cJmH7UEg" coveredBy="_YcVGwb1UEeaGe5cJmH7UEg _bY0tEL1UEeaGe5cJmH7UEg _qj-REMLEEea1jsPJNPu_aw _F4S2gMLIEea-heYGI39TwA _XMSG0MLIEea-heYGI39TwA _a9hj0MLIEea-heYGI39TwA _bZUSgMLJEea-heYGI39TwA _ldQGgMLSEea-heYGI39TwA _oYkBEcLSEea-heYGI39TwA _8rDp4MLSEea-heYGI39TwA _8rMz0MLSEea-heYGI39TwA _fOG9ktWzEeakRO8LB8qZYw _4k5xQdW0EeakRO8LB8qZYw _62h1odW0EeakRO8LB8qZYw"/>
-          <lifeline xmi:type="uml:Lifeline" xmi:id="_IWcQwMLEEea1jsPJNPu_aw" name="" represents="_IWde4MLEEea1jsPJNPu_aw" coveredBy="_qj-4IMLEEea1jsPJNPu_aw _rDAWcMLEEea1jsPJNPu_aw _oudZkMLHEea-heYGI39TwA _a9iK4MLIEea-heYGI39TwA _bUvxAMLIEea-heYGI39TwA _mLAI4MLIEea-heYGI39TwA _-Ik8UMLIEea-heYGI39TwA _1o3ZgcLSEea-heYGI39TwA _XfQ4AdWyEeakRO8LB8qZYw _fOG9kdWzEeakRO8LB8qZYw _yaVFYtW0EeakRO8LB8qZYw"/>
-          <lifeline xmi:type="uml:Lifeline" xmi:id="_Lix0cMLFEea1jsPJNPu_aw" name="radiateurChambre" represents="_LizpoMLFEea1jsPJNPu_aw" coveredBy="_pGiiYMLHEea-heYGI39TwA _pGhUQMLHEea-heYGI39TwA _mLBXAMLIEea-heYGI39TwA _XfQ4ANWyEeakRO8LB8qZYw _ubOHEMLSEea-heYGI39TwA _qrmfINW0EeakRO8LB8qZYw _rrIpgNW0EeakRO8LB8qZYw _yaVFYdW0EeakRO8LB8qZYw"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_IWcQwMLEEea1jsPJNPu_aw" name="" represents="_IWde4MLEEea1jsPJNPu_aw" coveredBy="_qj-4IMLEEea1jsPJNPu_aw _rDAWcMLEEea1jsPJNPu_aw _oudZkMLHEea-heYGI39TwA _a9iK4MLIEea-heYGI39TwA _bUvxAMLIEea-heYGI39TwA _mLAI4MLIEea-heYGI39TwA _-Ik8UMLIEea-heYGI39TwA _1o3ZgcLSEea-heYGI39TwA _fOG9kdWzEeakRO8LB8qZYw _5VLPYNarEea-xIE2iuEhKQ _7N0MANarEea-xIE2iuEhKQ _7N0zENarEea-xIE2iuEhKQ _-rHZUNarEea-xIE2iuEhKQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_Lix0cMLFEea1jsPJNPu_aw" name="radiateurChambre" represents="_LizpoMLFEea1jsPJNPu_aw" coveredBy="_pGiiYMLHEea-heYGI39TwA _pGhUQMLHEea-heYGI39TwA _mLBXAMLIEea-heYGI39TwA _ubOHEMLSEea-heYGI39TwA _qrmfINW0EeakRO8LB8qZYw _rrIpgNW0EeakRO8LB8qZYw _7NyW0NarEea-xIE2iuEhKQ _7N1aINarEea-xIE2iuEhKQ"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_mbk7wdWxEeakRO8LB8qZYw" name="ActionExecSpec4" covered="_UvLfkL1UEeaGe5cJmH7UEg" finish="_-e7fsNW0EeakRO8LB8qZYw" start="_DK_mMtW1EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_bUvxAMLIEea-heYGI39TwA" name="ActionExecSpec2" covered="_IWcQwMLEEea1jsPJNPu_aw" finish="_-Ik8UMLIEea-heYGI39TwA" start="_a9iK4MLIEea-heYGI39TwA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YcVGwL1UEeaGe5cJmH7UEg" name="augmenterTemperature_MessageSend" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_YcLVwL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YcVGwb1UEeaGe5cJmH7UEg" name="augmenterTemperature_MessageRecv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_YcLVwL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qj-4IMLEEea1jsPJNPu_aw" name="transmettreTemperatureRadiateurs_MessageRecv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_qj5_oMLEEea1jsPJNPu_aw"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7N1aINarEea-xIE2iuEhKQ" name="ActionExecSpec3Finish" covered="_Lix0cMLFEea1jsPJNPu_aw" execution="_ubOHEMLSEea-heYGI39TwA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-rHZUNarEea-xIE2iuEhKQ" name="transmettreEtat_Message4Recv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_-rGyQNarEea-xIE2iuEhKQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DK_mMdW1EeakRO8LB8qZYw" name="actualiser_Message0Send" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYkBEcLSEea-heYGI39TwA" name="allumerRadiateurChambre_MessageSend0" covered="_VPdiIL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a9iK4MLIEea-heYGI39TwA" name="allumerRadiateur_MessageRecv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_a9fHkMLIEea-heYGI39TwA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mLAI4MLIEea-heYGI39TwA" name="s_MessageSend" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_mK-TsMLIEea-heYGI39TwA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5VLPYNarEea-xIE2iuEhKQ" name="transmettreEtat_Message3Recv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_5VJaMNarEea-xIE2iuEhKQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fOG9kdWzEeakRO8LB8qZYw" name="transmettreEtat_Message0Send" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_fOG9kNWzEeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8rMz0MLSEea-heYGI39TwA" name="traitementAugmenterTemperatureStart" covered="_VPdiIL1UEeaGe5cJmH7UEg" execution="_bY0tEL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qj-REMLEEea1jsPJNPu_aw" name="transmettreTemperatureRadiateurs_MessageSend" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_qj5_oMLEEea1jsPJNPu_aw"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ubOHEMLSEea-heYGI39TwA" name="ActionExecSpec3" covered="_Lix0cMLFEea1jsPJNPu_aw" finish="_7N1aINarEea-xIE2iuEhKQ" start="_rrIpgNW0EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qrmfINW0EeakRO8LB8qZYw" name="augmenterTemperature_Message1Recv0" covered="_Lix0cMLFEea1jsPJNPu_aw" message="_qrgYgNW0EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7NyW0NarEea-xIE2iuEhKQ" name="ActionExecSpec3Finish" covered="_Lix0cMLFEea1jsPJNPu_aw" execution="_ubOHEMLSEea-heYGI39TwA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7N0MANarEea-xIE2iuEhKQ" name="ActionExecSpecFinish" covered="_IWcQwMLEEea1jsPJNPu_aw" execution="_rDAWcMLEEea1jsPJNPu_aw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62h1odW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0Send" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_62h1oNW0EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-Ik8UMLIEea-heYGI39TwA" name="ack_Message0Send" covered="_IWcQwMLEEea1jsPJNPu_aw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DK_mMtW1EeakRO8LB8qZYw" name="actualiser_Message0Recv" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4k5xQdW0EeakRO8LB8qZYw" name="transmettreEtat_Message2Recv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_4k5xQNW0EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYkBEsLSEea-heYGI39TwA" name="allumerRadiateurChambre_MessageRecv0" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_17BaYdWzEeakRO8LB8qZYw" name="notifierUtilisateur_MessageRecv" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_17BaYNWzEeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bZUSgMLJEea-heYGI39TwA" name="ack_Message0Recv1" covered="_VPdiIL1UEeaGe5cJmH7UEg"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F4RoYMLIEea-heYGI39TwA" name="allumerRadiateurChambre_MessageSend" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_F4QaQMLIEea-heYGI39TwA"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_XMSG0MLIEea-heYGI39TwA" name="ActionExecSpec1" covered="_VPdiIL1UEeaGe5cJmH7UEg" finish="_fOG9ktWzEeakRO8LB8qZYw" start="_F4S2gMLIEea-heYGI39TwA"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F4S2gMLIEea-heYGI39TwA" name="allumerRadiateurChambre_MessageRecv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_F4QaQMLIEea-heYGI39TwA"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a9hj0MLIEea-heYGI39TwA" name="allumerRadiateur_MessageSend" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_a9fHkMLIEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_bUvxAMLIEea-heYGI39TwA" name="ActionExecSpec2" covered="_IWcQwMLEEea1jsPJNPu_aw" finish="_-Ik8UMLIEea-heYGI39TwA" start="_a9iK4MLIEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a9iK4MLIEea-heYGI39TwA" name="allumerRadiateur_MessageRecv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_a9fHkMLIEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mLAI4MLIEea-heYGI39TwA" name="s_MessageSend" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_mK-TsMLIEea-heYGI39TwA"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_pGhUQMLHEea-heYGI39TwA" name="ActionExecSpec0" covered="_Lix0cMLFEea1jsPJNPu_aw" finish="_pGiiYMLHEea-heYGI39TwA" start="_mLBXAMLIEea-heYGI39TwA"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mLBXAMLIEea-heYGI39TwA" name="s_MessageRecv" covered="_Lix0cMLFEea1jsPJNPu_aw" message="_mK-TsMLIEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XfQ4ANWyEeakRO8LB8qZYw" name="transmettreEtat_MessageSend" covered="_Lix0cMLFEea1jsPJNPu_aw" message="_XfKxYNWyEeakRO8LB8qZYw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_pGiiYMLHEea-heYGI39TwA" name="ActionExecSpec0Finish" covered="_Lix0cMLFEea1jsPJNPu_aw" execution="_pGhUQMLHEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fOG9kdWzEeakRO8LB8qZYw" name="transmettreEtat_Message0Send" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_fOG9kNWzEeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XfQ4AdWyEeakRO8LB8qZYw" name="transmettreEtat_MessageRecv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_XfKxYNWyEeakRO8LB8qZYw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fOG9ktWzEeakRO8LB8qZYw" name="transmettreEtat_Message0Recv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_17BaYNWzEeakRO8LB8qZYw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ldQGgMLSEea-heYGI39TwA" name="ActionExecSpec1Finish" covered="_VPdiIL1UEeaGe5cJmH7UEg" execution="_XMSG0MLIEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_17BaYdWzEeakRO8LB8qZYw" name="notifierUtilisateur_MessageRecv" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_17BaYNWzEeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DK_mMtW1EeakRO8LB8qZYw" name="actualiser_Message0Recv" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-0rBwcLSEea-heYGI39TwA" name="actualiser_MessageSend" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_-0rBwMLSEea-heYGI39TwA"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-0rBwsLSEea-heYGI39TwA" name="actualiser_MessageRecv" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_-0rBwMLSEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8rMz0MLSEea-heYGI39TwA" name="traitementAugmenterTemperatureStart" covered="_VPdiIL1UEeaGe5cJmH7UEg" execution="_bY0tEL1UEeaGe5cJmH7UEg"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YcVGwL1UEeaGe5cJmH7UEg" name="augmenterTemperature_MessageSend" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_YcLVwL1UEeaGe5cJmH7UEg"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_bY0tEL1UEeaGe5cJmH7UEg" name="traitementAugmenterTemperature" covered="_VPdiIL1UEeaGe5cJmH7UEg" finish="_62h1odW0EeakRO8LB8qZYw" start="_8rMz0MLSEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YcVGwb1UEeaGe5cJmH7UEg" name="augmenterTemperature_MessageRecv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_YcLVwL1UEeaGe5cJmH7UEg"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qj-REMLEEea1jsPJNPu_aw" name="transmettreTemperatureRadiateurs_MessageSend" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_qj5_oMLEEea1jsPJNPu_aw"/>
-          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_rDAWcMLEEea1jsPJNPu_aw" name="ActionExecSpec" covered="_IWcQwMLEEea1jsPJNPu_aw" finish="_yaVFYtW0EeakRO8LB8qZYw" start="_qj-4IMLEEea1jsPJNPu_aw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qj-4IMLEEea1jsPJNPu_aw" name="transmettreTemperatureRadiateurs_MessageRecv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_qj5_oMLEEea1jsPJNPu_aw"/>
-          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ubOHEMLSEea-heYGI39TwA" name="ActionExecSpec3" covered="_Lix0cMLFEea1jsPJNPu_aw" finish="_yaVFYdW0EeakRO8LB8qZYw" start="_rrIpgNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYkBEcLSEea-heYGI39TwA" name="allumerRadiateurChambre_MessageSend0" covered="_VPdiIL1UEeaGe5cJmH7UEg"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oujgMMLHEea-heYGI39TwA" name="augmenterTemperature_Message0Recv" message="_qrgYgNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qrmfINW0EeakRO8LB8qZYw" name="augmenterTemperature_Message1Recv0" covered="_Lix0cMLFEea1jsPJNPu_aw" message="_qrgYgNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yaVFYdW0EeakRO8LB8qZYw" name="transmettreEtat_Message1Send" covered="_Lix0cMLFEea1jsPJNPu_aw" message="_yaVFYNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yaVFYtW0EeakRO8LB8qZYw" name="transmettreEtat_Message1Recv" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_4k5xQNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62h1odW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0Send" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_62h1oNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8rDp4MLSEea-heYGI39TwA" name="traitementAugmenterTemperatureStart" covered="_VPdiIL1UEeaGe5cJmH7UEg" execution="_bY0tEL1UEeaGe5cJmH7UEg"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62h1otW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0Recv" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_62h1oNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-Ik8UMLIEea-heYGI39TwA" name="ack_Message0Send" covered="_IWcQwMLEEea1jsPJNPu_aw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYkBEsLSEea-heYGI39TwA" name="allumerRadiateurChambre_MessageRecv0" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bZUSgMLJEea-heYGI39TwA" name="ack_Message0Recv1" covered="_VPdiIL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_rDAWcMLEEea1jsPJNPu_aw" name="ActionExecSpec" covered="_IWcQwMLEEea1jsPJNPu_aw" finish="_7N0zENarEea-xIE2iuEhKQ" start="_qj-4IMLEEea1jsPJNPu_aw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oudZkMLHEea-heYGI39TwA" name="augmenterTemperature_Message0Send" covered="_IWcQwMLEEea1jsPJNPu_aw" message="_ouYhEMLHEea-heYGI39TwA"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_rrIpgNW0EeakRO8LB8qZYw" name="ActionExecSpec3Start" covered="_Lix0cMLFEea1jsPJNPu_aw" execution="_ubOHEMLSEea-heYGI39TwA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4k5xQdW0EeakRO8LB8qZYw" name="transmettreEtat_Message2Recv" covered="_VPdiIL1UEeaGe5cJmH7UEg" message="_4k5xQNW0EeakRO8LB8qZYw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DK_mMdW1EeakRO8LB8qZYw" name="actualiser_Message0Send" covered="_UvLfkL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oujgMMLHEea-heYGI39TwA" name="augmenterTemperature_Message0Recv" message="_qrgYgNW0EeakRO8LB8qZYw"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7N0zENarEea-xIE2iuEhKQ" name="ActionExecSpecFinish" covered="_IWcQwMLEEea1jsPJNPu_aw" execution="_rDAWcMLEEea1jsPJNPu_aw"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8rDp4MLSEea-heYGI39TwA" name="traitementAugmenterTemperatureStart" covered="_VPdiIL1UEeaGe5cJmH7UEg" execution="_bY0tEL1UEeaGe5cJmH7UEg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62h1otW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0Recv" covered="_UvLfkL1UEeaGe5cJmH7UEg" message="_62h1oNW0EeakRO8LB8qZYw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_-e7fsNW0EeakRO8LB8qZYw" name="ActionExecSpec4Finish" covered="_UvLfkL1UEeaGe5cJmH7UEg" execution="_mbk7wdWxEeakRO8LB8qZYw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1o3ZgcLSEea-heYGI39TwA" name="augmenterTemperature_Message1Recv" covered="_IWcQwMLEEea1jsPJNPu_aw"/>
           <message xmi:type="uml:Message" xmi:id="_YcLVwL1UEeaGe5cJmH7UEg" name="augmenterTemperature_Message" receiveEvent="_YcVGwb1UEeaGe5cJmH7UEg" sendEvent="_YcVGwL1UEeaGe5cJmH7UEg" signature="_LnZbsL1UEeaGe5cJmH7UEg"/>
@@ -380,13 +381,13 @@ et nommez-les au passage.
           </message>
           <message xmi:type="uml:Message" xmi:id="_mK-TsMLIEea-heYGI39TwA" name="allumer" receiveEvent="_mLBXAMLIEea-heYGI39TwA" sendEvent="_mLAI4MLIEea-heYGI39TwA" signature="_ij3qIMLIEea-heYGI39TwA"/>
           <message xmi:type="uml:Message" xmi:id="_-0rBwMLSEea-heYGI39TwA" name="actualiser_Message" receiveEvent="_-0rBwsLSEea-heYGI39TwA" sendEvent="_-0rBwcLSEea-heYGI39TwA" signature="_xhd7wMLREea-heYGI39TwA"/>
-          <message xmi:type="uml:Message" xmi:id="_XfKxYNWyEeakRO8LB8qZYw" name="transmettreEtat_Message" messageSort="reply" receiveEvent="_XfQ4AdWyEeakRO8LB8qZYw" sendEvent="_XfQ4ANWyEeakRO8LB8qZYw" signature="_SrtpcNWyEeakRO8LB8qZYw"/>
           <message xmi:type="uml:Message" xmi:id="_fOG9kNWzEeakRO8LB8qZYw" name="transmettreEtat_Message0" messageSort="reply" receiveEvent="_fOG9ktWzEeakRO8LB8qZYw" sendEvent="_fOG9kdWzEeakRO8LB8qZYw" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
           <message xmi:type="uml:Message" xmi:id="_17BaYNWzEeakRO8LB8qZYw" name="notifierUtilisateur_Message" messageSort="reply" receiveEvent="_17BaYdWzEeakRO8LB8qZYw" sendEvent="_fOG9ktWzEeakRO8LB8qZYw" signature="_tsboUNWzEeakRO8LB8qZYw"/>
           <message xmi:type="uml:Message" xmi:id="_qrgYgNW0EeakRO8LB8qZYw" name="augmenterTemperature()" receiveEvent="_qrmfINW0EeakRO8LB8qZYw" sendEvent="_oujgMMLHEea-heYGI39TwA" signature="_mJSKgNW0EeakRO8LB8qZYw"/>
-          <message xmi:type="uml:Message" xmi:id="_yaVFYNW0EeakRO8LB8qZYw" name="transmettreEtat_Message1" messageSort="reply" receiveEvent="_yaVFYtW0EeakRO8LB8qZYw" sendEvent="_yaVFYdW0EeakRO8LB8qZYw" signature="_SrtpcNWyEeakRO8LB8qZYw"/>
-          <message xmi:type="uml:Message" xmi:id="_4k5xQNW0EeakRO8LB8qZYw" name="transmettreEtat_Message2" messageSort="reply" receiveEvent="_4k5xQdW0EeakRO8LB8qZYw" sendEvent="_yaVFYtW0EeakRO8LB8qZYw" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
+          <message xmi:type="uml:Message" xmi:id="_4k5xQNW0EeakRO8LB8qZYw" name="transmettreEtat_Message2" messageSort="reply" receiveEvent="_4k5xQdW0EeakRO8LB8qZYw" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
           <message xmi:type="uml:Message" xmi:id="_62h1oNW0EeakRO8LB8qZYw" name="notifierUtilisateur_Message0" messageSort="reply" receiveEvent="_62h1otW0EeakRO8LB8qZYw" sendEvent="_62h1odW0EeakRO8LB8qZYw" signature="_tsboUNWzEeakRO8LB8qZYw"/>
+          <message xmi:type="uml:Message" xmi:id="_5VJaMNarEea-xIE2iuEhKQ" name="transmettreEtat_Message3" messageSort="asynchSignal" receiveEvent="_5VLPYNarEea-xIE2iuEhKQ" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
+          <message xmi:type="uml:Message" xmi:id="_-rGyQNarEea-xIE2iuEhKQ" name="transmettreEtat_Message4" messageSort="asynchSignal" receiveEvent="_-rHZUNarEea-xIE2iuEhKQ" signature="_EZfrkNWzEeakRO8LB8qZYw"/>
         </ownedBehavior>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yVRbtb1JEeaGe5cJmH7UEg" name="Ajuster le réglage de la clim"/>
