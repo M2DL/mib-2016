@@ -202,6 +202,58 @@ et nommez-les au passage.
         <packagedElement xmi:type="uml:TimeExpression" xmi:id="_EusT871TEeaE6NsQRwNxSQ" name="TimeIntervalMax">
           <expr xmi:type="uml:LiteralInteger" xmi:id="_EusT9b1TEeaE6NsQRwNxSQ" value="10"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Fv4W0MLHEeauyKtd5aDNcg" name="systeme_defense">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HiopscLOEeauyKtd5aDNcg" name="gestionnaire" type="_QQy7YMLIEeauyKtd5aDNcg" association="_Him0gMLOEeauyKtd5aDNcg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_F2VHoMLIEeauyKtd5aDNcg" name="start_gestionnaires"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LcrFEMLIEeauyKtd5aDNcg" name="stop_gestionnaires"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HpMB0MLHEeauyKtd5aDNcg" name="gestionnaire_alarmes">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Iz2zQMLJEeauyKtd5aDNcg" general="_QQy7YMLIEeauyKtd5aDNcg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kyQX0MLJEeauyKtd5aDNcg" name="list_alarmes" type="_ywkXsMLHEeauyKtd5aDNcg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nLfgEMLJEeauyKtd5aDNcg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nN23kMLJEeauyKtd5aDNcg" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MWyVMcLOEeauyKtd5aDNcg" name="alarme" type="_ywkXsMLHEeauyKtd5aDNcg" association="_MWxHEMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IKszcMLHEeauyKtd5aDNcg" name="gestionnaire_lumieres">
+          <generalization xmi:type="uml:Generalization" xmi:id="_KdQaAMLJEeauyKtd5aDNcg" general="_QQy7YMLIEeauyKtd5aDNcg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U5HioMLOEeauyKtd5aDNcg" name="lumiere" type="_yXM1cMLHEeauyKtd5aDNcg" association="_U5GUgMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JZm2kMLHEeauyKtd5aDNcg" name="gestionnaire_portes">
+          <generalization xmi:type="uml:Generalization" xmi:id="_JtoT4MLJEeauyKtd5aDNcg" general="_QQy7YMLIEeauyKtd5aDNcg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R_8WEsLOEeauyKtd5aDNcg" name="porte" type="_zJOvUMLHEeauyKtd5aDNcg" association="_R_7vAMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yXM1cMLHEeauyKtd5aDNcg" name="lumiere"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zJOvUMLHEeauyKtd5aDNcg" name="porte"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QQy7YMLIEeauyKtd5aDNcg" name="gestionnaire" isAbstract="true">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_dW_8oMLIEeauyKtd5aDNcg" name="start_elements"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jqX_MMLIEeauyKtd5aDNcg" name="stop_elements"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ywkXsMLHEeauyKtd5aDNcg" name="alarme"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Him0gMLOEeauyKtd5aDNcg" memberEnd="_HiopscLOEeauyKtd5aDNcg _HipQwMLOEeauyKtd5aDNcg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HioCoMLOEeauyKtd5aDNcg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HiopsMLOEeauyKtd5aDNcg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_HipQwMLOEeauyKtd5aDNcg" name="systeme_defense" type="_Fv4W0MLHEeauyKtd5aDNcg" association="_Him0gMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_MWxHEMLOEeauyKtd5aDNcg" memberEnd="_MWyVMcLOEeauyKtd5aDNcg _MWyVMsLOEeauyKtd5aDNcg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MWxuIMLOEeauyKtd5aDNcg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MWyVMMLOEeauyKtd5aDNcg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MWyVMsLOEeauyKtd5aDNcg" name="gestionnaire_alarmes" type="_HpMB0MLHEeauyKtd5aDNcg" association="_MWxHEMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_R_7vAMLOEeauyKtd5aDNcg" memberEnd="_R_8WEsLOEeauyKtd5aDNcg _R_89IMLOEeauyKtd5aDNcg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R_8WEMLOEeauyKtd5aDNcg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R_8WEcLOEeauyKtd5aDNcg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_R_89IMLOEeauyKtd5aDNcg" name="gestionnaire_portes" type="_JZm2kMLHEeauyKtd5aDNcg" association="_R_7vAMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_U5GUgMLOEeauyKtd5aDNcg" memberEnd="_U5HioMLOEeauyKtd5aDNcg _U5HiocLOEeauyKtd5aDNcg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U5G7kMLOEeauyKtd5aDNcg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U5G7kcLOEeauyKtd5aDNcg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_U5HiocLOEeauyKtd5aDNcg" name="gestionnaire_lumieres" type="_IKszcMLHEeauyKtd5aDNcg" association="_U5GUgMLOEeauyKtd5aDNcg"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
@@ -263,6 +315,12 @@ et nommez-les au passage.
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_so1H8MLIEeauyKtd5aDNcg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_so3kMMLIEeauyKtd5aDNcg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_1DGMQKzUEean1fvqSNKjOw" base_Class="_02decKzUEean1fvqSNKjOw"/>
@@ -330,4 +388,12 @@ et nommez-les au passage.
   <Requirements:DeriveReqt xmi:id="_hDXrAbJREeaM68BLgT48_Q" base_DirectedRelationship="_hDXrALJREeaM68BLgT48_Q" base_Abstraction="_hDXrALJREeaM68BLgT48_Q"/>
   <Requirements:DeriveReqt xmi:id="_hs8McLJREeaM68BLgT48_Q" base_DirectedRelationship="_hsybcLJREeaM68BLgT48_Q" base_Abstraction="_hsybcLJREeaM68BLgT48_Q"/>
   <Requirements:DeriveReqt xmi:id="_ijn80LJREeaM68BLgT48_Q" base_DirectedRelationship="_ijeL0LJREeaM68BLgT48_Q" base_Abstraction="_ijeL0LJREeaM68BLgT48_Q"/>
+  <Blocks:Block xmi:id="_GDa94MLHEeauyKtd5aDNcg" base_Class="_Fv4W0MLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_HpZdMMLHEeauyKtd5aDNcg" base_Class="_HpMB0MLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_IK5nwMLHEeauyKtd5aDNcg" base_Class="_IKszcMLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_JZzq4MLHEeauyKtd5aDNcg" base_Class="_JZm2kMLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_yXcGAMLHEeauyKtd5aDNcg" base_Class="_yXM1cMLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_ywxzEMLHEeauyKtd5aDNcg" base_Class="_ywkXsMLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_zJZucMLHEeauyKtd5aDNcg" base_Class="_zJOvUMLHEeauyKtd5aDNcg"/>
+  <Blocks:Block xmi:id="_QRAWwMLIEeauyKtd5aDNcg" base_Class="_QQy7YMLIEeauyKtd5aDNcg"/>
 </xmi:XMI>
