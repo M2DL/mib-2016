@@ -290,6 +290,33 @@ déprogrammer.</body>
         <message xmi:type="uml:Message" xmi:id="_hRJowNtYEeaJv6NK8dxvbg" name="emetMessage(HautParleur)" receiveEvent="_hROhQNtYEeaJv6NK8dxvbg" sendEvent="_hRNTINtYEeaJv6NK8dxvbg"/>
         <message xmi:type="uml:Message" xmi:id="_h9wQENtYEeaJv6NK8dxvbg" name="transmetMessage(HautParleur)" receiveEvent="_h9ysUNtYEeaJv6NK8dxvbg" sendEvent="_h9yFQNtYEeaJv6NK8dxvbg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_u48pQNtaEeaJv6NK8dxvbg" name="Programmer réveil" node="_0i2RANtaEeaJv6NK8dxvbg _9ojpkNtgEeaJv6NK8dxvbg _Odj30NthEeaJv6NK8dxvbg _Q0IGkNthEeaJv6NK8dxvbg _UjmpANthEeaJv6NK8dxvbg">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_kKCyYNthEeaJv6NK8dxvbg" target="_9ojpkNtgEeaJv6NK8dxvbg" source="_0i2RANtaEeaJv6NK8dxvbg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_krKicNthEeaJv6NK8dxvbg" target="_Odj30NthEeaJv6NK8dxvbg" source="_9ojpkNtgEeaJv6NK8dxvbg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_lwkrUNthEeaJv6NK8dxvbg" target="_Q0IGkNthEeaJv6NK8dxvbg" source="_Odj30NthEeaJv6NK8dxvbg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_mI654NthEeaJv6NK8dxvbg" target="_UjmpANthEeaJv6NK8dxvbg" source="_Odj30NthEeaJv6NK8dxvbg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_0i2RANtaEeaJv6NK8dxvbg" outgoing="_kKCyYNthEeaJv6NK8dxvbg"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_9ojpkNtgEeaJv6NK8dxvbg" name="Reception mot clé de programmation" incoming="_kKCyYNthEeaJv6NK8dxvbg" outgoing="_krKicNthEeaJv6NK8dxvbg"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_Odj30NthEeaJv6NK8dxvbg" name="Analyse de la programmation" incoming="_krKicNthEeaJv6NK8dxvbg" outgoing="_lwkrUNthEeaJv6NK8dxvbg _mI654NthEeaJv6NK8dxvbg"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_Q0IGkNthEeaJv6NK8dxvbg" name="Programmation du reveil" incoming="_lwkrUNthEeaJv6NK8dxvbg"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_UjmpANthEeaJv6NK8dxvbg" name="Emission haut parleur" incoming="_mI654NthEeaJv6NK8dxvbg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_pOWngNtmEeaJv6NK8dxvbg" name="Programmer Reveil">
+        <region xmi:type="uml:Region" xmi:id="_qrabYNtmEeaJv6NK8dxvbg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_y4VZgNtmEeaJv6NK8dxvbg" source="_snBMcNtmEeaJv6NK8dxvbg" target="_ulQawNtmEeaJv6NK8dxvbg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_IKz4oNtnEeaJv6NK8dxvbg" source="_ulQawNtmEeaJv6NK8dxvbg" target="_2uhn8NtmEeaJv6NK8dxvbg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_JW0YwNtnEeaJv6NK8dxvbg" source="_2uhn8NtmEeaJv6NK8dxvbg" target="_DH5_cNtnEeaJv6NK8dxvbg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KDBXcNtnEeaJv6NK8dxvbg" source="_DH5_cNtnEeaJv6NK8dxvbg" target="_E0SBsNtnEeaJv6NK8dxvbg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Kj8TMNtnEeaJv6NK8dxvbg" source="_E0SBsNtnEeaJv6NK8dxvbg" target="_xL2pkNtmEeaJv6NK8dxvbg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_pMLAwNtnEeaJv6NK8dxvbg" source="_ulQawNtmEeaJv6NK8dxvbg" target="_xL2pkNtmEeaJv6NK8dxvbg"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_snBMcNtmEeaJv6NK8dxvbg" name="Commande Vocale"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ulQawNtmEeaJv6NK8dxvbg" name="Analyse Systeme"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_xL2pkNtmEeaJv6NK8dxvbg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_2uhn8NtmEeaJv6NK8dxvbg" name="Envoi ordre réveil"/>
+          <subvertex xmi:type="uml:State" xmi:id="_DH5_cNtnEeaJv6NK8dxvbg" name="Attente retour ordre"/>
+          <subvertex xmi:type="uml:State" xmi:id="_E0SBsNtnEeaJv6NK8dxvbg" name="Envoie ordre haut parleur"/>
+        </region>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
