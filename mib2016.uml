@@ -166,7 +166,7 @@ et nommez-les au passage.
       <packagedElement xmi:type="uml:Actor" xmi:id="_TIqZ86_8EeapM-HOoIo7tA" name="AssistanceDeVie"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_dbG9YMLEEeankbaEtBM7Tw" name="commandes-vocales">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_G3B3AMLFEeankbaEtBM7Tw" name="Programmer le réveil" classifierBehavior="_bq744MLHEeankbaEtBM7Tw">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_G3B3AMLFEeankbaEtBM7Tw" name="Programmer le réveil vocalement    " classifierBehavior="_bq744MLHEeankbaEtBM7Tw">
         <ownedBehavior xmi:type="uml:Interaction" xmi:id="_bq744MLHEeankbaEtBM7Tw" name="Programmation du réveil">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Lsca4MLSEeankbaEtBM7Tw">
             <body> Penser à ajouter les operations et autres dans le BDD</body>
@@ -193,16 +193,34 @@ et nommez-les au passage.
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_OSkpQMLKEeankbaEtBM7Tw" name="HautParleur"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_9PUHIMLKEeankbaEtBM7Tw" name="SystemeCommandeVocale">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GnfGsNtREeaTxNvDDjTEVA" name="analyseVocale" type="_Js4KUNtREeaTxNvDDjTEVA" aggregation="composite" association="_JtiRoNtREeaTxNvDDjTEVA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_R-VqMNtREeaTxNvDDjTEVA" name="syntheseVocale" type="_TX9IgNtREeaTxNvDDjTEVA" aggregation="composite" association="_TY3ugNtREeaTxNvDDjTEVA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_XVk0oNtREeaTxNvDDjTEVA" name="cpu" type="_cbT_YNtREeaTxNvDDjTEVA" aggregation="composite" association="_cb51QNtREeaTxNvDDjTEVA"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_kJjdcNtREeaTxNvDDjTEVA" name="Connector1">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_kJoV8NtREeaTxNvDDjTEVA" role="_GnfGsNtREeaTxNvDDjTEVA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_kJo9ANtREeaTxNvDDjTEVA" role="_XVk0oNtREeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zdjCkttqEeaTxNvDDjTEVA" name="synthesevocale" type="_TX9IgNtREeaTxNvDDjTEVA" aggregation="composite" association="_zdibgNtqEeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0oZFEttqEeaTxNvDDjTEVA" name="cpu" type="_cbT_YNtREeaTxNvDDjTEVA" aggregation="composite" association="_0oYeANtqEeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1qA6IttqEeaTxNvDDjTEVA" name="analysevocale" type="_Js4KUNtREeaTxNvDDjTEVA" aggregation="composite" association="_1qATENtqEeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EOXUYNtrEeaTxNvDDjTEVA" name="syntheseVocale" type="_TX9IgNtREeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EOYig9trEeaTxNvDDjTEVA" name="cPU" type="_cbT_YNtREeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EOZJlNtrEeaTxNvDDjTEVA" name="analyseVocale" type="_Js4KUNtREeaTxNvDDjTEVA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_SljcYNtrEeaTxNvDDjTEVA" name="EmetMessage" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_urB5UNtrEeaTxNvDDjTEVA" name="RecoisMessage" visibility="private" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_JCGTsNtsEeaTxNvDDjTEVA" name="EmetCommande" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_KS8tANtrEeaTxNvDDjTEVA" name="BindingConnector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_KS_wUNtrEeaTxNvDDjTEVA" role="_EOZJlNtrEeaTxNvDDjTEVA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_KS_wUdtrEeaTxNvDDjTEVA" role="_EOYig9trEeaTxNvDDjTEVA"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_lKKl4NtREeaTxNvDDjTEVA" name="Connector2">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_lKL0ANtREeaTxNvDDjTEVA" role="_XVk0oNtREeaTxNvDDjTEVA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_lKL0AdtREeaTxNvDDjTEVA" role="_R-VqMNtREeaTxNvDDjTEVA"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_LHSUANtrEeaTxNvDDjTEVA" name="BindingConnector2">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_LHXzkNtrEeaTxNvDDjTEVA" role="_EOYig9trEeaTxNvDDjTEVA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_LHXzkdtrEeaTxNvDDjTEVA" role="_EOXUYNtrEeaTxNvDDjTEVA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_oaJxINtrEeaTxNvDDjTEVA" name="Connector2">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_oaKYMNtrEeaTxNvDDjTEVA" role="_EOXUYNtrEeaTxNvDDjTEVA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_oaKYMdtrEeaTxNvDDjTEVA" role="_SljcYNtrEeaTxNvDDjTEVA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_DnXJUNtsEeaTxNvDDjTEVA" name="Connector3">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DnXwYNtsEeaTxNvDDjTEVA" role="_urB5UNtrEeaTxNvDDjTEVA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DnXwYdtsEeaTxNvDDjTEVA" role="_EOZJlNtrEeaTxNvDDjTEVA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Pk1n8NtsEeaTxNvDDjTEVA" name="Connector4">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Pk1n8dtsEeaTxNvDDjTEVA" role="_EOYig9trEeaTxNvDDjTEVA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Pk1n8ttsEeaTxNvDDjTEVA" role="_JCGTsNtsEeaTxNvDDjTEVA"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_-0B_AMLGEeankbaEtBM7Tw" memberEnd="_-0EbQMLGEeankbaEtBM7Tw _-0FCUMLGEeankbaEtBM7Tw">
@@ -236,6 +254,9 @@ et nommez-les au passage.
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_YBvZE8LREeankbaEtBM7Tw" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_YBuyAMLREeankbaEtBM7Tw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TX9IgNtREeaTxNvDDjTEVA" name="SyntheseVocale"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cbT_YNtREeaTxNvDDjTEVA" name="CPU"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Js4KUNtREeaTxNvDDjTEVA" name="AnalyseVocale"/>
       <packagedElement xmi:type="uml:Interaction" xmi:id="_JrpbQNtREeaJv6NK8dxvbg" name="Programmer réveil">
         <ownedComment xmi:type="uml:Comment" xmi:id="_nWP0MNtXEeaJv6NK8dxvbg">
           <body> Transmettre un message à destination du réveil : 
@@ -285,23 +306,30 @@ déprogrammer.</body>
         <message xmi:type="uml:Message" xmi:id="_hRJowNtYEeaJv6NK8dxvbg" name="emetMessage(HautParleur)" receiveEvent="_hROhQNtYEeaJv6NK8dxvbg" sendEvent="_hRNTINtYEeaJv6NK8dxvbg"/>
         <message xmi:type="uml:Message" xmi:id="_h9wQENtYEeaJv6NK8dxvbg" name="transmetMessage(HautParleur)" receiveEvent="_h9ysUNtYEeaJv6NK8dxvbg" sendEvent="_h9yFQNtYEeaJv6NK8dxvbg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Js4KUNtREeaTxNvDDjTEVA" name="AnalyseVocale"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JtiRoNtREeaTxNvDDjTEVA" memberEnd="_GnfGsNtREeaTxNvDDjTEVA _JtjfwNtREeaTxNvDDjTEVA">
-        <ownedEnd xmi:type="uml:Property" xmi:id="_JtjfwNtREeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_JtiRoNtREeaTxNvDDjTEVA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ETkosNtkEeaTxNvDDjTEVA" name="ProgrammerReveil"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_UVqMQNtkEeaTxNvDDjTEVA" name="" client="_ETkosNtkEeaTxNvDDjTEVA" supplier="_dbG9YMLEEeankbaEtBM7Tw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2U9t4NtlEeaTxNvDDjTEVA" name="RepondreCommandeVocale"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_idTm8NtlEeaTxNvDDjTEVA" name="RecevoirCommandeVocale"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rDJGQNtjEeaTxNvDDjTEVA" name="CommandesVocales"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_fonxcNtoEeaTxNvDDjTEVA" name="" client="_2U9t4NtlEeaTxNvDDjTEVA" supplier="_rDJGQNtjEeaTxNvDDjTEVA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_hnRPcNtoEeaTxNvDDjTEVA" client="_idTm8NtlEeaTxNvDDjTEVA" supplier="_rDJGQNtjEeaTxNvDDjTEVA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zdibgNtqEeaTxNvDDjTEVA" memberEnd="_zdjCkttqEeaTxNvDDjTEVA _zdjCk9tqEeaTxNvDDjTEVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zdjCkNtqEeaTxNvDDjTEVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zdjCkdtqEeaTxNvDDjTEVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zdjCk9tqEeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_zdibgNtqEeaTxNvDDjTEVA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_TX9IgNtREeaTxNvDDjTEVA" name="SyntheseVocale">
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_tbf4ANtTEeaTxNvDDjTEVA" name="synthetiserVoix">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_tbf4AdtTEeaTxNvDDjTEVA" name="phrase">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedParameter>
-        </ownedOperation>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0oYeANtqEeaTxNvDDjTEVA" memberEnd="_0oZFEttqEeaTxNvDDjTEVA _0oZFE9tqEeaTxNvDDjTEVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0oZFENtqEeaTxNvDDjTEVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0oZFEdtqEeaTxNvDDjTEVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0oZFE9tqEeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_0oYeANtqEeaTxNvDDjTEVA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_TY3ugNtREeaTxNvDDjTEVA" memberEnd="_R-VqMNtREeaTxNvDDjTEVA _TY_qUNtREeaTxNvDDjTEVA">
-        <ownedEnd xmi:type="uml:Property" xmi:id="_TY_qUNtREeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_TY3ugNtREeaTxNvDDjTEVA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_cbT_YNtREeaTxNvDDjTEVA" name="CPU"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_cb51QNtREeaTxNvDDjTEVA" memberEnd="_XVk0oNtREeaTxNvDDjTEVA _cb6cUNtREeaTxNvDDjTEVA">
-        <ownedEnd xmi:type="uml:Property" xmi:id="_cb6cUNtREeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_cb51QNtREeaTxNvDDjTEVA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1qATENtqEeaTxNvDDjTEVA" memberEnd="_1qA6IttqEeaTxNvDDjTEVA _1qA6I9tqEeaTxNvDDjTEVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1qA6INtqEeaTxNvDDjTEVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qA6IdtqEeaTxNvDDjTEVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1qA6I9tqEeaTxNvDDjTEVA" name="systemecommandevocale" type="_9PUHIMLKEeankbaEtBM7Tw" association="_1qATENtqEeaTxNvDDjTEVA"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
@@ -431,4 +459,14 @@ déprogrammer.</body>
   <Blocks:Block xmi:id="_JtIB8NtREeaTxNvDDjTEVA" base_Class="_Js4KUNtREeaTxNvDDjTEVA"/>
   <Blocks:Block xmi:id="_TYQqgNtREeaTxNvDDjTEVA" base_Class="_TX9IgNtREeaTxNvDDjTEVA"/>
   <Blocks:Block xmi:id="_cbgzsNtREeaTxNvDDjTEVA" base_Class="_cbT_YNtREeaTxNvDDjTEVA"/>
+  <Requirements:Requirement xmi:id="_rDXIsNtjEeaTxNvDDjTEVA" base_Class="_rDJGQNtjEeaTxNvDDjTEVA" id="4.2" text="La MIB peut être commandée vocalement"/>
+  <Requirements:Requirement xmi:id="_ETvAwNtkEeaTxNvDDjTEVA" base_Class="_ETkosNtkEeaTxNvDDjTEVA" id="4.2.1" text="Le réveil peut-être programmé vocalement"/>
+  <Requirements:Refine xmi:id="_UV1ycNtkEeaTxNvDDjTEVA" base_DirectedRelationship="_UVqMQNtkEeaTxNvDDjTEVA" base_Abstraction="_UVqMQNtkEeaTxNvDDjTEVA"/>
+  <Requirements:Requirement xmi:id="_idemENtlEeaTxNvDDjTEVA" base_Class="_idTm8NtlEeaTxNvDDjTEVA" id="4.2.1" text="La MIB peut &quot;entendre&quot; une commande vocale"/>
+  <Requirements:Requirement xmi:id="_2VItANtlEeaTxNvDDjTEVA" base_Class="_2U9t4NtlEeaTxNvDDjTEVA" id="4.2.2" text="La MIB peut &quot;parler&quot; dans la maison"/>
+  <Requirements:DeriveReqt xmi:id="_foz-sNtoEeaTxNvDDjTEVA" base_DirectedRelationship="_fonxcNtoEeaTxNvDDjTEVA" base_Abstraction="_fonxcNtoEeaTxNvDDjTEVA"/>
+  <Requirements:DeriveReqt xmi:id="_hncOkNtoEeaTxNvDDjTEVA" base_DirectedRelationship="_hnRPcNtoEeaTxNvDDjTEVA" base_Abstraction="_hnRPcNtoEeaTxNvDDjTEVA"/>
+  <Blocks:BindingConnector xmi:id="_KTKIYNtrEeaTxNvDDjTEVA" base_Connector="_KS8tANtrEeaTxNvDDjTEVA"/>
+  <Blocks:BindingConnector xmi:id="_LHg9gNtrEeaTxNvDDjTEVA" base_Connector="_LHSUANtrEeaTxNvDDjTEVA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_EgkpQNtsEeaTxNvDDjTEVA" base_Element="_oaKYMNtrEeaTxNvDDjTEVA" propertyPath="_EOXUYNtrEeaTxNvDDjTEVA" base_ConnectorEnd="_oaKYMNtrEeaTxNvDDjTEVA"/>
 </xmi:XMI>
