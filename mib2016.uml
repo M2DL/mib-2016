@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="Root">
     <ownedComment xmi:type="uml:Comment" xmi:id="_bdHyMK_2EeapM-HOoIo7tA" annotatedElement="_6gfZEK_1EeapM-HOoIo7tA">
       <body>Liste des exigences reprises du fichier excel.
@@ -156,6 +156,32 @@ et nommez-les au passage.
         <nestedClassifier xmi:type="uml:Class" xmi:id="_BzMwAL1PEeaGe5cJmH7UEg" name="Actionneurs" isAbstract="true"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_C8sHoL1PEeaGe5cJmH7UEg" name="Radiateurs">
           <generalization xmi:type="uml:Generalization" xmi:id="_GevSEL1PEeaGe5cJmH7UEg" general="_BzMwAL1PEeaGe5cJmH7UEg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_untv8NsFEeaKPpZlG8KQsA" name="pilote" type="_WfdhENsGEeaKPpZlG8KQsA" aggregation="composite" association="_xJB2INsFEeaKPpZlG8KQsA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_inEMENsGEeaKPpZlG8KQsA" name="thermo" visibility="private" type="_glNpENsGEeaKPpZlG8KQsA" aggregation="composite" association="_qDC1cNsGEeaKPpZlG8KQsA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5qOlsNsGEeaKPpZlG8KQsA" name="alim" type="_zDIV4NsGEeaKPpZlG8KQsA" aggregation="composite" association="_7oELYNsGEeaKPpZlG8KQsA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9ow30NsGEeaKPpZlG8KQsA" name="resistor" visibility="private" type="_1T4QgNsGEeaKPpZlG8KQsA" aggregation="composite" association="_BdXK0NsHEeaKPpZlG8KQsA"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_uJi7UNsHEeaKPpZlG8KQsA" name="alimElectrique" type="_RoGUENsHEeaKPpZlG8KQsA" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lMN-gNsIEeaKPpZlG8KQsA" name="entreeCmd" visibility="package" type="_dXZXUNsIEeaKPpZlG8KQsA" aggregation="composite"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_qSU8sNsIEeaKPpZlG8KQsA" name="Connector1">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_qSWK0NsIEeaKPpZlG8KQsA" role="_lMN-gNsIEeaKPpZlG8KQsA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_qSWK0dsIEeaKPpZlG8KQsA" partWithPort="_untv8NsFEeaKPpZlG8KQsA" role="_UzxwcNsIEeaKPpZlG8KQsA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_7JqtQNsIEeaKPpZlG8KQsA" name="Connector2">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7JrUUNsIEeaKPpZlG8KQsA" role="_uJi7UNsHEeaKPpZlG8KQsA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7Jr7YNsIEeaKPpZlG8KQsA" partWithPort="_5qOlsNsGEeaKPpZlG8KQsA" role="_sVqGYNsIEeaKPpZlG8KQsA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_7uIFMNsIEeaKPpZlG8KQsA" name="Connector3">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7uIsQNsIEeaKPpZlG8KQsA" partWithPort="_5qOlsNsGEeaKPpZlG8KQsA" role="_xdzr8NsIEeaKPpZlG8KQsA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7uJTUNsIEeaKPpZlG8KQsA" partWithPort="_9ow30NsGEeaKPpZlG8KQsA" role="_3NBRgNsIEeaKPpZlG8KQsA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_K_5mINsJEeaKPpZlG8KQsA" name="Connector4">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_K_60QNsJEeaKPpZlG8KQsA" partWithPort="_untv8NsFEeaKPpZlG8KQsA" role="_Dqzn4NsJEeaKPpZlG8KQsA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_K_60QdsJEeaKPpZlG8KQsA" partWithPort="_inEMENsGEeaKPpZlG8KQsA" role="_GUaucNsJEeaKPpZlG8KQsA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_UM7WYNsJEeaKPpZlG8KQsA" name="Connector5">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UM8kgNsJEeaKPpZlG8KQsA" partWithPort="_inEMENsGEeaKPpZlG8KQsA" role="_QomUANsJEeaKPpZlG8KQsA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UM8kgdsJEeaKPpZlG8KQsA" partWithPort="_5qOlsNsGEeaKPpZlG8KQsA" role="_sVqGYNsIEeaKPpZlG8KQsA"/>
+          </ownedConnector>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_gB5SEMLHEea-heYGI39TwA" name="reglerTemperature">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_e_DYcNW0EeakRO8LB8qZYw" name="temp">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
@@ -168,6 +194,23 @@ et nommez-les au passage.
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_mJSKgNW0EeakRO8LB8qZYw" name="augmenterTemperature" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_WfdhENsGEeaKPpZlG8KQsA" name="ModulePilote">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_UzxwcNsIEeaKPpZlG8KQsA" name="signalCmd" type="_dXZXUNsIEeaKPpZlG8KQsA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_Dqzn4NsJEeaKPpZlG8KQsA" name="sortieCmd" visibility="private" type="_dXZXUNsIEeaKPpZlG8KQsA" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_glNpENsGEeaKPpZlG8KQsA" name="Thermostat">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_GUaucNsJEeaKPpZlG8KQsA" name="inputCmd" visibility="private" type="_dXZXUNsIEeaKPpZlG8KQsA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_QomUANsJEeaKPpZlG8KQsA" name="outElec" visibility="private" type="_RoGUENsHEeaKPpZlG8KQsA" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zDIV4NsGEeaKPpZlG8KQsA" name="AlimentationElectrique">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_sVqGYNsIEeaKPpZlG8KQsA" name="entreeElec" type="_RoGUENsHEeaKPpZlG8KQsA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_xdzr8NsIEeaKPpZlG8KQsA" name="sortieElec" visibility="private" type="_RoGUENsHEeaKPpZlG8KQsA" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1T4QgNsGEeaKPpZlG8KQsA" name="Resistance">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_3NBRgNsIEeaKPpZlG8KQsA" name="inputElec" visibility="private" type="_RoGUENsHEeaKPpZlG8KQsA" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_RoGUENsHEeaKPpZlG8KQsA" name="Type_Electricite"/>
+          <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_dXZXUNsIEeaKPpZlG8KQsA" name="Type_Signal_Commande"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_uHdL4L1TEeaGe5cJmH7UEg" name="Tablette">
           <generalization xmi:type="uml:Generalization" xmi:id="_wfD8cL1TEeaGe5cJmH7UEg" general="_OhdZwLAGEeapM-HOoIo7tA"/>
@@ -254,6 +297,18 @@ et nommez-les au passage.
         <ownedEnd xmi:type="uml:Property" xmi:id="_HxgooMLNEea-heYGI39TwA" name="mib" type="_IIbeYKzVEean1fvqSNKjOw" association="_HxXesMLNEea-heYGI39TwA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Signal" xmi:id="_URk-UMLKEea-heYGI39TwA" name="Signal1"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xJB2INsFEeaKPpZlG8KQsA" memberEnd="_untv8NsFEeaKPpZlG8KQsA _xJCdMNsFEeaKPpZlG8KQsA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xJCdMNsFEeaKPpZlG8KQsA" name="radiateurs" type="_C8sHoL1PEeaGe5cJmH7UEg" association="_xJB2INsFEeaKPpZlG8KQsA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qDC1cNsGEeaKPpZlG8KQsA" memberEnd="_inEMENsGEeaKPpZlG8KQsA _qDC1cdsGEeaKPpZlG8KQsA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qDC1cdsGEeaKPpZlG8KQsA" name="radiateurs" type="_C8sHoL1PEeaGe5cJmH7UEg" association="_qDC1cNsGEeaKPpZlG8KQsA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7oELYNsGEeaKPpZlG8KQsA" memberEnd="_5qOlsNsGEeaKPpZlG8KQsA _7oELYdsGEeaKPpZlG8KQsA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7oELYdsGEeaKPpZlG8KQsA" name="radiateurs" type="_C8sHoL1PEeaGe5cJmH7UEg" association="_7oELYNsGEeaKPpZlG8KQsA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_BdXK0NsHEeaKPpZlG8KQsA" memberEnd="_9ow30NsGEeaKPpZlG8KQsA _BdXK0dsHEeaKPpZlG8KQsA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BdXK0dsHEeaKPpZlG8KQsA" name="radiateurs" type="_C8sHoL1PEeaGe5cJmH7UEg" association="_BdXK0NsHEeaKPpZlG8KQsA"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6oUQoK_7EeapM-HOoIo7tA" name="Acteurs">
       <packagedElement xmi:type="uml:Actor" xmi:id="_TubRIKzVEean1fvqSNKjOw" name="Medecin"/>
@@ -453,6 +508,9 @@ et nommez-les au passage.
         <ownedEnd xmi:type="uml:Property" xmi:id="_812eg71JEeaGe5cJmH7UEg" name="saisir ses préférences" type="_yVRbvb1JEeaGe5cJmH7UEg" association="_812egL1JEeaGe5cJmH7UEg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_812ehL1JEeaGe5cJmH7UEg" name="utilisateur" type="_3-pfAL1JEeaGe5cJmH7UEg" association="_812egL1JEeaGe5cJmH7UEg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_sfEBYNsFEeaKPpZlG8KQsA" name="PartsRadiateur">
+        <packagedElement xmi:type="uml:Class" xmi:id="_w8mjsNsFEeaKPpZlG8KQsA" name="Block1"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -590,4 +648,18 @@ et nommez-les au passage.
   <Requirements:Refine xmi:id="_cjs54NXAEeakRO8LB8qZYw" base_DirectedRelationship="_cjjI4NXAEeakRO8LB8qZYw" base_Abstraction="_cjjI4NXAEeakRO8LB8qZYw"/>
   <Requirements:Requirement xmi:id="_fOMKMNXAEeakRO8LB8qZYw" base_Class="_fOCZMNXAEeakRO8LB8qZYw" id="ReqEco2" text="L'habitant doit pouvoir quitter sa maison sans avoir à vérifier l'état de l'éclairage, du chauffage ou de la climatisation"/>
   <Requirements:Refine xmi:id="_jW2osNXAEeakRO8LB8qZYw" base_DirectedRelationship="_jWs3sNXAEeakRO8LB8qZYw" base_Abstraction="_jWs3sNXAEeakRO8LB8qZYw"/>
+  <Blocks:Block xmi:id="_xIo0kNsFEeaKPpZlG8KQsA" base_Class="_w8mjsNsFEeaKPpZlG8KQsA"/>
+  <Blocks:Block xmi:id="_Wflc4NsGEeaKPpZlG8KQsA" base_Class="_WfdhENsGEeaKPpZlG8KQsA"/>
+  <Blocks:Block xmi:id="_glTvsNsGEeaKPpZlG8KQsA" base_Class="_glNpENsGEeaKPpZlG8KQsA"/>
+  <Blocks:Block xmi:id="_zDOcgNsGEeaKPpZlG8KQsA" base_Class="_zDIV4NsGEeaKPpZlG8KQsA"/>
+  <Blocks:Block xmi:id="_1T-XINsGEeaKPpZlG8KQsA" base_Class="_1T4QgNsGEeaKPpZlG8KQsA"/>
+  <DeprecatedElements:FlowPort xmi:id="_uJppANsHEeaKPpZlG8KQsA" base_Port="_uJi7UNsHEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_Uz2o8NsIEeaKPpZlG8KQsA" base_Port="_UzxwcNsIEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_lMTeENsIEeaKPpZlG8KQsA" base_Port="_lMN-gNsIEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_sVu-4NsIEeaKPpZlG8KQsA" base_Port="_sVqGYNsIEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_xd4kcNsIEeaKPpZlG8KQsA" base_Port="_xdzr8NsIEeaKPpZlG8KQsA" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_3NGKANsIEeaKPpZlG8KQsA" base_Port="_3NBRgNsIEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_Dq4gYNsJEeaKPpZlG8KQsA" base_Port="_Dqzn4NsJEeaKPpZlG8KQsA" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_GUfm8NsJEeaKPpZlG8KQsA" base_Port="_GUaucNsJEeaKPpZlG8KQsA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_QorzkNsJEeaKPpZlG8KQsA" base_Port="_QomUANsJEeaKPpZlG8KQsA" direction="out"/>
 </xmi:XMI>
