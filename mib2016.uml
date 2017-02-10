@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_iozbMKzUEean1fvqSNKjOw" name="Root">
     <ownedComment xmi:type="uml:Comment" xmi:id="_bdHyMK_2EeapM-HOoIo7tA" annotatedElement="_6gfZEK_1EeapM-HOoIo7tA">
       <body>Liste des exigences reprises du fichier excel.
@@ -212,6 +212,49 @@ et nommez-les au passage.
         <ownedEnd xmi:type="uml:Property" xmi:id="_uesaMsLEEeaDqqUocSJQ0Q" name="réparer le système d'arrosage" type="_sDBB8MLEEeaDqqUocSJQ0Q" association="_uerzIMLEEeaDqqUocSJQ0Q"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_uesaM8LEEeaDqqUocSJQ0Q" name="technicien" type="_TIpy4a_8EeapM-HOoIo7tA" association="_uerzIMLEEeaDqqUocSJQ0Q"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lf9OgMLNEeazH4R3rhYeYg" name="Contexte système d'arrosage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NPl6ksLQEeazH4R3rhYeYg" name="arrivée d'eau" type="_S0OdQMLPEeazH4R3rhYeYg" aggregation="composite" association="_NPkscMLQEeazH4R3rhYeYg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_S0OdQMLPEeazH4R3rhYeYg" name="Arrivée d'eau"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NPkscMLQEeazH4R3rhYeYg" memberEnd="_NPl6ksLQEeazH4R3rhYeYg _NPmhoMLQEeazH4R3rhYeYg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NPl6kMLQEeazH4R3rhYeYg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NPl6kcLQEeazH4R3rhYeYg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NPmhoMLQEeazH4R3rhYeYg" name="contexte système d'arrosage" type="_lf9OgMLNEeazH4R3rhYeYg" association="_NPkscMLQEeazH4R3rhYeYg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IY5ggNkNEeauyrFWoDUBnA" name="DésactivationPointsArrosage"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_4Loq4NkQEeauyrFWoDUBnA" name="SystèmeArrosage">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ugV8MNkOEeauyrFWoDUBnA" name="Maintenance">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_LLKh4NkPEeauyrFWoDUBnA" name="CoupureEau"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_gFzIwNkPEeauyrFWoDUBnA" name="CoupureEnergie"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_WdTPYNkNEeauyrFWoDUBnA" name="ArrosageMultiple">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0Lxf4NkMEeauyrFWoDUBnA" name="PointsArrosage"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_K-pTYNkQEeauyrFWoDUBnA" name="CompatibilitéRéseauHydraulique"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jYa6oNkQEeauyrFWoDUBnA" name="Visuel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_A1OwMNkMEeauyrFWoDUBnA" name="Pertes"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_adO2YNkSEeauyrFWoDUBnA" name="ActivationAlimentations">
+        <region xmi:type="uml:Region" xmi:id="_bAVjcNkSEeauyrFWoDUBnA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_OKBi4NkTEeauyrFWoDUBnA" source="_IKxWMNkTEeauyrFWoDUBnA" target="_iNmbYNkSEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_PIjnsNkTEeauyrFWoDUBnA" source="_iNmbYNkSEeauyrFWoDUBnA" target="_I_6OcNkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Uyt4sNkUEeauyrFWoDUBnA" source="_iNmbYNkSEeauyrFWoDUBnA" target="_gemtgNkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_qTjugNkVEeauyrFWoDUBnA" source="_iNmbYNkSEeauyrFWoDUBnA" target="_gsuCANkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tLhaINkVEeauyrFWoDUBnA" source="_gemtgNkTEeauyrFWoDUBnA" target="_z4_CkNkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_uvjYsNkVEeauyrFWoDUBnA" source="_z4_CkNkTEeauyrFWoDUBnA" target="_gsuCANkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_wGYowNkVEeauyrFWoDUBnA" source="_gsuCANkTEeauyrFWoDUBnA" target="_z4_CkNkTEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_zWBNgNkVEeauyrFWoDUBnA" source="_gsuCANkTEeauyrFWoDUBnA" target="_iNmbYNkSEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_36Q0wNkVEeauyrFWoDUBnA" source="_gemtgNkTEeauyrFWoDUBnA" target="_iNmbYNkSEeauyrFWoDUBnA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Ak_wQNkWEeauyrFWoDUBnA" source="_z4_CkNkTEeauyrFWoDUBnA" target="_gemtgNkTEeauyrFWoDUBnA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iNmbYNkSEeauyrFWoDUBnA" name="Desactive"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_IKxWMNkTEeauyrFWoDUBnA" name="Initial"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_I_6OcNkTEeauyrFWoDUBnA" name="Final"/>
+          <subvertex xmi:type="uml:State" xmi:id="_gemtgNkTEeauyrFWoDUBnA" name="EauActivee"/>
+          <subvertex xmi:type="uml:State" xmi:id="_gsuCANkTEeauyrFWoDUBnA" name="EnergieActivee"/>
+          <subvertex xmi:type="uml:State" xmi:id="_z4_CkNkTEeauyrFWoDUBnA" name="Fonctionnel"/>
+        </region>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iqMiUKzUEean1fvqSNKjOw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iqOXgKzUEean1fvqSNKjOw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -273,6 +316,12 @@ et nommez-les au passage.
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DByqMNkTEeauyrFWoDUBnA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DBz4UNkTEeauyrFWoDUBnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_1DGMQKzUEean1fvqSNKjOw" base_Class="_02decKzUEean1fvqSNKjOw"/>
   <Blocks:Block xmi:id="_IIkoUKzVEean1fvqSNKjOw" base_Class="_IIbeYKzVEean1fvqSNKjOw"/>
@@ -327,4 +376,20 @@ et nommez-les au passage.
   <Blocks:Block xmi:id="_OhkHcLAGEeapM-HOoIo7tA" base_Class="_OhdZwLAGEeapM-HOoIo7tA"/>
   <Blocks:Block xmi:id="_ll2icLAGEeapM-HOoIo7tA" base_Class="_llwb0LAGEeapM-HOoIo7tA"/>
   <Requirements:Requirement xmi:id="_MPcl0MLIEeaDqqUocSJQ0Q" base_Class="_MPPxgMLIEeaDqqUocSJQ0Q" id="06-02" text="La MI doit arroser les plantes"/>
+  <Blocks:Block xmi:id="_lgOUQMLNEeazH4R3rhYeYg" base_Class="_lf9OgMLNEeazH4R3rhYeYg"/>
+  <Blocks:Block xmi:id="_S0ZcYMLPEeazH4R3rhYeYg" base_Class="_S0OdQMLPEeazH4R3rhYeYg"/>
+  <Requirements:Requirement xmi:id="_A1a9cNkMEeauyrFWoDUBnA" base_Class="_A1OwMNkMEeauyrFWoDUBnA" id="R1" text="Le pertes d'eau doivent être infèrieures à 1%"/>
+  <Requirements:Requirement xmi:id="_0L9GENkMEeauyrFWoDUBnA" base_Class="_0Lxf4NkMEeauyrFWoDUBnA" id="R2.1" text="Il doit y avoir au moins 4 points d'arrosage"/>
+  <Requirements:Requirement xmi:id="_IZD4kNkNEeauyrFWoDUBnA" base_Class="_IY5ggNkNEeauyrFWoDUBnA" id="R2.2" text="Les points d'arrosage doivent pouvoir être desactivés individuellement par l'utilisateur à distance"/>
+  <Requirements:Requirement xmi:id="_WdpNoNkNEeauyrFWoDUBnA" base_Class="_WdTPYNkNEeauyrFWoDUBnA" id="R2" text="Plusieurs plantes doivent pouvoir être arrosées en même temps"/>
+  <Requirements:DeriveReqt xmi:id="_1ajxwNkNEeauyrFWoDUBnA"/>
+  <Requirements:Requirement xmi:id="_ugo3INkOEeauyrFWoDUBnA" base_Class="_ugV8MNkOEeauyrFWoDUBnA" id="R3" text="Le système doit pouvoir être maintenu sans risques pour le mainteneur"/>
+  <Requirements:Requirement xmi:id="_LLbAkNkPEeauyrFWoDUBnA" base_Class="_LLKh4NkPEeauyrFWoDUBnA" id="R3.1" text="L'arrivée d'eau doit pouvoir être desactivée pour tout le système"/>
+  <Requirements:Requirement xmi:id="_gF7roNkPEeauyrFWoDUBnA" base_Class="_gFzIwNkPEeauyrFWoDUBnA" id="R3.2" text="L'alimentation en energie doit pouvoir être coupée pour tout le système"/>
+  <Requirements:Requirement xmi:id="_K-7nQNkQEeauyrFWoDUBnA" base_Class="_K-pTYNkQEeauyrFWoDUBnA" id="R4" text="Le système doit pouvoir être compatible avec les arrivées d'eau standards"/>
+  <Requirements:Requirement xmi:id="_jYw44NkQEeauyrFWoDUBnA" base_Class="_jYa6oNkQEeauyrFWoDUBnA" id="R5" text="Le système doit être discret ou agréable à la vue"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_DMNKcNkTEeauyrFWoDUBnA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_iN450NkTEeauyrFWoDUBnA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_VsWPYNkUEeauyrFWoDUBnA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_5nEKQNkUEeauyrFWoDUBnA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
 </xmi:XMI>
